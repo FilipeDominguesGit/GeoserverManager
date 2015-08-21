@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Gateways;
+using GeoserverManager.DAL.Repositories.Factories;
+using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Entities.Interface.BussinessModelFactories;
+using GeoserverManager.UseCases.Interface.Repositories;
+
+namespace GeoserverManager.DAL.Repositories.Repositories
+{
+    public class LayerInfoRepository : ILayerInfoRepository
+    {
+          private readonly IGeoGateway gateway;
+          private readonly ILayerInfoBuilderPrototype builderPrototype;
+
+          public LayerInfoRepository(IGeoGateway gateway, ILayerInfoBuilderPrototype builderPrototype)
+        {
+            if (gateway == null)
+                throw new ArgumentNullException("gateway", "gateway cannot be null");
+            if (builderPrototype == null)
+                throw new ArgumentNullException("builderPrototype", "builderPrototype cannot be null");
+
+            this.gateway = gateway;
+              this.builderPrototype = builderPrototype;
+        }
+
+        public IEnumerable<ILayerInfo> GetAllLayersInfos()
+        {
+            var output = gateway.GetAllLayers();
+
+            if (output == null || !output.Any())
+                throw new ArgumentNullException("output", "Repository returned null value");
+
+            return output.Select(CreateLayerInfoFromEntity);
+        }
+
+        private ILayerInfo CreateLayerInfoFromEntity(IGeoEntity entity)
+        {
+            var builder = this.builderPrototype.Clone();
+
+            return CreateLayerInfoFromEntities.CreateLayerInfo(entity, builder);
+        }
+    }
+}

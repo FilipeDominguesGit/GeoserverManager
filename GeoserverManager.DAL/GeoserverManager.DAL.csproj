@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoserverManager.DAL</RootNamespace>
+    <AssemblyName>GeoserverManager.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Converter\JsonLayerConverter.cs" />
+    <Compile Include="Datamodel\Attributes.cs" />
+    <Compile Include="Datamodel\Entry.cs" />
+    <Compile Include="Datamodel\FeatureType.cs" />
+    <Compile Include="Datamodel\GeoEntity.cs" />
+    <Compile Include="Datamodel\Geometry.cs" />
+    <Compile Include="Datamodel\Keywords.cs" />
+    <Compile Include="Datamodel\LatLonBoundingBox.cs" />
+    <Compile Include="Datamodel\Metadata.cs" />
+    <Compile Include="Datamodel\Namespace.cs" />
+    <Compile Include="Datamodel\NativeBoundingBox.cs" />
+    <Compile Include="Datamodel\Store.cs" />
+    <Compile Include="Datamodel\VirtualTable.cs" />
+    <Compile Include="Gateways\GeoEntityJsonGateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
+      <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
+      <Name>GeoserverManager.Entities.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities\GeoserverManager.Entities.csproj">
+      <Project>{FBFECAF6-D7E3-4B29-82F3-279007CB4481}</Project>
+      <Name>GeoserverManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
+      <Project>{A3D8D48A-5E5C-4637-A3FF-9C6FCC74233F}</Project>
+      <Name>GeoserverManager.DAL.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

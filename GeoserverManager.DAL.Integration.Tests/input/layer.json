@@ -1,0 +1,639 @@
+﻿[
+
+    {
+        "featureType": {
+            "name": "live_cell_size_geom_big",
+            "nativeName": "live_cell_size_geom_big",
+            "namespace": {
+                "name": "webgis-dev",
+                "href": "http:\/\/cfn-gis-stg.cloudapp.net:8080\/geoserver\/rest\/namespaces\/webgis-dev.json"
+            },
+            "title": "live_cell_size_geom_big",
+            "keywords": {
+                "string": [
+                    "live_cell_size_geom_big",
+                    "features"
+                ]
+            },
+            "srs": "EPSG:4326",
+            "nativeBoundingBox": {
+                "minx": -8.09702713503679,
+                "maxx": 1.7663477658771,
+                "miny": 49.7597499549932,
+                "maxy": 58.7872608588412
+            },
+            "latLonBoundingBox": {
+                "minx": -8.09702713503679,
+                "maxx": 1.7663477658771,
+                "miny": 49.7597499549932,
+                "maxy": 58.7872608588412,
+                "crs": "GEOGCS[\"WGS84(DD)\", \r\n  DATUM[\"WGS84\", \r\n    SPHEROID[\"WGS84\", 6378137.0, 298.257223563]], \r\n  PRIMEM[\"Greenwich\", 0.0],\r\n UNIT[\"degree\", 0.017453292519943295], \r\n  AXIS[\"Geodetic longitude\", EAST], \r\nAXIS[\"Geodetic latitude\", NORTH]]"
+            },
+            "projectionPolicy": "FORCE_DECLARED",
+            "enabled": true,
+            "metadata": {
+                "entry": [
+                    {
+                        "@key": "cachingEnabled",
+                        "$": "false"
+                    },
+                    {
+                        "@key": "JDBC_VIRTUAL_TABLE",
+                        "virtualTable": {
+                            "name": "live_cell_size_geom_big",
+                            "sql": "SELECT
+                            uuid,
+                            cellid,
+                            cellname,
+                            cellname as
+                            sigga_external_id,
+                            cellstate,
+                            operator,
+                            latitude,
+                            longitude,
+                            \r\nazimuth,
+                            sectorid,
+                            siteenvironment,
+                            siteid,
+                            vendor,
+                            tech,
+                            band,
+                            \r\nsector,
+                            oss,
+                            mcc,
+                            mnc,
+                            controllerid,
+                            controllername,
+                            lac,
+                            rac,
+                            \r\ntac,
+                            carrier,
+                            frequency,
+                            code,
+                            dldataspeed,
+                            managedby,
+                            cellgeombig as
+                            geom,
+                            errors\r\nFROM view_livefulldata_cell\n",
+                            "escapeSql": false,
+                            "geometry": {
+                                "name": "geom",
+                                "type": "Geometry",
+                                "srid": -1
+                            }
+                        }
+                    }
+                ]
+            },
+            "store": {
+                "@class": "dataStore",
+                "name": "networkTopologyDev",
+                "href": "http:\/\/cfn-gis-stg.cloudapp.net:8080\/geoserver\/rest\/workspaces\/webgis-dev\/datastores\/networkTopologyDev.json"
+            },
+            "maxFeatures": 0,
+            "numDecimals": 0,
+            "overridingServiceSRS": false,
+            "circularArcPresent": false,
+            "attributes": {
+                "attribute": [
+                    {
+                        "name": "uuid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellname",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sigga_external_id",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellstate",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "operator",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "latitude",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "longitude",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "azimuth",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sectorid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "siteenvironment",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "siteid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "vendor",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "tech",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "band",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sector",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "oss",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "mcc",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "mnc",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "controllerid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "controllername",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "lac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "rac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "tac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "carrier",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "frequency",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "code",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "dldataspeed",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "managedby",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "geom",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "com.vividsolutions.jts.geom.Geometry"
+                    },
+                    {
+                        "name": "errors",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "featureType": {
+            "name": "live_cell_size_geom_big",
+            "nativeName": "live_cell_size_geom_big",
+            "namespace": {
+                "name": "webgis",
+                "href": "http:\/\/cfn-gis-stg.cloudapp.net:8080\/geoserver\/rest\/namespaces\/webgis-dev.json"
+            },
+            "title": "live_cell_size_geom_big",
+            "keywords": {
+                "string": [
+                    "live_cell_size_geom_big",
+                    "features"
+                ]
+            },
+            "srs": "EPSG:4326",
+            "nativeBoundingBox": {
+                "minx": -8.09702713503679,
+                "maxx": 1.7663477658771,
+                "miny": 49.7597499549932,
+                "maxy": 58.7872608588412
+            },
+            "latLonBoundingBox": {
+                "minx": -8.09702713503679,
+                "maxx": 1.7663477658771,
+                "miny": 49.7597499549932,
+                "maxy": 58.7872608588412,
+                "crs": "GEOGCS[\"WGS84(DD)\", \r\n  DATUM[\"WGS84\", \r\n    SPHEROID[\"WGS84\", 6378137.0, 298.257223563]], \r\n  PRIMEM[\"Greenwich\", 0.0],\r\n UNIT[\"degree\", 0.017453292519943295], \r\n  AXIS[\"Geodetic longitude\", EAST], \r\nAXIS[\"Geodetic latitude\", NORTH]]"
+            },
+            "projectionPolicy": "FORCE_DECLARED",
+            "enabled": true,
+            "metadata": {
+                "entry": [
+                    {
+                        "@key": "cachingEnabled",
+                        "$": "false"
+                    },
+                    {
+                        "@key": "JDBC_VIRTUAL_TABLE",
+                        "virtualTable": {
+                            "name": "live_cell_size_geom_big",
+                            "sql": "SELECT
+                            uuid,
+                            cellid,
+                            cellname,
+                            cellname as
+                            sigga_external_id,
+                            cellstate,
+                            operator,
+                            latitude,
+                            longitude,
+                            \r\nazimuth,
+                            sectorid,
+                            siteenvironment,
+                            siteid,
+                            vendor,
+                            tech,
+                            band,
+                            \r\nsector,
+                            oss,
+                            mcc,
+                            mnc,
+                            controllerid,
+                            controllername,
+                            lac,
+                            rac,
+                            \r\ntac,
+                            carrier,
+                            frequency,
+                            code,
+                            dldataspeed,
+                            managedby,
+                            cellgeombig as
+                            geom,
+                            errors\r\nFROM view_livefulldata_cell\n",
+                            "escapeSql": false,
+                            "geometry": {
+                                "name": "geom",
+                                "type": "Geometry",
+                                "srid": -1
+                            }
+                        }
+                    }
+                ]
+            },
+            "store": {
+                "@class": "dataStore",
+                "name": "networkTopologyDev",
+                "href": "http:\/\/cfn-gis-stg.cloudapp.net:8080\/geoserver\/rest\/workspaces\/webgis-dev\/datastores\/networkTopologyDev.json"
+            },
+            "maxFeatures": 0,
+            "numDecimals": 0,
+            "overridingServiceSRS": false,
+            "circularArcPresent": false,
+            "attributes": {
+                "attribute": [
+                    {
+                        "name": "uuid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellname",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sigga_external_id",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "cellstate",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "operator",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "latitude",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "longitude",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "azimuth",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sectorid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "siteenvironment",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "siteid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "vendor",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "tech",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "band",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "sector",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "oss",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "mcc",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "mnc",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "controllerid",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "controllername",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "lac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "rac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "tac",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "carrier",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "frequency",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "code",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "dldataspeed",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "managedby",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    },
+                    {
+                        "name": "geom",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "com.vividsolutions.jts.geom.Geometry"
+                    },
+                    {
+                        "name": "errors",
+                        "minOccurs": 0,
+                        "maxOccurs": 1,
+                        "nillable": true,
+                        "binding": "java.lang.String"
+                    }
+                ]
+            }
+        }
+    }
+
+]
