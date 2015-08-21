@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.Entities.B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Adapters", "Interface Adapters", "{D4E17A2A-C2F1-4D7D-ADB1-B1F3A040F0E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.DAL.Repositories.Tests", "GeoserverManager.DAL.Repositories.Tests\GeoserverManager.DAL.Repositories.Tests.csproj", "{DA678D62-D167-4063-9377-A5225B7EDA0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{9782A491-7FB8-44D1-88BA-32B78EE5EC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9782A491-7FB8-44D1-88BA-32B78EE5EC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9782A491-7FB8-44D1-88BA-32B78EE5EC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA678D62-D167-4063-9377-A5225B7EDA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA678D62-D167-4063-9377-A5225B7EDA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA678D62-D167-4063-9377-A5225B7EDA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA678D62-D167-4063-9377-A5225B7EDA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,5 +145,6 @@ Global
 		{835C1BF9-A72D-44C8-AE79-1A40560703E1} = {C9A8BE4D-2F9F-4840-B86B-69D502289C83}
 		{9782A491-7FB8-44D1-88BA-32B78EE5EC3A} = {5B233F34-A6DB-4820-8CBA-3C48D21151A5}
 		{D4E17A2A-C2F1-4D7D-ADB1-B1F3A040F0E3} = {887905AF-F1B7-440F-A512-E0DC27E7EDF8}
+		{DA678D62-D167-4063-9377-A5225B7EDA0C} = {D4E17A2A-C2F1-4D7D-ADB1-B1F3A040F0E3}
 	EndGlobalSection
 EndGlobal

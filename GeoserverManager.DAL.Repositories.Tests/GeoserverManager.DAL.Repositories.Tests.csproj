@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA678D62-D167-4063-9377-A5225B7EDA0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GeoserverManager.DAL.Repositories.Tests</RootNamespace>
+    <AssemblyName>GeoserverManager.DAL.Repositories.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.JustMock, Version=2015.2.715.1, Culture=neutral, PublicKeyToken=721b6c5bc0326b3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\JustMock.2015.2.715.1\lib\Net35\Telerik.JustMock.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GeoEntityRepositoryTests.cs" />
+    <Compile Include="LayerInfoRepositoryTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
+      <Project>{A3D8D48A-5E5C-4637-A3FF-9C6FCC74233F}</Project>
+      <Name>GeoserverManager.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL.Repositories\GeoserverManager.DAL.Repositories.csproj">
+      <Project>{2D0F72AF-A226-4621-8CDE-B8FD2B440F45}</Project>
+      <Name>GeoserverManager.DAL.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities.Base.Interface\GeoserverManager.Entities.Base.Interface.csproj">
+      <Project>{9782a491-7fb8-44d1-88ba-32b78ee5ec3a}</Project>
+      <Name>GeoserverManager.Entities.Base.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
+      <Project>{3a8e26f8-0fc1-4a83-9b46-d351116def35}</Project>
+      <Name>GeoserverManager.Entities.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities\GeoserverManager.Entities.csproj">
+      <Project>{FBFECAF6-D7E3-4B29-82F3-279007CB4481}</Project>
+      <Name>GeoserverManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.UseCases.Interface\GeoserverManager.UseCases.Interface.csproj">
+      <Project>{536BF67D-00BA-4520-AFBC-963CFDEC1BAA}</Project>
+      <Name>GeoserverManager.UseCases.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
