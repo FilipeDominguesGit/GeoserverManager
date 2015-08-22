@@ -55,6 +55,7 @@
     <Compile Include="Datamodel\INativeBoundingBox.cs" />
     <Compile Include="Datamodel\IStore.cs" />
     <Compile Include="Datamodel\IVirtualTable.cs" />
+    <Compile Include="Gateways\IGeoEntityJsonGateway.cs" />
     <Compile Include="Gateways\IGeoGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

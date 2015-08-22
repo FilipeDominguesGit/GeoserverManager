@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GeoserverManager.Properties {
+namespace GeoserverManager.DAL.Repositories.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,18 @@ namespace GeoserverManager.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("LocalLayersConnectionStringValue")]
+        public string LocalLayersConnectionString {
+            get {
+                return ((string)(this["LocalLayersConnectionString"]));
+            }
+            set {
+                this["LocalLayersConnectionString"] = value;
             }
         }
     }

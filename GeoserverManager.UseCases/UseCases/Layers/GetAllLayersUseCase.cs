@@ -10,7 +10,6 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 {
     public class GetAllLayersUseCase : IGetAllLayersUseCase
     {
-
         private readonly ILayerInfoRepository repository;
 
         public GetAllLayersUseCase(ILayerInfoRepository repository)
@@ -27,11 +26,12 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
             try
             {
-                var layers = this.repository.GetAllLayersInfos();
+                var layers = repository.GetAllLayersInfos();
                 responseBoundary(layers.Any() ? new GetAllLayersResponse(layers) : GetAllLayersResponse.NULL);
             }
             catch (Exception ex)
             {
+                
                 //throw new UseCaseExecutionException("An error occurred while trying to get cell neighbours info!", ex);
             }
         }

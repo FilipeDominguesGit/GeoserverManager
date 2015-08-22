@@ -4,7 +4,7 @@ using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Responses
 {
-    public  interface IGetAllLayersResponse : IUseCaseResponse
+    public interface IGetAllLayersResponse : IUseCaseResponse
     {
         IEnumerable<ILayerInfo> Layers { get; }
     }

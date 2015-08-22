@@ -9,14 +9,14 @@ using Newtonsoft.Json;
 
 namespace GeoserverManager.DAL.Gateways
 {
-    public class GeoEntityJsonGateway : IGeoGateway
+    public class GeoEntityJsonGateway : IGeoEntityJsonGateway
     {
-        public GeoEntityJsonGateway(string path)
+        public GeoEntityJsonGateway(string connectionString)
         {
-            if (string.IsNullOrWhiteSpace(path))
-                throw new ArgumentNullException("path", "path cannot be null or empty");
+            if (string.IsNullOrWhiteSpace(connectionString))
+                throw new ArgumentNullException("connectionString", "connectionString cannot be null or empty");
 
-            FilePath = path;
+            FilePath = connectionString;
         }
 
         private string FilePath { get; set; }

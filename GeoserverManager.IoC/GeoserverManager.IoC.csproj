@@ -1,20 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFD57AA7-A22F-4A0E-A1CB-D3E3F32D7F27}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{AD40D74B-181D-4F09-95A6-CAA15DC592E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GeoserverManager</RootNamespace>
-    <AssemblyName>GeoserverManager</AssemblyName>
+    <RootNamespace>GeoserverManager.IoC</RootNamespace>
+    <AssemblyName>GeoserverManager.IoC</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -47,51 +44,33 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Container\IocContainer.cs" />
+    <Compile Include="Installers\BuilderPrototypeInstaller.cs" />
+    <Compile Include="Installers\ConfigurationDataInstaller.cs" />
+    <Compile Include="Installers\GatewaysInstaller.cs" />
+    <Compile Include="Installers\RepositoriesInstaller.cs" />
+    <Compile Include="Installers\UseCasesInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
+      <Project>{A3D8D48A-5E5C-4637-A3FF-9C6FCC74233F}</Project>
+      <Name>GeoserverManager.DAL.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.DAL.Repositories\GeoserverManager.DAL.Repositories.csproj">
       <Project>{2D0F72AF-A226-4621-8CDE-B8FD2B440F45}</Project>
       <Name>GeoserverManager.DAL.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL\GeoserverManager.DAL.csproj">
+      <Project>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</Project>
+      <Name>GeoserverManager.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
       <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
@@ -100,10 +79,6 @@
     <ProjectReference Include="..\GeoserverManager.Entities\GeoserverManager.Entities.csproj">
       <Project>{FBFECAF6-D7E3-4B29-82F3-279007CB4481}</Project>
       <Name>GeoserverManager.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GeoserverManager.IoC\GeoserverManager.IoC.csproj">
-      <Project>{AD40D74B-181D-4F09-95A6-CAA15DC592E6}</Project>
-      <Name>GeoserverManager.IoC</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.UseCases.Base.Interface\GeoserverManager.UseCases.Base.Interface.csproj">
       <Project>{835C1BF9-A72D-44C8-AE79-1A40560703E1}</Project>
@@ -116,14 +91,6 @@
     <ProjectReference Include="..\GeoserverManager.UseCases\GeoserverManager.UseCases.csproj">
       <Project>{2B5D1EF5-06A0-4F45-A875-FC2EC850F8B9}</Project>
       <Name>GeoserverManager.UseCases</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
-      <Project>{A3D8D48A-5E5C-4637-A3FF-9C6FCC74233F}</Project>
-      <Name>GeoserverManager.DAL.Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GeoserverManager.DAL\GeoserverManager.DAL.csproj">
-      <Project>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</Project>
-      <Name>GeoserverManager.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
