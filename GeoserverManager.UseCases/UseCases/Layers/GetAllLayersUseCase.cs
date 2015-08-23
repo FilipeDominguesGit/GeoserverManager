@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using GeoserverManager.UseCases.Base.Interface.Exceptions;
 using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
 using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 using GeoserverManager.UseCases.Interface.Repositories;
@@ -32,7 +33,7 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             catch (Exception ex)
             {
                 
-                //throw new UseCaseExecutionException("An error occurred while trying to get cell neighbours info!", ex);
+                throw new UseCaseExecutionException("An error occurred while trying to get Layer info!", ex);
             }
         }
     }
