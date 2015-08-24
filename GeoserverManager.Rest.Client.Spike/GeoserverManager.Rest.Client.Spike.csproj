@@ -50,6 +50,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.Geoserver.Rest.Client\GeoserverManager.Geoserver.Rest.Client.csproj">
+      <Project>{ED45F433-F9A5-4C1A-91DF-C5DF2BF9F1F7}</Project>
+      <Name>GeoserverManager.Geoserver.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Rest.Client.Interface\GeoserverManager.Rest.Client.Interface.csproj">
+      <Project>{f96d8e68-be81-4d62-b669-c81930d975b4}</Project>
+      <Name>GeoserverManager.Rest.Client.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Rest.Client\GeoserverManager.Rest.Client.csproj">
       <Project>{9c6787d4-bc5f-48f3-8edb-db32f374a618}</Project>
       <Name>GeoserverManager.Rest.Client</Name>

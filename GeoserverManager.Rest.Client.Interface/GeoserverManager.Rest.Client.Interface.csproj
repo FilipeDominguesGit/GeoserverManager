@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C6787D4-BC5F-48F3-8EDB-DB32F374A618}</ProjectGuid>
+    <ProjectGuid>{F96D8E68-BE81-4D62-B669-C81930D975B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GeoserverManager.Rest.Client</RootNamespace>
-    <AssemblyName>GeoserverManager.Rest.Client</AssemblyName>
+    <RootNamespace>GeoserverManager.Rest.Client.Interface</RootNamespace>
+    <AssemblyName>GeoserverManager.Rest.Client.Interface</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RestSharp, Version=105.2.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.105.2.2\lib\net451\RestSharp.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,20 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Request\RequestSettings.cs" />
-    <Compile Include="Request\ServiceRequest.cs" />
-    <Compile Include="Response\ServiceResponse.cs" />
-    <Compile Include="RestService.cs" />
+    <Compile Include="IRestService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GeoserverManager.Rest.Client.Interface\GeoserverManager.Rest.Client.Interface.csproj">
-      <Project>{F96D8E68-BE81-4D62-B669-C81930D975B4}</Project>
-      <Name>GeoserverManager.Rest.Client.Interface</Name>
-    </ProjectReference>
+    <Compile Include="Request\IRequestSettings.cs" />
+    <Compile Include="Request\IServiceRequest.cs" />
+    <Compile Include="Response\IServiceResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

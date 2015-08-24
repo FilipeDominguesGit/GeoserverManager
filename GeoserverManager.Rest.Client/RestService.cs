@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GeoserverManager.Rest.Client.Request;
+using GeoserverManager.Rest.Client.Interface;
+using GeoserverManager.Rest.Client.Interface.Request;
+using GeoserverManager.Rest.Client.Interface.Response;
 using GeoserverManager.Rest.Client.Response;
 using RestSharp;
 using RestSharp.Authenticators;
+using RestSharp.Serializers;
 
 namespace GeoserverManager.Rest.Client
 {
     public class RestService : IRestService
     {
+        private readonly IAuthenticator Auth;
         private readonly IRestClient client;
-        private IAuthenticator Auth;
-
 
         public RestService(string uri, string user = "", string password = "")
         {
@@ -31,45 +29,57 @@ namespace GeoserverManager.Rest.Client
                 Auth = new HttpBasicAuthenticator(user, password);
 
             client = new RestClient(uri);
-
-
         }
 
         public IServiceResponse Get(IServiceRequest request, IRequestSettings restSettings)
         {
+            if (Auth != null)
+                client.Authenticator = Auth;
 
             var restRequest = new RestRequest(request.Uri, Method.GET);
             var response = client.Execute(restRequest);
 
-            if (Auth != null)
-                client.Authenticator = Auth;
 
-            return new ServiceResponse() { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
         }
 
         public IServiceResponse Get(IServiceRequest request)
         {
+            if (Auth != null)
+                client.Authenticator = Auth;
 
             var restRequest = new RestRequest(request.Uri, Method.GET);
             var response = client.Execute(restRequest);
 
-            if (Auth != null)
-                client.Authenticator = Auth;
 
-            return new ServiceResponse() { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
         }
-
 
         public void Post(IServiceRequest request, IRequestSettings restSettings)
         {
             throw new NotImplementedException();
         }
 
-        public void Post(IServiceRequest request)
+        public IServiceResponse Post(IServiceRequest request)
         {
-            throw new NotImplementedException();
-        }
+            if (Auth != null)
+                client.Authenticator = Auth;
 
+
+            var restRequest = new RestRequest(request.Uri, Method.POST);
+
+
+            if (!string.IsNullOrWhiteSpace(request.Body))
+            {
+                restRequest.AddParameter("text/json", request.Body, ParameterType.RequestBody);
+                restRequest.RequestFormat = DataFormat.Json;
+            }
+
+            var response = client.Execute(restRequest);
+
+
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
+        }
 
         public void Put(IServiceRequest request, IRequestSettings restSettings)
         {

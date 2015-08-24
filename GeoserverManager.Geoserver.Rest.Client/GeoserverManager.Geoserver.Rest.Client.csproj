@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,6 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter\ComplexJsonConverter.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Contact.cs" />
+    <Compile Include="Datamodel\GlobalSettings\CoverageAccess.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Entry.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Global.cs" />
+    <Compile Include="Datamodel\GlobalSettings\GlobalSettingsRoot.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IContact.cs" />
+    <Compile Include="Datamodel\GlobalSettings\ICoverageAccess.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IEntry.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IGlobal.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IGlobalSettingsRoot.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IJai.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IMap.cs" />
+    <Compile Include="Datamodel\GlobalSettings\IMetadata.cs" />
+    <Compile Include="Datamodel\GlobalSettings\ISettings.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Jai.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Map.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Metadata.cs" />
+    <Compile Include="Datamodel\GlobalSettings\Settings.cs" />
+    <Compile Include="Datamodel\Workspaces\IWorkspace.cs" />
+    <Compile Include="Datamodel\Workspaces\IWorkspaces.cs" />
+    <Compile Include="Datamodel\Workspaces\IWorkspacesRoot.cs" />
+    <Compile Include="Datamodel\Workspaces\Workspace.cs" />
+    <Compile Include="Datamodel\Workspaces\Workspaces.cs" />
+    <Compile Include="Datamodel\Workspaces\WorkspacesRoot.cs" />
     <Compile Include="GeoserverRestClient.cs" />
     <Compile Include="IGeoserverRestClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,10 +82,17 @@
       <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
       <Name>GeoserverManager.Entities.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Rest.Client.Interface\GeoserverManager.Rest.Client.Interface.csproj">
+      <Project>{F96D8E68-BE81-4D62-B669-C81930D975B4}</Project>
+      <Name>GeoserverManager.Rest.Client.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Rest.Client\GeoserverManager.Rest.Client.csproj">
       <Project>{9C6787D4-BC5F-48F3-8EDB-DB32F374A618}</Project>
       <Name>GeoserverManager.Rest.Client</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

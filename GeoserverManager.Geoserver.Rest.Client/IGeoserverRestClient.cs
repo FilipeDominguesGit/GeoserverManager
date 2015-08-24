@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GeoserverManager.Entities.Interface.BussinessModel;
+﻿using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
 
 namespace GeoserverManager.Geoserver.Rest.Client
 {
     public interface IGeoserverRestClient
     {
-
-        ILayerInfo GetLayerInfoByNameAndNamespace(string layername, string workspace);
-
+        IGlobalSettingsRoot GetGlobalSettings();
+        IWorkspacesRoot GetAllWorkSpaces();
+        ILayerInfo GetLayerInfoByWorkspaceLayerNameAndNamespace(string workspace, string datastore, string layername);
     }
 }

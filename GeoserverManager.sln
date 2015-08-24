@@ -75,6 +75,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spike", "Spike", "{B892A56C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.Rest.Client.Spike", "GeoserverManager.Rest.Client.Spike\GeoserverManager.Rest.Client.Spike.csproj", "{1292E7D2-BFF9-4513-81CD-39A1EE33E15F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.Rest.Client.Interface", "GeoserverManager.Rest.Client.Interface\GeoserverManager.Rest.Client.Interface.csproj", "{F96D8E68-BE81-4D62-B669-C81930D975B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{1292E7D2-BFF9-4513-81CD-39A1EE33E15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1292E7D2-BFF9-4513-81CD-39A1EE33E15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1292E7D2-BFF9-4513-81CD-39A1EE33E15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F96D8E68-BE81-4D62-B669-C81930D975B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F96D8E68-BE81-4D62-B669-C81930D975B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F96D8E68-BE81-4D62-B669-C81930D975B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F96D8E68-BE81-4D62-B669-C81930D975B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,5 +191,6 @@ Global
 		{9C6787D4-BC5F-48F3-8EDB-DB32F374A618} = {963A2554-5686-405A-A74F-01DF477BBBA4}
 		{B892A56C-9185-476F-8437-DC5F7CEAC8CA} = {20649DE2-0FAA-4AF2-B40B-4DB41789666F}
 		{1292E7D2-BFF9-4513-81CD-39A1EE33E15F} = {B892A56C-9185-476F-8437-DC5F7CEAC8CA}
+		{F96D8E68-BE81-4D62-B669-C81930D975B4} = {963A2554-5686-405A-A74F-01DF477BBBA4}
 	EndGlobalSection
 EndGlobal

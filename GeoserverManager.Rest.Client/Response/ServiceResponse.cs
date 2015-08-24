@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using GeoserverManager.Rest.Client.Interface.Response;
 
 namespace GeoserverManager.Rest.Client.Response
 {
