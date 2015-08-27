@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 
 namespace GeoserverManager.DAL.Interface.Gateways
 {
     public interface IGeoGateway
     {
-        IEnumerable<IGeoEntity> GetAllLayers();
-        IEnumerable<IGeoEntity> GetLayerByNameAndNamespace(string name, string @namespace);
+        IEnumerable<IFeatureTypeRoot> GetAllLayers();
+        IEnumerable<IFeatureTypeRoot> GetLayerByName(string name);
     }
 }

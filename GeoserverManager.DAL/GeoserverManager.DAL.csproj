@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converter\JsonLayerConverter.cs" />
-    <Compile Include="Datamodel\Attributes.cs" />
+    <Compile Include="Converter\ComplexJsonConverter.cs" />
     <Compile Include="Datamodel\Entry.cs" />
     <Compile Include="Datamodel\FeatureType.cs" />
-    <Compile Include="Datamodel\GeoEntity.cs" />
-    <Compile Include="Datamodel\Geometry.cs" />
-    <Compile Include="Datamodel\Keywords.cs" />
-    <Compile Include="Datamodel\LatLonBoundingBox.cs" />
+    <Compile Include="Datamodel\FeatureTypeRoot.cs" />
     <Compile Include="Datamodel\Metadata.cs" />
-    <Compile Include="Datamodel\Namespace.cs" />
-    <Compile Include="Datamodel\NativeBoundingBox.cs" />
-    <Compile Include="Datamodel\Store.cs" />
     <Compile Include="Datamodel\VirtualTable.cs" />
     <Compile Include="Gateways\GeoEntityJsonGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

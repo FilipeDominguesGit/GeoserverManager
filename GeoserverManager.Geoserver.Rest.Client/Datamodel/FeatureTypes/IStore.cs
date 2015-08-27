@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace GeoserverManager.DAL.Interface.Datamodel
+namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public interface IStore
     {

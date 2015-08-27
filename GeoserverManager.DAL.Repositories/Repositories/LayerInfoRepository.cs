@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Factories;
 using GeoserverManager.Entities.Interface.BussinessModel;
@@ -14,10 +13,10 @@ namespace GeoserverManager.DAL.Repositories.Repositories
 {
     public class LayerInfoRepository : ILayerInfoRepository
     {
-          private readonly IGeoGateway gateway;
-          private readonly ILayerInfoBuilderPrototype builderPrototype;
+        private readonly ILayerInfoBuilderPrototype builderPrototype;
+        private readonly IGeoGateway gateway;
 
-          public LayerInfoRepository(IGeoGateway gateway, ILayerInfoBuilderPrototype builderPrototype)
+        public LayerInfoRepository(IGeoGateway gateway, ILayerInfoBuilderPrototype builderPrototype)
         {
             if (gateway == null)
                 throw new ArgumentNullException("gateway", "gateway cannot be null");
@@ -25,7 +24,7 @@ namespace GeoserverManager.DAL.Repositories.Repositories
                 throw new ArgumentNullException("builderPrototype", "builderPrototype cannot be null");
 
             this.gateway = gateway;
-              this.builderPrototype = builderPrototype;
+            this.builderPrototype = builderPrototype;
         }
 
         public IEnumerable<ILayerInfo> GetAllLayersInfos()
@@ -38,9 +37,9 @@ namespace GeoserverManager.DAL.Repositories.Repositories
             return output.Select(CreateLayerInfoFromEntity);
         }
 
-        private ILayerInfo CreateLayerInfoFromEntity(IGeoEntity entity)
+        private ILayerInfo CreateLayerInfoFromEntity(IFeatureTypeRoot entity)
         {
-            var builder = this.builderPrototype.Clone();
+            var builder = builderPrototype.Clone();
 
             return CreateLayerInfoFromEntities.CreateLayerInfo(entity, builder);
         }

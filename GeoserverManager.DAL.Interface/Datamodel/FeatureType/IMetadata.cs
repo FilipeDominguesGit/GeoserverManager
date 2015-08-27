@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GeoserverManager.DAL.Interface.Datamodel
+namespace GeoserverManager.DAL.Interface.Datamodel.FeatureType
 {
     public interface IMetadata
     {

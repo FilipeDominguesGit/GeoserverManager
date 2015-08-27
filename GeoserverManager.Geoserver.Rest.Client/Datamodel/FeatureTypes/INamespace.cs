@@ -1,4 +1,4 @@
-﻿namespace GeoserverManager.DAL.Interface.Datamodel
+﻿namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public interface INamespace
     {

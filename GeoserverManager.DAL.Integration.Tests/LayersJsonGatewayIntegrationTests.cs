@@ -44,13 +44,12 @@ namespace GeoserverManager.DAL.Integration.Tests
                 //arrange
                 var expected = EntityHelper.CreateLayerEntity();
                 //act
-                var list = gateway.GetLayerByNameAndNamespace("live_cell_size_geom_big", "webgis-dev");
+                var list = gateway.GetLayerByName("new_test_layer");
                 var elem = list.ElementAt(0);
                 //assert
                 Assert.IsNotNull(list);
-                Assert.AreEqual(1, list.Count());
+                Assert.AreEqual(2, list.Count());
                 Assert.AreEqual(expected.FeatureType.Name, elem.FeatureType.Name);
-                Assert.AreEqual(expected.FeatureType.Namespace.Name, elem.FeatureType.Namespace.Name);
             }
         }
     }

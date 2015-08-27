@@ -10,6 +10,6 @@ namespace GeoserverManager.Rest.Client.Interface
         void Post(IServiceRequest request, IRequestSettings restSettings);
         IServiceResponse Post(IServiceRequest request);
         void Put(IServiceRequest request, IRequestSettings restSettings);
-        void Put(IServiceRequest request);
+        IServiceResponse Put(IServiceRequest request);
     }
 }

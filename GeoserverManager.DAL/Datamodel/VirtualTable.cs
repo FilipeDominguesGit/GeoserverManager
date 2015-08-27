@@ -1,8 +1,6 @@
-﻿using GeoserverManager.DAL.Converter;
-using GeoserverManager.DAL.Interface.Datamodel;
-using Newtonsoft.Json;
+﻿using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 
-namespace GeoserverManager.DAL.Datamodel
+namespace GeoserverManager.DAL.Datamodel.FeatureType
 {
     public class VirtualTable : IVirtualTable
     {
@@ -10,7 +8,6 @@ namespace GeoserverManager.DAL.Datamodel
         public string Sql { get; set; }
         public string EscapeSql { get; set; }
 
-        [JsonConverter(typeof (JsonLayerConverter<Geometry>))]
-        public IGeometry Geometry { get; set; }
+  
     }
 }

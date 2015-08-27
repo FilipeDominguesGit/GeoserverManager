@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Repositories;
 using NUnit.Framework;
@@ -20,8 +18,7 @@ namespace GeoserverManager.DAL.Repositories.Tests
             [Test]
             public void Should_throw_exception_When_gateway_is_null()
             {
-                Assert.Throws<ArgumentNullException>(()=>new GeoEntityRepository(null));
-
+                Assert.Throws<ArgumentNullException>(() => new GeoEntityRepository(null));
             }
 
             [Test]
@@ -29,12 +26,10 @@ namespace GeoserverManager.DAL.Repositories.Tests
             {
                 var gateway = Mock.Create<IGeoGateway>();
 
-                var repo=new GeoEntityRepository(gateway);
+                var repo = new GeoEntityRepository(gateway);
 
                 Assert.IsNotNull(repo);
-
             }
-
         }
 
         [TestFixture]
@@ -61,19 +56,17 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Should_return_list_with_geoentities_When_db_has_records()
             {
                 //arrange
-                var output=new List<IGeoEntity>();
-                var elem = Mock.Create<IGeoEntity>();
+                var output = new List<IFeatureTypeRoot>();
+                var elem = Mock.Create<IFeatureTypeRoot>();
                 output.Add(elem);
                 Mock.Arrange(() => gateway.GetAllLayers()).Returns(output);
 
                 //act
-                var list=repository.GetAllLayers();
+                var list = repository.GetAllLayers();
 
                 //assert
                 Assert.IsNotEmpty(list);
-
             }
-
         }
     }
 }

@@ -86,9 +86,25 @@ namespace GeoserverManager.Rest.Client
             throw new NotImplementedException();
         }
 
-        public void Put(IServiceRequest request)
+        public IServiceResponse Put(IServiceRequest request)
         {
-            throw new NotImplementedException();
+            if (Auth != null)
+                client.Authenticator = Auth;
+
+
+            var restRequest = new RestRequest(request.Uri, Method.PUT);
+
+
+            if (!string.IsNullOrWhiteSpace(request.Body))
+            {
+                restRequest.AddParameter("text/json", request.Body, ParameterType.RequestBody);
+                restRequest.RequestFormat = DataFormat.Json;
+            }
+
+            var response = client.Execute(restRequest);
+
+
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
         }
     }
 }

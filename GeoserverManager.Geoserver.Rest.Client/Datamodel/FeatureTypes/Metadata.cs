@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using GeoserverManager.DAL.Converter;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.Geoserver.Rest.Client.Converter;
 using Newtonsoft.Json;
 
-namespace GeoserverManager.DAL.Datamodel.FeatureType
+namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public class Metadata : IMetadata
     {

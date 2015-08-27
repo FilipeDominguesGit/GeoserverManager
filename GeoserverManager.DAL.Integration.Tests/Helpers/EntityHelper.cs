@@ -1,20 +1,22 @@
 ﻿using GeoserverManager.DAL.Datamodel;
+using GeoserverManager.DAL.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 
 namespace GeoserverManager.DAL.Integration.Tests.Helpers
 {
     public static class EntityHelper
     {
-        public static IGeoEntity CreateLayerEntity()
+        public static IFeatureTypeRoot CreateLayerEntity()
         {
-            return new GeoEntity
+            return new FeatureTypeRoot
             {
                 FeatureType = new FeatureType
                 {
-                    Name = "live_cell_size_geom_big",
-                    Namespace = new Namespace() { Name = "webgis-dev" }
+                    Name = "new_test_layer"
+
+
                 }
-                
             };
         }
     }

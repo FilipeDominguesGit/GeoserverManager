@@ -45,6 +45,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\ComplexJsonConverter.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Attributes.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Entry.cs" />
+    <Compile Include="Datamodel\FeatureTypes\FeatureType.cs" />
+    <Compile Include="Datamodel\FeatureTypes\FeatureTypeRoot.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Geometry.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IAttributes.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IEntry.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IFeatureType.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IFeatureTypeRoot.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IGeometry.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IKeywords.cs" />
+    <Compile Include="Datamodel\FeatureTypes\ILatLonBoundingBox.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IMetadata.cs" />
+    <Compile Include="Datamodel\FeatureTypes\INamespace.cs" />
+    <Compile Include="Datamodel\FeatureTypes\INativeBoundingBox.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IStore.cs" />
+    <Compile Include="Datamodel\FeatureTypes\IVirtualTable.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Keywords.cs" />
+    <Compile Include="Datamodel\FeatureTypes\LatLonBoundingBox.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Metadata.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Namespace.cs" />
+    <Compile Include="Datamodel\FeatureTypes\NativeBoundingBox.cs" />
+    <Compile Include="Datamodel\FeatureTypes\Store.cs" />
+    <Compile Include="Datamodel\FeatureTypes\VirtualTable.cs" />
     <Compile Include="Datamodel\GlobalSettings\Contact.cs" />
     <Compile Include="Datamodel\GlobalSettings\CoverageAccess.cs" />
     <Compile Include="Datamodel\GlobalSettings\Entry.cs" />

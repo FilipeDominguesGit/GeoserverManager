@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 
 namespace GeoserverManager.DAL.Repositories.Repositories
@@ -18,7 +19,7 @@ namespace GeoserverManager.DAL.Repositories.Repositories
             this.gateway = gateway;
         }
 
-        public IEnumerable<IGeoEntity> GetAllLayers()
+        public IEnumerable<IFeatureTypeRoot> GetAllLayers()
         {
             var output = gateway.GetAllLayers();
 

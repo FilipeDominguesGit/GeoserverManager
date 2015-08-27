@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datamodel\IAttributes.cs" />
-    <Compile Include="Datamodel\IEntry.cs" />
-    <Compile Include="Datamodel\IFeatureType.cs" />
-    <Compile Include="Datamodel\IGeoEntity.cs" />
-    <Compile Include="Datamodel\IGeometry.cs" />
-    <Compile Include="Datamodel\IKeywords.cs" />
-    <Compile Include="Datamodel\ILatLonBoundingBox.cs" />
-    <Compile Include="Datamodel\IMetadata.cs" />
-    <Compile Include="Datamodel\INamespace.cs" />
-    <Compile Include="Datamodel\INativeBoundingBox.cs" />
-    <Compile Include="Datamodel\IStore.cs" />
-    <Compile Include="Datamodel\IVirtualTable.cs" />
+    <Compile Include="Datamodel\FeatureType\IEntry.cs" />
+    <Compile Include="Datamodel\FeatureType\IFeatureType.cs" />
+    <Compile Include="Datamodel\FeatureType\IFeatureTypeRoot.cs" />
+    <Compile Include="Datamodel\FeatureType\IMetadata.cs" />
+    <Compile Include="Datamodel\FeatureType\IVirtualTable.cs" />
     <Compile Include="Gateways\IGeoEntityJsonGateway.cs" />
     <Compile Include="Gateways\IGeoGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

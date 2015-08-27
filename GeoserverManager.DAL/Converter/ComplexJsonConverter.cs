@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace GeoserverManager.DAL.Converter
 {
-    public class JsonLayerConverter<T> : JsonConverter
+    public class ComplexJsonConverter<T> : JsonConverter
     {
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {

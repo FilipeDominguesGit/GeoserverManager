@@ -1,6 +1,4 @@
-﻿using GeoserverManager.DAL.Interface.Datamodel;
-
-namespace GeoserverManager.DAL.Datamodel
+﻿namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public class LatLonBoundingBox : ILatLonBoundingBox
     {

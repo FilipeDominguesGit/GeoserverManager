@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,8 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
+      <Project>{a3d8d48a-5e5c-4637-a3ff-9c6fcc74233f}</Project>
+      <Name>GeoserverManager.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL\GeoserverManager.DAL.csproj">
+      <Project>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</Project>
+      <Name>GeoserverManager.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Geoserver.Rest.Client\GeoserverManager.Geoserver.Rest.Client.csproj">
       <Project>{ED45F433-F9A5-4C1A-91DF-C5DF2BF9F1F7}</Project>
       <Name>GeoserverManager.Geoserver.Rest.Client</Name>

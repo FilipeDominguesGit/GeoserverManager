@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using GeoserverManager.DAL.Interface.Datamodel;
+using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Repositories;
 using GeoserverManager.Entities.BussinessModelFactories;
@@ -22,12 +20,10 @@ namespace GeoserverManager.DAL.Repositories.Tests
         [TestFixture]
         public class ConstructorTests
         {
-           
             [Test]
             public void Should_throw_exception_When_gateway_is_null()
             {
-                Assert.Throws<ArgumentNullException>(() => new LayerInfoRepository(null,null));
-
+                Assert.Throws<ArgumentNullException>(() => new LayerInfoRepository(null, null));
             }
 
             [Test]
@@ -36,27 +32,25 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 var gateway = Mock.Create<IGeoGateway>();
                 var prototype = Mock.Create<ILayerInfoBuilderPrototype>();
 
-                var repo = new LayerInfoRepository(gateway,prototype);
+                var repo = new LayerInfoRepository(gateway, prototype);
 
                 Assert.IsNotNull(repo);
-
             }
-
         }
 
         [TestFixture]
         public class ExecuteTests
         {
+            private ILayerInfoBuilderPrototype builderPrototype;
             private IGeoGateway gateway;
             private ILayerInfoRepository repository;
-            private ILayerInfoBuilderPrototype builderPrototype;
 
             [SetUp]
             public void Setup()
             {
                 gateway = Mock.Create<IGeoGateway>();
                 builderPrototype = new LayerInfoBuilder();
-                repository = new LayerInfoRepository(gateway,builderPrototype);
+                repository = new LayerInfoRepository(gateway, builderPrototype);
             }
 
             [TearDown]
@@ -71,12 +65,12 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Should_return_list_with_layerinfo_When_db_has_records()
             {
                 //arrange
-                var output = new List<IGeoEntity>();
-                var elem = Mock.Create<IGeoEntity>();
+                var output = new List<IFeatureTypeRoot>();
+                var elem = Mock.Create<IFeatureTypeRoot>();
 
-                elem.FeatureType.Metadata=Mock.Create<IMetadata>();
+                elem.FeatureType.Metadata = Mock.Create<IMetadata>();
                 elem.FeatureType.Metadata.Entry = new List<IEntry>();
-                (elem.FeatureType.Metadata.Entry  as List<IEntry>).Add(Mock.Create<IEntry>());
+                (elem.FeatureType.Metadata.Entry as List<IEntry>).Add(Mock.Create<IEntry>());
 
                 var entry = Mock.Create<IEntry>();
                 var virtualTable = Mock.Create<IVirtualTable>();
@@ -94,9 +88,7 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 //assert
                 Assert.IsNotEmpty(list);
                 Assert.IsInstanceOf<ILayerInfo>(layerInfo);
-
             }
-
         }
     }
 }
