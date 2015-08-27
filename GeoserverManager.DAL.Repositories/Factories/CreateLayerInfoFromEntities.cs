@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;

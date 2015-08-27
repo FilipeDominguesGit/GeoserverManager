@@ -5,7 +5,6 @@ using GeoserverManager.Rest.Client.Interface.Response;
 using GeoserverManager.Rest.Client.Response;
 using RestSharp;
 using RestSharp.Authenticators;
-using RestSharp.Serializers;
 
 namespace GeoserverManager.Rest.Client
 {
@@ -40,7 +39,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
         }
 
         public IServiceResponse Get(IServiceRequest request)
@@ -52,7 +51,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
         }
 
         public void Post(IServiceRequest request, IRequestSettings restSettings)
@@ -78,7 +77,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
         }
 
         public void Put(IServiceRequest request, IRequestSettings restSettings)
@@ -104,7 +103,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode };
+            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
         }
     }
 }

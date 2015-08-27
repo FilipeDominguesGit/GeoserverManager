@@ -32,7 +32,6 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             }
             catch (Exception ex)
             {
-                
                 throw new UseCaseExecutionException("An error occurred while trying to get Layer info!", ex);
             }
         }

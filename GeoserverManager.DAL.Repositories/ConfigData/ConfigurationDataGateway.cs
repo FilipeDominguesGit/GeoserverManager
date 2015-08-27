@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
+using GeoserverManager.DAL.Repositories.Properties;
 
 namespace GeoserverManager.DAL.Repositories.ConfigData
 {
-    public class ConfigurationDataGateway: IConfigurationDataGateway
+    public class ConfigurationDataGateway : IConfigurationDataGateway
     {
         private const string LocalLayersConnectionStringName = "LocalLayersConnectionString";
 
@@ -15,8 +11,8 @@ namespace GeoserverManager.DAL.Repositories.ConfigData
         {
             get
             {
-                string appSetting = Properties.Settings.Default[LocalLayersConnectionStringName].ToString();
-                if (string.IsNullOrWhiteSpace( appSetting ))
+                var appSetting = Settings.Default[LocalLayersConnectionStringName].ToString();
+                if (string.IsNullOrWhiteSpace(appSetting))
                 {
                     const string message = "Unable to get Local Layers connection string!";
                     throw new ConfigurationErrorsException(message);
@@ -24,7 +20,5 @@ namespace GeoserverManager.DAL.Repositories.ConfigData
                 return appSetting;
             }
         }
-
-      
     }
 }

@@ -2,7 +2,7 @@
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using Newtonsoft.Json;
 
-namespace GeoserverManager.DAL.Datamodel.FeatureType
+namespace GeoserverManager.DAL.Datamodel
 {
     public class FeatureTypeRoot : IFeatureTypeRoot
     {

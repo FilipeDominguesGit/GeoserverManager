@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Repositories;
@@ -21,12 +20,6 @@ namespace GeoserverManager.DAL.Repositories.Tests
         public class ConstructorTests
         {
             [Test]
-            public void Should_throw_exception_When_gateway_is_null()
-            {
-                Assert.Throws<ArgumentNullException>(() => new LayerInfoRepository(null, null));
-            }
-
-            [Test]
             public void Should_build_repository_When_gateway_is_valid()
             {
                 var gateway = Mock.Create<IGeoGateway>();
@@ -36,15 +29,17 @@ namespace GeoserverManager.DAL.Repositories.Tests
 
                 Assert.IsNotNull(repo);
             }
+
+            [Test]
+            public void Should_throw_exception_When_gateway_is_null()
+            {
+                Assert.Throws<ArgumentNullException>(() => new LayerInfoRepository(null, null));
+            }
         }
 
         [TestFixture]
         public class ExecuteTests
         {
-            private ILayerInfoBuilderPrototype builderPrototype;
-            private IGeoGateway gateway;
-            private ILayerInfoRepository repository;
-
             [SetUp]
             public void Setup()
             {
@@ -60,6 +55,10 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 repository = null;
                 builderPrototype = null;
             }
+
+            private ILayerInfoBuilderPrototype builderPrototype;
+            private IGeoGateway gateway;
+            private ILayerInfoRepository repository;
 
             [Test]
             public void Should_return_list_with_layerinfo_When_db_has_records()

@@ -2,7 +2,6 @@
 using GeoserverManager.DAL.Gateways;
 using GeoserverManager.Geoserver.Rest.Client;
 using GeoserverManager.Rest.Client.Request;
-using Newtonsoft.Json;
 
 namespace GeoserverManager.Rest.Client.Spike
 {
@@ -10,7 +9,8 @@ namespace GeoserverManager.Rest.Client.Spike
     {
         private static void Main(string[] args)
         {
-            var restService = new RestService("http://cfn-gis-stg.cloudapp.net:8080/geoserver/rest", "cfnAdmin", "celfinet#2015");
+            var restService = new RestService("http://cfn-gis-stg.cloudapp.net:8080/geoserver/rest", "cfnAdmin",
+                "celfinet#2015");
             // var restService = new RestService("http://jsonplaceholder.typicode.com");
 
             var gate = new GeoEntityJsonGateway(@"c:\tmp\layer.json");
@@ -21,7 +21,9 @@ namespace GeoserverManager.Rest.Client.Spike
             //var response = restService.Post(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes") { Body = testLayer });
 
             //restService.Post(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes") {Body = testLayer});
-            var response = restService.Get(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes/new_test_layer"));
+            var response =
+                restService.Get(
+                    new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes/new_test_layer"));
             //var layerInfo = JsonConvert.DeserializeObject<GeoEntity>(response.Data);
 
             // var response = restService.Get(new ServiceRequest("layers/uk_postcode"));

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 

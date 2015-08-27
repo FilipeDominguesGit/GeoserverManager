@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using GeoserverManager.DAL.Datamodel;
-using GeoserverManager.DAL.Datamodel.FeatureType;
-using GeoserverManager.DAL.Interface.Datamodel;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using Newtonsoft.Json;
@@ -21,7 +19,7 @@ namespace GeoserverManager.DAL.Gateways
             FilePath = connectionString;
         }
 
-        private string FilePath { get; set; }
+        private string FilePath { get; }
 
         public IEnumerable<IFeatureTypeRoot> GetAllLayers()
         {

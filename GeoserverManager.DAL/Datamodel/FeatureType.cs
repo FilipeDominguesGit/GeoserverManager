@@ -2,13 +2,12 @@
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using Newtonsoft.Json;
 
-namespace GeoserverManager.DAL.Datamodel.FeatureType
+namespace GeoserverManager.DAL.Datamodel
 {
     public class FeatureType : IFeatureType
     {
-
         public string Name { get; set; }
-    
+
         public string Title { get; set; }
 
         public string srs { get; set; }
@@ -22,6 +21,5 @@ namespace GeoserverManager.DAL.Datamodel.FeatureType
 
         public bool OverridingServiceSRS { get; set; }
         public bool CircularArcPresent { get; set; }
-
     }
 }

@@ -1,6 +1,4 @@
 ﻿using GeoserverManager.DAL.Datamodel;
-using GeoserverManager.DAL.Datamodel.FeatureType;
-using GeoserverManager.DAL.Interface.Datamodel;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 
 namespace GeoserverManager.DAL.Integration.Tests.Helpers
@@ -14,8 +12,6 @@ namespace GeoserverManager.DAL.Integration.Tests.Helpers
                 FeatureType = new FeatureType
                 {
                     Name = "new_test_layer"
-
-
                 }
             };
         }
