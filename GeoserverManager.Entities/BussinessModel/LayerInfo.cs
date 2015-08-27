@@ -9,7 +9,7 @@ namespace GeoserverManager.Entities.BussinessModel
     {
         public static readonly ILayerInfo NULL = new NullLayerInfo();
         public string Name { get; internal set; }
-        public string Workspace { get; internal set; }
+        public string Srs { get; internal set; }
         public string Sql { get; internal set; }
 
         public bool IsNull()
@@ -78,7 +78,7 @@ namespace GeoserverManager.Entities.BussinessModel
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }
 
-            public string Workspace
+            public string Srs
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }

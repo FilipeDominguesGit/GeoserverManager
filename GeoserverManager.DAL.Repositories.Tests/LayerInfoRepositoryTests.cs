@@ -4,6 +4,7 @@ using System.Linq;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Repositories;
+using GeoserverManager.DAL.UI.Repositories;
 using GeoserverManager.Entities.BussinessModelFactories;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;

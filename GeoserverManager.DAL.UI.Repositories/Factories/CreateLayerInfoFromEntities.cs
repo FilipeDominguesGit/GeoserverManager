@@ -3,7 +3,7 @@ using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;
 
-namespace GeoserverManager.DAL.Repositories.Factories
+namespace GeoserverManager.DAL.UI.Repositories.Factories
 {
     public static class CreateLayerInfoFromEntities
     {
@@ -18,7 +18,8 @@ namespace GeoserverManager.DAL.Repositories.Factories
         private static ILayerInfo Create(IFeatureTypeRoot entity, ILayerInfoBuilder builder)
         {
             builder = builder.WithName(entity.FeatureType.Name)
-                .WithSql(entity.FeatureType.Metadata.Entry.ElementAt(1).VirtualTable.Sql);
+                .WithSrs(entity.FeatureType.srs)
+                .WithSql(entity.FeatureType.Metadata.Entry.ElementAt(0).VirtualTable.Sql);
 
             return builder.Build();
         }

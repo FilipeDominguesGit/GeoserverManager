@@ -1,7 +1,7 @@
 ﻿using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using GeoserverManager.DAL.Repositories.ConfigData;
+using GeoserverManager.DAL.UI.Repositories.ConfigData;
 
 namespace GeoserverManager.IoC.Installers
 {

@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -93,6 +108,10 @@
       <Project>{2D0F72AF-A226-4621-8CDE-B8FD2B440F45}</Project>
       <Name>GeoserverManager.DAL.Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities.Base.Interface\GeoserverManager.Entities.Base.Interface.csproj">
+      <Project>{9782a491-7fb8-44d1-88ba-32b78ee5ec3a}</Project>
+      <Name>GeoserverManager.Entities.Base.Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
       <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
       <Name>GeoserverManager.Entities.Interface</Name>
@@ -125,6 +144,18 @@
       <Project>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</Project>
       <Name>GeoserverManager.DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

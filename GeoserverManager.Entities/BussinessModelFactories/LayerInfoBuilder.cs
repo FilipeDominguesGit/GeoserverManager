@@ -24,9 +24,9 @@ namespace GeoserverManager.Entities.BussinessModelFactories
             return this;
         }
 
-        public ILayerInfoBuilder WithWorkspace(string value)
+        public ILayerInfoBuilder WithSrs(string value)
         {
-            layerInfo.Workspace = value;
+            layerInfo.Srs = value;
             return this;
         }
 

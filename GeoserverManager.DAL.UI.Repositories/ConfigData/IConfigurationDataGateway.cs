@@ -1,4 +1,4 @@
-﻿namespace GeoserverManager.DAL.Repositories.ConfigData
+﻿namespace GeoserverManager.DAL.UI.Repositories.ConfigData
 {
     public interface IConfigurationDataGateway
     {

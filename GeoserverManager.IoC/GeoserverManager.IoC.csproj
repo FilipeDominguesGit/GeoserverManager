@@ -68,6 +68,10 @@
       <Project>{2D0F72AF-A226-4621-8CDE-B8FD2B440F45}</Project>
       <Name>GeoserverManager.DAL.Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL.UI.Repositories\GeoserverManager.DAL.UI.Repositories.csproj">
+      <Project>{F6A7AC03-FF6F-4BDB-A4F8-4F4848135F8E}</Project>
+      <Name>GeoserverManager.DAL.UI.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.DAL\GeoserverManager.DAL.csproj">
       <Project>{ADA25A1C-5E82-4F02-88CE-4DF8061A4906}</Project>
       <Name>GeoserverManager.DAL</Name>

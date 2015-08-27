@@ -3,7 +3,7 @@ using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using GeoserverManager.DAL.Gateways;
 using GeoserverManager.DAL.Interface.Gateways;
-using GeoserverManager.DAL.Repositories.ConfigData;
+using GeoserverManager.DAL.UI.Repositories.ConfigData;
 
 namespace GeoserverManager.IoC.Installers
 {

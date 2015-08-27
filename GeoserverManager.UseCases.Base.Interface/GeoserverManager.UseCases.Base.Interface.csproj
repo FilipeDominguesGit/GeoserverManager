@@ -45,7 +45,16 @@
     <Compile Include="RequestBoundary\IUseCaseRequestBoundary.cs" />
     <Compile Include="ResponseBoundary\IUseCaseResponse.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\GeoserverManager.Entities.Base.Interface\GeoserverManager.Entities.Base.Interface.csproj">
+      <Project>{9782a491-7fb8-44d1-88ba-32b78ee5ec3a}</Project>
+      <Name>GeoserverManager.Entities.Base.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
+      <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
+      <Name>GeoserverManager.Entities.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

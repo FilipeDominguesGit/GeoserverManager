@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
-using GeoserverManager.DAL.Repositories.Factories;
+using GeoserverManager.DAL.UI.Repositories.Factories;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;
 using GeoserverManager.UseCases.Interface.Repositories;
 
-namespace GeoserverManager.DAL.Repositories.Repositories
+namespace GeoserverManager.DAL.UI.Repositories
 {
     public class LayerInfoRepository : ILayerInfoRepository
     {

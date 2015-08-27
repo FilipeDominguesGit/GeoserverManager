@@ -5,7 +5,7 @@ namespace GeoserverManager.Entities.Interface.BussinessModel
     public interface ILayerInfo : IBusinessModel
     {
         string Name { get; }
-        string Workspace { get; }
+        string Srs { get; }
         string Sql { get; }
     }
 }

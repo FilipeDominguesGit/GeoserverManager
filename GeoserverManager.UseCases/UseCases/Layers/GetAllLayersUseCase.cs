@@ -5,6 +5,8 @@ using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
 using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 using GeoserverManager.UseCases.Interface.Repositories;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
+using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
+using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 using GeoserverManager.UseCases.UseCases.Layers.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.Layers
@@ -18,7 +20,7 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             this.repository = repository;
         }
 
-        public void Execute(IUseCaseRequest request, Action<IUseCaseResponse> responseBoundary)
+        public void Execute(IGetAllLayersRequests request, Action<IGetAllLayersResponse> responseBoundary)
         {
             if (request == null)
                 throw new ArgumentNullException("request", "Use case request cannot be null!");

@@ -7,7 +7,7 @@ namespace GeoserverManager.Entities.Interface.BussinessModelFactories
         ILayerInfo Build();
         ILayerInfo BuildNullObject();
         ILayerInfoBuilder WithName(string value);
-        ILayerInfoBuilder WithWorkspace(string value);
+        ILayerInfoBuilder WithSrs(string value);
         ILayerInfoBuilder WithSql(string value);
     }
 }
