@@ -1,7 +1,7 @@
 ﻿using System;
 using GeoserverManager.Entities.Interface.BussinessModel;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.GlobalSettings;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.Workspaces;
 using GeoserverManager.Rest.Client.Interface;
 using GeoserverManager.Rest.Client.Request;
 using Newtonsoft.Json;

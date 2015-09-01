@@ -1,6 +1,6 @@
 ﻿using GeoserverManager.Entities.Interface.BussinessModel;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.GlobalSettings;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.Workspaces;
 
 namespace GeoserverManager.Geoserver.Rest.Client
 {
