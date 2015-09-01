@@ -6,6 +6,7 @@ using GeoserverManager.Rest.Client.Response;
 using RestSharp;
 using RestSharp.Authenticators;
 
+
 namespace GeoserverManager.Rest.Client
 {
     public class RestService : IRestService
