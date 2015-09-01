@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.Repositories.Repositories;
 using NUnit.Framework;
@@ -55,8 +55,8 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Should_return_list_with_geoentities_When_db_has_records()
             {
                 //arrange
-                var output = new List<IFeatureTypeRoot>();
-                var elem = Mock.Create<IFeatureTypeRoot>();
+                var output = new List<ILayerEntityRoot>();
+                var elem = Mock.Create<ILayerEntityRoot>();
                 output.Add(elem);
                 Mock.Arrange(() => gateway.GetAllLayers()).Returns(output);
 

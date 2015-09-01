@@ -44,11 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\ComplexJsonConverter.cs" />
-    <Compile Include="Datamodel\Entry.cs" />
-    <Compile Include="Datamodel\FeatureType.cs" />
-    <Compile Include="Datamodel\FeatureTypeRoot.cs" />
-    <Compile Include="Datamodel\Metadata.cs" />
-    <Compile Include="Datamodel\VirtualTable.cs" />
+    <Compile Include="Datamodel\Layer\LayerEntity.cs" />
+    <Compile Include="Datamodel\Layer\LayerEntityRoot.cs" />
     <Compile Include="Gateways\GeoEntityJsonGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +61,10 @@
     <ProjectReference Include="..\GeoserverManager.DAL.Interface\GeoserverManager.DAL.Interface.csproj">
       <Project>{A3D8D48A-5E5C-4637-A3FF-9C6FCC74233F}</Project>
       <Name>GeoserverManager.DAL.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Geoserver.Rest.Client\GeoserverManager.Geoserver.Rest.Client.csproj">
+      <Project>{ED45F433-F9A5-4C1A-91DF-C5DF2BF9F1F7}</Project>
+      <Name>GeoserverManager.Geoserver.Rest.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

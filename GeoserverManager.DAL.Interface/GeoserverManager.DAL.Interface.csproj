@@ -43,11 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datamodel\FeatureType\IEntry.cs" />
-    <Compile Include="Datamodel\FeatureType\IFeatureType.cs" />
-    <Compile Include="Datamodel\FeatureType\IFeatureTypeRoot.cs" />
-    <Compile Include="Datamodel\FeatureType\IMetadata.cs" />
-    <Compile Include="Datamodel\FeatureType\IVirtualTable.cs" />
+    <Compile Include="Datamodel\Layer\ILayerEntity.cs" />
+    <Compile Include="Datamodel\Layer\ILayerEntityRoot.cs" />
     <Compile Include="Gateways\IGeoEntityJsonGateway.cs" />
     <Compile Include="Gateways\IGeoGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

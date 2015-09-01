@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.UI.Repositories.Factories;
 using GeoserverManager.Entities.Interface.BussinessModel;
@@ -36,7 +36,7 @@ namespace GeoserverManager.DAL.UI.Repositories
             return output.Select(CreateLayerInfoFromEntity);
         }
 
-        private ILayerInfo CreateLayerInfoFromEntity(IFeatureTypeRoot entity)
+        private ILayerInfo CreateLayerInfoFromEntity(ILayerEntityRoot entity)
         {
             var builder = builderPrototype.Clone();
 

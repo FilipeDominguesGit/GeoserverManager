@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.DAL.Interface.Gateways;
 using GeoserverManager.DAL.UI.Repositories;
 using GeoserverManager.Entities.BussinessModelFactories;
@@ -64,19 +64,12 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Should_return_list_with_layerinfo_When_db_has_records()
             {
                 //arrange
-                var output = new List<IFeatureTypeRoot>();
-                var elem = Mock.Create<IFeatureTypeRoot>();
+                var output = new List<ILayerEntityRoot>();
+                var elem = Mock.Create<ILayerEntityRoot>();
 
-                elem.FeatureType.Metadata = Mock.Create<IMetadata>();
-                elem.FeatureType.Metadata.Entry = new List<IEntry>();
-                (elem.FeatureType.Metadata.Entry as List<IEntry>).Add(Mock.Create<IEntry>());
-
-                var entry = Mock.Create<IEntry>();
-                var virtualTable = Mock.Create<IVirtualTable>();
-                virtualTable.Sql = "sql";
-                entry.VirtualTable = virtualTable;
-
-                (elem.FeatureType.Metadata.Entry as List<IEntry>).Add(entry);
+               
+                elem.Layer.Sql = "sql";
+              
                 output.Add(elem);
                 Mock.Arrange(() => gateway.GetAllLayers()).Returns(output);
 

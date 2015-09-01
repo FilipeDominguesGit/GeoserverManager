@@ -45,6 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\ComplexJsonConverter.cs" />
+    <Compile Include="Datamodel\Request\ILayer.cs" />
+    <Compile Include="Datamodel\Request\ILayerRoot.cs" />
+    <Compile Include="Datamodel\Request\Layer.cs" />
+    <Compile Include="Datamodel\Request\LayerRoot.cs" />
     <Compile Include="Datamodel\Response\FeatureTypes\Attributes.cs" />
     <Compile Include="Datamodel\Response\FeatureTypes\Entry.cs" />
     <Compile Include="Datamodel\Response\FeatureTypes\FeatureType.cs" />

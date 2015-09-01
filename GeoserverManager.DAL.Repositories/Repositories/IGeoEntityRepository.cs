@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 
 namespace GeoserverManager.DAL.Repositories.Repositories
 {
     public interface IGeoEntityRepository
     {
-        IEnumerable<IFeatureTypeRoot> GetAllLayers();
+        IEnumerable<ILayerEntityRoot> GetAllLayers();
     }
 }

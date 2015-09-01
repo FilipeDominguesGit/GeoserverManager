@@ -23,7 +23,14 @@ namespace GeoserverManager
         private void LoadGrid()
         {
             var request = new GetAllLayersRequests();
-            getAllLayersUseCase.Execute(request, GetAllLayersHandler);
+            try
+            {
+                getAllLayersUseCase.Execute(request, GetAllLayersHandler);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message+Environment.NewLine+e.InnerException.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void GetAllLayersHandler(IGetAllLayersResponse obj)

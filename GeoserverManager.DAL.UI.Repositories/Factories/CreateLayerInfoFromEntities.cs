@@ -1,13 +1,14 @@
 ﻿using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes;
 
 namespace GeoserverManager.DAL.UI.Repositories.Factories
 {
     public static class CreateLayerInfoFromEntities
     {
-        public static ILayerInfo CreateLayerInfo(IFeatureTypeRoot entity, ILayerInfoBuilder builder)
+        public static ILayerInfo CreateLayerInfo(ILayerEntityRoot entity, ILayerInfoBuilder builder)
         {
             if (entity == null)
                 return builder.BuildNullObject();
@@ -15,11 +16,11 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
             return Create(entity, builder);
         }
 
-        private static ILayerInfo Create(IFeatureTypeRoot entity, ILayerInfoBuilder builder)
+        private static ILayerInfo Create(ILayerEntityRoot entity, ILayerInfoBuilder builder)
         {
-            builder = builder.WithName(entity.FeatureType.Name)
-                .WithSrs(entity.FeatureType.srs)
-                .WithSql(entity.FeatureType.Metadata.Entry.ElementAt(0).VirtualTable.Sql);
+            builder = builder.WithName(entity.Layer.Name)
+                .WithSrs(entity.Layer.Srs)
+                .WithSql(entity.Layer.Sql);
 
             return builder.Build();
         }

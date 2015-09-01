@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using GeoserverManager.DAL.Datamodel;
-using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
+using GeoserverManager.DAL.Datamodel.Layer;
+using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.DAL.Interface.Gateways;
 using Newtonsoft.Json;
 
@@ -21,19 +21,19 @@ namespace GeoserverManager.DAL.Gateways
 
         private string FilePath { get; }
 
-        public IEnumerable<IFeatureTypeRoot> GetAllLayers()
+        public IEnumerable<ILayerEntityRoot> GetAllLayers()
         {
-            var entities = JsonConvert.DeserializeObject<IEnumerable<FeatureTypeRoot>>(File.ReadAllText(@FilePath));
+            var entities = JsonConvert.DeserializeObject<IEnumerable<LayerEntityRoot>>(File.ReadAllText(@FilePath));
 
             return entities;
         }
 
-        public IEnumerable<IFeatureTypeRoot> GetLayerByName(string name)
+        public IEnumerable<ILayerEntityRoot> GetLayerByName(string name)
         {
-            var entities = JsonConvert.DeserializeObject<IEnumerable<FeatureTypeRoot>>(File.ReadAllText(@FilePath));
+            var entities = JsonConvert.DeserializeObject<IEnumerable<LayerEntityRoot>>(File.ReadAllText(@FilePath));
 
             entities =
-                entities.Where(x => x.FeatureType.Name.Equals(name))
+                entities.Where(x => x.Layer.Name.Equals(name))
                     .ToList();
 
             return entities;

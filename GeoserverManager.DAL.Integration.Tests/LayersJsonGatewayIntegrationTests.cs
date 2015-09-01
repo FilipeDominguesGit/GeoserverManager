@@ -44,12 +44,12 @@ namespace GeoserverManager.DAL.Integration.Tests
                 //arrange
                 var expected = EntityHelper.CreateLayerEntity();
                 //act
-                var list = gateway.GetLayerByName("new_test_layer");
+                var list = gateway.GetLayerByName("Layer_teste_1");
                 var elem = list.ElementAt(0);
                 //assert
                 Assert.IsNotNull(list);
-                Assert.AreEqual(2, list.Count());
-                Assert.AreEqual(expected.FeatureType.Name, elem.FeatureType.Name);
+                Assert.AreEqual(1, list.Count());
+                Assert.AreEqual(expected.Layer.Name, elem.Layer.Name);
             }
         }
     }
