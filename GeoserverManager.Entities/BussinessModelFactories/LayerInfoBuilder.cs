@@ -36,6 +36,18 @@ namespace GeoserverManager.Entities.BussinessModelFactories
             return this;
         }
 
+        public ILayerInfoBuilder WithWorkspace(string value)
+        {
+            layerInfo.Workspace = value;
+            return this;
+        }
+
+        public ILayerInfoBuilder WithDatastore(string value)
+        {
+            layerInfo.Datastore = value;
+            return this;
+        }
+
         public ILayerInfoBuilder Clone()
         {
             return new LayerInfoBuilder();

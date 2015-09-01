@@ -11,6 +11,8 @@ namespace GeoserverManager.Entities.BussinessModel
         public string Name { get; internal set; }
         public string Srs { get; internal set; }
         public string Sql { get; internal set; }
+        public string Workspace { get; internal set; }
+        public string Datastore { get; internal set; }
 
         public bool IsNull()
         {
@@ -84,6 +86,16 @@ namespace GeoserverManager.Entities.BussinessModel
             }
 
             public string Sql
+            {
+                get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
+            }
+
+            public string Workspace
+            {
+                get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
+            }
+
+            public string Datastore
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }

@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
+using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.IoC.Container;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
@@ -46,8 +49,36 @@ namespace GeoserverManager
             LoadGrid();
         }
 
-        private void LayersGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void bt_check_state_Click(object sender, EventArgs e)
         {
+            //var list =(LayersGrid.DataSource as List<ILayerInfo>);
+
+            //foreach (var layerInfo in list)
+            //{
+            //    Debug.Write(layerInfo.Name);
+            //}
+
+            progressBar1.Visible = true;
+            backgroundWorker1.RunWorkerAsync();
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                // Report progress to 'UI' thread
+                backgroundWorker1.ReportProgress(i);
+                // Simulate long task
+                System.Threading.Thread.Sleep(100);
+            }
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, System.ComponentModel.ProgressChangedEventArgs e)
+        {
+
+            progressBar1.Value = e.ProgressPercentage;
+            
         }
     }
 }

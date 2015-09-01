@@ -55,6 +55,7 @@
 [
   {
     "Layer": {
+      "Datastore": "networkTopologyDev",
       "Workspace": "Webgis-Dev",
       "Name": "Layer_teste_1",
       "Srs": "EPSG :4326",
@@ -62,19 +63,19 @@
       "ProjectionPolicy": "FORCE_DECLARED",
       "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
       "Geometry": "Polygon"
-      }
-  }
-  ,
-   {
-        "Layer": {
-            "Workspace": "Webgis-Dev",
-            "Name": "Layer_teste_2",
-            "Srs": "EPSG :4326",
-            "Enabled": "True",
-            "ProjectionPolicy": "FORCE_DECLARED",
-            "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
-            "Geometry": "Polygon"
-        }
     }
+  },
+  {
+    "Layer": {
+      "Datastore": "networkTopologyDev",
+      "Workspace": "Webgis-Dev",
+      "Name": "Layer_teste_2",
+      "Srs": "EPSG :4326",
+      "Enabled": "True",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
+      "Geometry": "Polygon"
+    }
+  }
 
 ]

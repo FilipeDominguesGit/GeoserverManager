@@ -20,7 +20,9 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
         {
             builder = builder.WithName(entity.Layer.Name)
                 .WithSrs(entity.Layer.Srs)
-                .WithSql(entity.Layer.Sql);
+                .WithSql(entity.Layer.Sql)
+                .WithDatastore(entity.Layer.Datastore)
+                .WithWorkspace(entity.Layer.Workspace);
 
             return builder.Build();
         }
