@@ -1,5 +1,4 @@
 ﻿using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
-using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 

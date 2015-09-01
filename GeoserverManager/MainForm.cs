@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Windows.Forms;
 using GeoserverManager.IoC.Container;
-using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 using GeoserverManager.UseCases.UseCases.Layers.Requests;
@@ -21,13 +20,13 @@ namespace GeoserverManager
             getAllLayersUseCase = IocContainer.Resolve<IGetAllLayersUseCase>();
         }
 
-        private  void LoadGrid()
+        private void LoadGrid()
         {
             var request = new GetAllLayersRequests();
             getAllLayersUseCase.Execute(request, GetAllLayersHandler);
         }
 
-        private  void GetAllLayersHandler(IGetAllLayersResponse obj)
+        private void GetAllLayersHandler(IGetAllLayersResponse obj)
         {
             var list = obj.Layers.ToList();
 
@@ -42,7 +41,6 @@ namespace GeoserverManager
 
         private void LayersGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
     }
 }

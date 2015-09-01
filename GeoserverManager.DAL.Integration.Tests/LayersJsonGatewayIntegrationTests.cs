@@ -11,6 +11,8 @@ namespace GeoserverManager.DAL.Integration.Tests
         [TestFixture]
         public class ExecuteTests
         {
+            private GeoEntityJsonGateway gateway;
+
             [SetUp]
             public void Setup()
             {
@@ -22,8 +24,6 @@ namespace GeoserverManager.DAL.Integration.Tests
             {
                 gateway = null;
             }
-
-            private GeoEntityJsonGateway gateway;
 
             [Test]
             public void Should_return_entities_When_valid_json_is_foun()

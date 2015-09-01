@@ -10,7 +10,7 @@ namespace GeoserverManager.DAL.UI.Repositories.ConfigData
         {
             get
             {
-                var appSetting = ConfigurationManager.AppSettings[LocalLayersConnectionStringName].ToString();
+                var appSetting = ConfigurationManager.AppSettings[LocalLayersConnectionStringName];
                 if (string.IsNullOrWhiteSpace(appSetting))
                 {
                     const string message = "Unable to get Local Layers connection string!";

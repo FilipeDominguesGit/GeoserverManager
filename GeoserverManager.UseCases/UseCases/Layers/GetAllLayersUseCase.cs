@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
 using GeoserverManager.UseCases.Base.Interface.Exceptions;
-using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
-using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 using GeoserverManager.UseCases.Interface.Repositories;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;

@@ -2,7 +2,6 @@
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using GeoserverManager.DAL.Interface.Gateways;
-using GeoserverManager.DAL.Repositories.Repositories;
 using GeoserverManager.DAL.UI.Repositories;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;
 using GeoserverManager.UseCases.Interface.Repositories;

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using GeoserverManager.DAL.Interface.Datamodel.FeatureType;
 using GeoserverManager.DAL.Interface.Gateways;
-using GeoserverManager.DAL.Repositories.Repositories;
 using GeoserverManager.DAL.UI.Repositories;
 using GeoserverManager.Entities.BussinessModelFactories;
 using GeoserverManager.Entities.Interface.BussinessModel;
@@ -41,6 +40,10 @@ namespace GeoserverManager.DAL.Repositories.Tests
         [TestFixture]
         public class ExecuteTests
         {
+            private ILayerInfoBuilderPrototype builderPrototype;
+            private IGeoGateway gateway;
+            private ILayerInfoRepository repository;
+
             [SetUp]
             public void Setup()
             {
@@ -56,10 +59,6 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 repository = null;
                 builderPrototype = null;
             }
-
-            private ILayerInfoBuilderPrototype builderPrototype;
-            private IGeoGateway gateway;
-            private ILayerInfoRepository repository;
 
             [Test]
             public void Should_return_list_with_layerinfo_When_db_has_records()

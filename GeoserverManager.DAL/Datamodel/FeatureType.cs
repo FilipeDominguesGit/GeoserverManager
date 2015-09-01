@@ -22,4 +22,4 @@ namespace GeoserverManager.DAL.Datamodel
         public bool OverridingServiceSRS { get; set; }
         public bool CircularArcPresent { get; set; }
     }
-}
+} 
