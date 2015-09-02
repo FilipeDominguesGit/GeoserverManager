@@ -66,8 +66,7 @@ namespace GeoserverManager
             if (LayersGrid.DataSource != null && !backgroundWorker1.IsBusy)
             {
                 var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
-                progressBar1.Maximum = LayersGrid.RowCount;
-                progressBar1.Visible = true;
+                pb_load_layers.Visible = true;
                 backgroundWorker1.RunWorkerAsync(list);
             }
             else
@@ -99,7 +98,7 @@ namespace GeoserverManager
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.Orange;
                         break;
 
-                    case LayerStatus.WithChanges:
+                    case LayerStatus.ConnectionError:
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.CadetBlue;
                         break;
 
@@ -116,14 +115,15 @@ namespace GeoserverManager
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             var list = e.Argument as List<ILayerInfo>;
+            //tssl_loading_label.Text = "...Loading";
 
-            for(int i = 0; i < list.Count; i++) {
+            for (int i = 0; i < list.Count; i++) {
 
                 var i1 = i;
                 getLayerStatusUseCase.Execute(new GetLayerStatusRequest() {Layer = list[i]},
                      response => ResponseBoundary(response,i1, ref list));
 
-                backgroundWorker1.ReportProgress(i+1);
+                backgroundWorker1.ReportProgress(((i+1)*100)/list.Count);
           
             }
 
@@ -137,7 +137,13 @@ namespace GeoserverManager
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            progressBar1.Value = e.ProgressPercentage;
+            pb_load_layers.Value = e.ProgressPercentage;
+            //tssl_loading_label.Text =  e.ProgressPercentage+"%";
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            MessageBox.Show("Local layers up to date.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

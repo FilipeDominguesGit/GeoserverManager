@@ -49,8 +49,8 @@ namespace GeoserverManager.Rest.Client
                 client.Authenticator = Auth;
 
             var restRequest = new RestRequest(request.Uri, Method.GET);
-            var response = client.Execute(restRequest);
 
+            var response = client.Execute(restRequest);
 
             return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
         }

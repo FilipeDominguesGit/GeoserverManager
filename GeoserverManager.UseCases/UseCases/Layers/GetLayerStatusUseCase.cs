@@ -32,12 +32,14 @@ namespace GeoserverManager.UseCases.UseCases.Layers
                 var response = restClient.GetLayerInfoBy(request.Layer.Datastore,request.Layer.Workspace,request.Layer.Name);
 
                 var status=LayerStatus.Unknown;
+
                 if(response.Code==HttpStatusCode.OK)
                     status=LayerStatus.Ok;
 
                 if (response.Code==HttpStatusCode.NotFound)
                     status = response.IsMissingFeatureType ? LayerStatus.Missing : LayerStatus.Error;
-                
+                if(response.Code==0)
+                    status=LayerStatus.ConnectionError;
                 
                 responseBoundary(new GetLayerStatusResponse(status));
             }

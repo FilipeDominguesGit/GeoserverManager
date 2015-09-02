@@ -6,6 +6,7 @@
         Ok,
         Missing,
         WithChanges,
-        Error
+        Error,
+        ConnectionError
     }
 }
