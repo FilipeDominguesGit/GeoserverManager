@@ -39,10 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UseCases\Layers\GetLayerStatusUseCase.cs" />
     <Compile Include="UseCases\Layers\GetAllLayersUseCase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseCases\Layers\Requests\GetAllLayersRequests.cs" />
+    <Compile Include="UseCases\Layers\Requests\GetLayerStatusRequest.cs" />
     <Compile Include="UseCases\Layers\Responses\GetAllLayersResponse.cs" />
+    <Compile Include="UseCases\Layers\Responses\GetLayerStatusResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -53,6 +56,10 @@
     <ProjectReference Include="..\GeoserverManager.Entities.Interface\GeoserverManager.Entities.Interface.csproj">
       <Project>{3A8E26F8-0FC1-4A83-9B46-D351116DEF35}</Project>
       <Name>GeoserverManager.Entities.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Geoserver.Rest.Client\GeoserverManager.Geoserver.Rest.Client.csproj">
+      <Project>{ED45F433-F9A5-4C1A-91DF-C5DF2BF9F1F7}</Project>
+      <Name>GeoserverManager.Geoserver.Rest.Client</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.UseCases.Base.Interface\GeoserverManager.UseCases.Base.Interface.csproj">
       <Project>{835C1BF9-A72D-44C8-AE79-1A40560703E1}</Project>

@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="BussinessModelFactories\ILayerInfoBuilder.cs" />
     <Compile Include="BussinessModelFactories\ILayerInfoBuilderPrototype.cs" />
+    <Compile Include="BussinessModel\Enums\LayerStatus.cs" />
     <Compile Include="BussinessModel\ILayerInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

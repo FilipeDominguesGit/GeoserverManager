@@ -1,4 +1,5 @@
 ﻿using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 
 namespace GeoserverManager.Entities.Interface.BussinessModelFactories
 {
@@ -11,5 +12,6 @@ namespace GeoserverManager.Entities.Interface.BussinessModelFactories
         ILayerInfoBuilder WithSql(string value);
         ILayerInfoBuilder WithWorkspace(string value);
         ILayerInfoBuilder WithDatastore(string value);
+        ILayerInfoBuilder WithLayerStatus(LayerStatus value);
     }
 }

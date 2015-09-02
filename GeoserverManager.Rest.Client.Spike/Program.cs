@@ -9,8 +9,8 @@ namespace GeoserverManager.Rest.Client.Spike
     {
         private static void Main(string[] args)
         {
-            var restService = new RestService("http://cfn-gis-stg.cloudapp.net:8080/geoserver/rest", "cfnAdmin",
-                "celfinet#2015");
+            var restService = new RestService("", "",
+                "");
             // var restService = new RestService("http://jsonplaceholder.typicode.com");
 
             var gate = new GeoEntityJsonGateway(@"c:\tmp\layer.json");
@@ -28,6 +28,8 @@ namespace GeoserverManager.Rest.Client.Spike
 
             // var response = restService.Get(new ServiceRequest("layers/uk_postcode"));
             //geoserverClient.GetAllWorkSpaces();
+
+            var output=geoserverClient.GetLayerInfoBy("networkTopologyDev", "webgis-dev", "new_test_layer");
 
 
             Console.WriteLine(response.StatusCode.ToString());

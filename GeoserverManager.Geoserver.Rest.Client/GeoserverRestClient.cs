@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Net;
 using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.GlobalSettings;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.Workspaces;
+using GeoserverManager.Geoserver.Rest.Client.Response;
 using GeoserverManager.Rest.Client.Interface;
 using GeoserverManager.Rest.Client.Request;
 using Newtonsoft.Json;
@@ -46,17 +49,31 @@ namespace GeoserverManager.Geoserver.Rest.Client
             return workspacesRoot;
         }
 
-        public ILayerInfo GetLayerInfoByWorkspaceLayerNameAndNamespace(string workspace, string datastore,
-            string layername)
+        public IGeoserverRestResponse GetLayerInfoBy( string datastore, string workspace,string layername)
         {
-            var uri = string.Format(@"workspaces/{0}/datastores/{1}/featuretypes/{2}", workspace, datastore, layername);
-
+            var uri = $@"workspaces/{workspace}/datastores/{datastore}/featuretypes/{layername}";
             var request = new ServiceRequest(uri);
-
             var response = restService.Get(request);
+            
+            var output=new GeoserverRestResponse()
+            {
+                Data = response.Data,
+                Code = response.StatusCode
+            };
 
+            if (response.StatusCode==HttpStatusCode.OK)
+            {
+                output.FeatureTypeRoot = JsonConvert.DeserializeObject<FeatureTypeRoot>(response.Data);
 
-            throw new NotImplementedException();
+            }
+            if (response.StatusCode == HttpStatusCode.NotFound)
+            {
+                output.IsMissingDataStore = response.Data.StartsWith("No such datastore");
+                output.IsMissingWorkSpace = response.Data.StartsWith("No such workspace");
+                output.IsMissingFeatureType = response.Data.StartsWith("No such feature type");
+            }
+            
+            return output;
         }
     }
 }

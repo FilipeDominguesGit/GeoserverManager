@@ -17,8 +17,10 @@ namespace GeoserverManager.IoC.Container
             var container = new WindsorContainer();
             container.Install(new ConfigurationDataInstaller(),
                 new BuilderPrototypeInstaller(),
+                new RestClientInstaller(),
                 new GatewaysInstaller(),
                 new RepositoriesInstaller(),
+                new GeoserverRestClientInstaller(),
                 new UseCasesInstaller());
 
 

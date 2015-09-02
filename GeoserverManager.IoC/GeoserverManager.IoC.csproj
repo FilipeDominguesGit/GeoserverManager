@@ -52,7 +52,9 @@
     <Compile Include="Installers\BuilderPrototypeInstaller.cs" />
     <Compile Include="Installers\ConfigurationDataInstaller.cs" />
     <Compile Include="Installers\GatewaysInstaller.cs" />
+    <Compile Include="Installers\GeoserverRestClientInstaller.cs" />
     <Compile Include="Installers\RepositoriesInstaller.cs" />
+    <Compile Include="Installers\RestClientInstaller.cs" />
     <Compile Include="Installers\UseCasesInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +85,18 @@
     <ProjectReference Include="..\GeoserverManager.Entities\GeoserverManager.Entities.csproj">
       <Project>{FBFECAF6-D7E3-4B29-82F3-279007CB4481}</Project>
       <Name>GeoserverManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Geoserver.Rest.Client\GeoserverManager.Geoserver.Rest.Client.csproj">
+      <Project>{ED45F433-F9A5-4C1A-91DF-C5DF2BF9F1F7}</Project>
+      <Name>GeoserverManager.Geoserver.Rest.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Rest.Client.Interface\GeoserverManager.Rest.Client.Interface.csproj">
+      <Project>{F96D8E68-BE81-4D62-B669-C81930D975B4}</Project>
+      <Name>GeoserverManager.Rest.Client.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.Rest.Client\GeoserverManager.Rest.Client.csproj">
+      <Project>{9C6787D4-BC5F-48F3-8EDB-DB32F374A618}</Project>
+      <Name>GeoserverManager.Rest.Client</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.UseCases.Base.Interface\GeoserverManager.UseCases.Base.Interface.csproj">
       <Project>{835C1BF9-A72D-44C8-AE79-1A40560703E1}</Project>

@@ -2,6 +2,7 @@
 using System.Reflection;
 using GeoserverManager.Entities.Base.Interface.BusinessModel;
 using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 
 namespace GeoserverManager.Entities.BussinessModel
 {
@@ -13,6 +14,12 @@ namespace GeoserverManager.Entities.BussinessModel
         public string Sql { get; internal set; }
         public string Workspace { get; internal set; }
         public string Datastore { get; internal set; }
+        public LayerStatus LayerStatus { get; internal set; }
+
+        public void ChangeLayerStatus(LayerStatus layerStatus)
+        {
+            LayerStatus = layerStatus;
+        }
 
         public bool IsNull()
         {
@@ -98,6 +105,16 @@ namespace GeoserverManager.Entities.BussinessModel
             public string Datastore
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
+            }
+
+            public LayerStatus LayerStatus
+            {
+                get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
+            }
+
+            public void ChangeLayerStatus(LayerStatus layerStatus)
+            {
+                throw new InvalidOperationException();
             }
         }
     }

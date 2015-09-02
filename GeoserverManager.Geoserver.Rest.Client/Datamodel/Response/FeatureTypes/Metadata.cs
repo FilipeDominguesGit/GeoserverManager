@@ -6,7 +6,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes
 {
     public class Metadata : IMetadata
     {
-        [JsonConverter(typeof (ComplexJsonConverter<IEnumerable<Entry>>))]
-        public IEnumerable<IEntry> Entry { get; set; }
+        [JsonConverter(typeof (ComplexJsonConverter<Entry>))]
+        public IEntry Entry { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using GeoserverManager.Entities.Base.Interface.BusinessModel;
+using GeoserverManager.Entities.Interface.BussinessModel.Enums;
+
 
 namespace GeoserverManager.Entities.Interface.BussinessModel
 {
@@ -9,5 +11,9 @@ namespace GeoserverManager.Entities.Interface.BussinessModel
         string Srs { get; }
         string Sql { get; }
         string Workspace { get; }
+        LayerStatus LayerStatus { get; }
+
+
+        void ChangeLayerStatus(LayerStatus layerStatus);
     }
 }

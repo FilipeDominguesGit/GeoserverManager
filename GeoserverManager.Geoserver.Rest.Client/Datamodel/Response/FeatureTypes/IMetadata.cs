@@ -4,6 +4,6 @@ namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes
 {
     public interface IMetadata
     {
-        IEnumerable<IEntry> Entry { get; set; }
+        IEntry Entry { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes;
 
@@ -22,7 +23,8 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
                 .WithSrs(entity.Layer.Srs)
                 .WithSql(entity.Layer.Sql)
                 .WithDatastore(entity.Layer.Datastore)
-                .WithWorkspace(entity.Layer.Workspace);
+                .WithWorkspace(entity.Layer.Workspace)
+                .WithLayerStatus(LayerStatus.Unknown);
 
             return builder.Build();
         }
