@@ -40,7 +40,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode, ErrorException = response.ErrorException, ErrorMessage = response.ErrorMessage };
         }
 
         public IServiceResponse Get(IServiceRequest request)
@@ -52,7 +52,7 @@ namespace GeoserverManager.Rest.Client
 
             var response = client.Execute(restRequest);
 
-            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
+            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode,ErrorException = response.ErrorException, ErrorMessage = response.ErrorMessage};
         }
 
         public void Post(IServiceRequest request, IRequestSettings restSettings)
@@ -78,7 +78,7 @@ namespace GeoserverManager.Rest.Client
             var response = client.Execute(restRequest);
 
 
-            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode, ErrorException = response.ErrorException, ErrorMessage = response.ErrorMessage };
         }
 
         public void Put(IServiceRequest request, IRequestSettings restSettings)
@@ -103,8 +103,7 @@ namespace GeoserverManager.Rest.Client
 
             var response = client.Execute(restRequest);
 
-
-            return new ServiceResponse {Data = response.Content, StatusCode = response.StatusCode};
+            return new ServiceResponse { Data = response.Content, StatusCode = response.StatusCode, ErrorException = response.ErrorException, ErrorMessage = response.ErrorMessage };
         }
     }
 }

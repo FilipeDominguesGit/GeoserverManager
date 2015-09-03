@@ -2,7 +2,7 @@
   {
     "Layer": {
       "Datastore": "networkTopologyDev",
-      "Workspace": "Webgis-Dev",
+      "Workspace": "webgis-dev",
       "Name": "Layer_teste_1",
       "Srs": "EPSG :4326",
       "Enabled": "True",
@@ -14,8 +14,45 @@
   {
     "Layer": {
       "Datastore": "networkTopologyDev",
-      "Workspace": "Webgis-Dev",
+      "Workspace": "webgis-dev",
       "Name": "Layer_teste_2",
+      "Srs": "EPSG :4326",
+      "Enabled": "True",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
+      "Geometry": "Polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "networkTopologyDev",
+      "Workspace": "webgis-dev",
+      "Name": "new_test_layer",
+      "Srs": "EPSG :4326",
+      "Enabled": "True",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
+      "Geometry": "Polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "bad-data-store",
+      "Workspace": "webgis-dev",
+      "Name": "new_test_layer",
+      "Srs": "EPSG :4326",
+      "Enabled": "True",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid,uuid,cellid,cellname,cellnameassigga_external_id,cellstate,operator,latitude,longitude,azimuth,sectorid,siteenvironment,siteid,vendor,tech,band,sector,oss,mcc,mnc,controllerid,controllername,lac,rac,tac,carrier,frequency,code,dldataspeed,cellgeomsmallasgeom,cellgeommicrotinyasmicrotiny,cellgeomtinyastiny,cellgeomsmallassmall,cellgeommediumasmedium,cellgeombigasbig,cellgeombiggerasbigger,cellgeomhugeashuge,errors FROM view_livefulldata_cell",
+      "Geometry": "Polygon"
+    }
+  }
+  ,
+  {
+    "Layer": {
+      "Datastore": "networkTopologyDev",
+      "Workspace": "bad workspace",
+      "Name": "new_test_layer",
       "Srs": "EPSG :4326",
       "Enabled": "True",
       "ProjectionPolicy": "FORCE_DECLARED",

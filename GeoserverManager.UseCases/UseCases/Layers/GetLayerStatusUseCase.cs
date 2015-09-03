@@ -2,6 +2,7 @@
 using System.Net;
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.Geoserver.Rest.Client;
+using GeoserverManager.Geoserver.Rest.Client.Response;
 using GeoserverManager.UseCases.Base.Interface.Exceptions;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
@@ -31,22 +32,39 @@ namespace GeoserverManager.UseCases.UseCases.Layers
                 
                 var response = restClient.GetLayerInfoBy(request.Layer.Datastore,request.Layer.Workspace,request.Layer.Name);
 
-                var status=LayerStatus.Unknown;
+                var status= GetStatusFromResponse(response);
 
-                if(response.Code==HttpStatusCode.OK)
-                    status=LayerStatus.Ok;
-
-                if (response.Code==HttpStatusCode.NotFound)
-                    status = response.IsMissingFeatureType ? LayerStatus.Missing : LayerStatus.Error;
-                if(response.Code==0)
-                    status=LayerStatus.ConnectionError;
-                
                 responseBoundary(new GetLayerStatusResponse(status));
             }
             catch (Exception ex)
             {
                 throw new UseCaseExecutionException("An error occurred while trying to get Layer Status!", ex);
             }
+        }
+
+        private LayerStatus GetStatusFromResponse(IGeoserverRestResponse response)
+        {
+            var status = LayerStatus.Unknown;
+
+            if (response.Code == HttpStatusCode.OK)
+                status = LayerStatus.Ok;
+
+            if (response.Code == HttpStatusCode.NotFound)
+            {
+                if(response.IsMissingDataStore)
+                    status=LayerStatus.DatastoreNotFound;
+              
+                if(response.IsMissingWorkSpace)
+                    status=LayerStatus.WorkspaceNotFound;
+              
+                if(response.IsMissingFeatureType)
+                    status=LayerStatus.Missing;
+               
+            }
+            if (response.Code == 0)
+                status = LayerStatus.ConnectionError;
+
+            return status;
         }
     }
 }

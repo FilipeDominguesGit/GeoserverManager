@@ -5,6 +5,8 @@
         Unknown,
         Ok,
         Missing,
+        WorkspaceNotFound,
+        DatastoreNotFound,
         WithChanges,
         Error,
         ConnectionError

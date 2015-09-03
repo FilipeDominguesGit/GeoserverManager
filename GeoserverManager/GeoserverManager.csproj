@@ -68,16 +68,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
+    <Compile Include="GeoserverManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="GeoserverManagerForm.Designer.cs">
+      <DependentUpon>GeoserverManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayersForm.Designer.cs">
+      <DependentUpon>LayersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="GeoserverManagerForm.resx">
+      <DependentUpon>GeoserverManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayersForm.resx">
+      <DependentUpon>LayersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,7 +113,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GeoserverManager.DAL.Repositories\GeoserverManager.DAL.Repositories.csproj">

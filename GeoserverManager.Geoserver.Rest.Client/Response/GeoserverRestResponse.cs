@@ -4,9 +4,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.FeatureTypes;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.GlobalSettings;
-using GeoserverManager.Geoserver.Rest.Client.Datamodel.Response.Workspaces;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
+using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Response
 {
