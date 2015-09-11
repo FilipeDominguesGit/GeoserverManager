@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -16,16 +15,6 @@ namespace GeoserverManager
 {
     public partial class LayersForm : Form
     {
-        #region Use Cases
-        private readonly IGetAllLayersUseCase getAllLayersUseCase;
-        private readonly IGetLayerStatusUseCase getLayerStatusUseCase;
-        #endregion
-
-        #region Delegates
-        private delegate void SetRowColorDelegate(LayerStatus status, int pos);
-        private delegate void SetLoadingToolStripStatusLabelTextDelegate(string text);
-        #endregion
-
         public LayersForm()
         {
             InitializeComponent();
@@ -43,7 +32,8 @@ namespace GeoserverManager
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message + Environment.NewLine + e.InnerException.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message + Environment.NewLine + e.InnerException.Message, "Error!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 SetLoadingToolStripStatusLabelText("!No layers found");
             }
         }
@@ -69,7 +59,6 @@ namespace GeoserverManager
 
         private void CheckAllLayersState()
         {
-
             if (LayersGrid.DataSource != null && !backgroundWorker1.IsBusy)
             {
                 var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
@@ -126,9 +115,22 @@ namespace GeoserverManager
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.Yellow;
                         break;
                 }
-
             }
+        }
 
+        private void SetCurrentGridRowSelection(int pos)
+        {
+            if (LayersGrid.InvokeRequired)
+            {
+                SetCurrentGridRowSelectionDelegate d = SetCurrentGridRowSelection;
+                Invoke(d, pos);
+            }
+            else
+            {
+                //  LayersGrid.FirstDisplayedScrollingRowIndex = pos;
+                LayersGrid.Rows[pos].Selected = true;
+                LayersGrid.CurrentCell = LayersGrid[0, pos];
+            }
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -141,13 +143,15 @@ namespace GeoserverManager
                 var i1 = i;
                 try
                 {
-                    getLayerStatusUseCase.Execute(new GetLayerStatusRequest() { Layer = list[i] },
+                    SetCurrentGridRowSelection(i1);
+
+                    getLayerStatusUseCase.Execute(new GetLayerStatusRequest {Layer = list[i]},
                         response => ResponseBoundary(response, i1, list));
-                    backgroundWorker1.ReportProgress(((i + 1) * 100) / list.Count);
+                    backgroundWorker1.ReportProgress(((i + 1)*100)/list.Count);
                 }
                 catch (Exception exception)
                 {
-                    if (!this.IsDisposed)
+                    if (!IsDisposed)
                     {
                         MessageBox.Show(exception.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -168,7 +172,6 @@ namespace GeoserverManager
             pb_load_layers.Value = e.ProgressPercentage;
 
             SetLoadingToolStripStatusLabelText(e.ProgressPercentage + "%");
-
         }
 
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -185,5 +188,22 @@ namespace GeoserverManager
             backgroundWorker1.Dispose();
             Dispose();
         }
+
+        #region Use Cases
+
+        private readonly IGetAllLayersUseCase getAllLayersUseCase;
+        private readonly IGetLayerStatusUseCase getLayerStatusUseCase;
+
+        #endregion
+
+        #region Delegates
+
+        private delegate void SetRowColorDelegate(LayerStatus status, int pos);
+
+        private delegate void SetLoadingToolStripStatusLabelTextDelegate(string text);
+
+        private delegate void SetCurrentGridRowSelectionDelegate(int pos);
+
+        #endregion
     }
 }

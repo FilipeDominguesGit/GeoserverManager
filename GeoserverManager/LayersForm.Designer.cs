@@ -40,11 +40,14 @@
             // 
             // LayersGrid
             // 
+            this.LayersGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.LayersGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.LayersGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.LayersGrid.Location = new System.Drawing.Point(12, 48);
             this.LayersGrid.Name = "LayersGrid";
-            this.LayersGrid.Size = new System.Drawing.Size(642, 318);
+            this.LayersGrid.Size = new System.Drawing.Size(642, 300);
             this.LayersGrid.TabIndex = 0;
             // 
             // bt_check_state

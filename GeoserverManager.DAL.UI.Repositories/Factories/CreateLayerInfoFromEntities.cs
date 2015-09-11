@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using GeoserverManager.DAL.Interface.Datamodel.Layer;
+﻿using GeoserverManager.DAL.Interface.Datamodel.Layer;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.Entities.Interface.BussinessModelFactories;

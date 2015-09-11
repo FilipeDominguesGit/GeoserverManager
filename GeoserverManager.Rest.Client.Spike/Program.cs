@@ -29,7 +29,7 @@ namespace GeoserverManager.Rest.Client.Spike
             // var response = restService.Get(new ServiceRequest("layers/uk_postcode"));
             //geoserverClient.GetAllWorkSpaces();
 
-            var output=geoserverClient.GetLayerInfoBy("networkTopologyDev", "webgis-dev", "new_test_layer");
+            var output = geoserverClient.GetLayerInfoBy("networkTopologyDev", "webgis-dev", "new_test_layer");
 
 
             Console.WriteLine(response.StatusCode.ToString());

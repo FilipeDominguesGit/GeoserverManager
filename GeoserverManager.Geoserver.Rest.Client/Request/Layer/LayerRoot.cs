@@ -5,7 +5,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
     public class LayerRoot : ILayerRoot
     {
-        [JsonConverter(typeof(ComplexJsonConverter<Layer>))]
+        [JsonConverter(typeof (ComplexJsonConverter<Layer>))]
         public ILayer Layer { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace GeoserverManager.DAL.Datamodel.Layer
 {
-    public class LayerEntity:ILayerEntity
+    public class LayerEntity : ILayerEntity
     {
         public string Datastore { get; set; }
         public string Workspace { get; set; }

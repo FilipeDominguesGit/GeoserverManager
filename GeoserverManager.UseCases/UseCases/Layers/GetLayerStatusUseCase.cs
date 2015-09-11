@@ -11,7 +11,7 @@ using GeoserverManager.UseCases.UseCases.Layers.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.Layers
 {
-    public class GetLayerStatusUseCase: IGetLayerStatusUseCase
+    public class GetLayerStatusUseCase : IGetLayerStatusUseCase
     {
         private readonly IGeoserverRestClient restClient;
 
@@ -29,10 +29,10 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
             try
             {
-                
-                var response = restClient.GetLayerInfoBy(request.Layer.Datastore,request.Layer.Workspace,request.Layer.Name);
+                var response = restClient.GetLayerInfoBy(request.Layer.Datastore, request.Layer.Workspace,
+                    request.Layer.Name);
 
-                var status= GetStatusFromResponse(response);
+                var status = GetStatusFromResponse(response);
 
                 responseBoundary(new GetLayerStatusResponse(status));
             }
@@ -51,15 +51,14 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
             if (response.Code == HttpStatusCode.NotFound)
             {
-                if(response.IsMissingDataStore)
-                    status=LayerStatus.DatastoreNotFound;
-              
-                if(response.IsMissingWorkSpace)
-                    status=LayerStatus.WorkspaceNotFound;
-              
-                if(response.IsMissingFeatureType)
-                    status=LayerStatus.Missing;
-               
+                if (response.IsMissingDataStore)
+                    status = LayerStatus.DatastoreNotFound;
+
+                if (response.IsMissingWorkSpace)
+                    status = LayerStatus.WorkspaceNotFound;
+
+                if (response.IsMissingFeatureType)
+                    status = LayerStatus.Missing;
             }
             if (response.Code == 0)
                 status = LayerStatus.ConnectionError;

@@ -1,6 +1,6 @@
 ﻿namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
-    public class Layer:ILayer
+    public class Layer : ILayer
     {
         public string Workspace { get; set; }
         public string Name { get; set; }

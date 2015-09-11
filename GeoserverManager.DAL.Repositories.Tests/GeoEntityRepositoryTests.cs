@@ -34,9 +34,6 @@ namespace GeoserverManager.DAL.Repositories.Tests
         [TestFixture]
         public class ExecuteTests
         {
-            private IGeoGateway gateway;
-            private IGeoEntityRepository repository;
-
             [SetUp]
             public void Setup()
             {
@@ -50,6 +47,9 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 gateway = null;
                 repository = null;
             }
+
+            private IGeoGateway gateway;
+            private IGeoEntityRepository repository;
 
             [Test]
             public void Should_return_list_with_geoentities_When_db_has_records()

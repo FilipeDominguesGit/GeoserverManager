@@ -25,7 +25,7 @@ namespace GeoserverManager.IoC.Installers
                 .For<IGetLayerStatusUseCase>()
                 .ImplementedBy<GetLayerStatusUseCase>().DependsOn(new
                 {
-                    restClient=container.Resolve<IGeoserverRestClient>()
+                    restClient = container.Resolve<IGeoserverRestClient>()
                 })
                 .LifestyleTransient());
         }

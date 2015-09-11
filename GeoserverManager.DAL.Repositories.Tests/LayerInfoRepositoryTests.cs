@@ -40,10 +40,6 @@ namespace GeoserverManager.DAL.Repositories.Tests
         [TestFixture]
         public class ExecuteTests
         {
-            private ILayerInfoBuilderPrototype builderPrototype;
-            private IGeoGateway gateway;
-            private ILayerInfoRepository repository;
-
             [SetUp]
             public void Setup()
             {
@@ -60,6 +56,10 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 builderPrototype = null;
             }
 
+            private ILayerInfoBuilderPrototype builderPrototype;
+            private IGeoGateway gateway;
+            private ILayerInfoRepository repository;
+
             [Test]
             public void Should_return_list_with_layerinfo_When_db_has_records()
             {
@@ -67,9 +67,9 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 var output = new List<ILayerEntityRoot>();
                 var elem = Mock.Create<ILayerEntityRoot>();
 
-               
+
                 elem.Layer.Sql = "sql";
-              
+
                 output.Add(elem);
                 Mock.Arrange(() => gateway.GetAllLayers()).Returns(output);
 

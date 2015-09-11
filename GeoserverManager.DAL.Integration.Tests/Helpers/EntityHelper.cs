@@ -1,5 +1,4 @@
-﻿using GeoserverManager.DAL.Datamodel;
-using GeoserverManager.DAL.Datamodel.Layer;
+﻿using GeoserverManager.DAL.Datamodel.Layer;
 using GeoserverManager.DAL.Interface.Datamodel.Layer;
 
 namespace GeoserverManager.DAL.Integration.Tests.Helpers

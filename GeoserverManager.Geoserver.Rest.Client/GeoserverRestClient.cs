@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net;
-using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
@@ -49,22 +48,21 @@ namespace GeoserverManager.Geoserver.Rest.Client
             return workspacesRoot;
         }
 
-        public IGeoserverRestResponse GetLayerInfoBy( string datastore, string workspace,string layername)
+        public IGeoserverRestResponse GetLayerInfoBy(string datastore, string workspace, string layername)
         {
             var uri = $@"workspaces/{workspace}/datastores/{datastore}/featuretypes/{layername}";
             var request = new ServiceRequest(uri);
             var response = restService.Get(request);
-            
-            var output=new GeoserverRestResponse()
+
+            var output = new GeoserverRestResponse
             {
                 Data = response.Data,
                 Code = response.StatusCode
             };
 
-            if (response.StatusCode==HttpStatusCode.OK)
+            if (response.StatusCode == HttpStatusCode.OK)
             {
                 output.FeatureTypeRoot = JsonConvert.DeserializeObject<FeatureTypeRoot>(response.Data);
-
             }
             if (response.StatusCode == HttpStatusCode.NotFound)
             {
@@ -72,8 +70,8 @@ namespace GeoserverManager.Geoserver.Rest.Client
                 output.IsMissingWorkSpace = response.Data.StartsWith("No such workspace");
                 output.IsMissingFeatureType = response.Data.StartsWith("No such feature type");
             }
-            
-            
+
+
             return output;
         }
     }
