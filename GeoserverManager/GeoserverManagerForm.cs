@@ -7,6 +7,7 @@ namespace GeoserverManager
     public partial class GeoserverManagerForm : Form
     {
         private LayersForm layersForm;
+        private SettingsForm settingsForm;
 
         public GeoserverManagerForm()
         {
@@ -15,15 +16,32 @@ namespace GeoserverManager
 
         private void importLayersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.Cast<Form>().Any(form => form.GetType() == typeof (LayersForm)))
+
+            layersForm=OpenOrFocusWindow<LayersForm>(layersForm);
+           
+        }
+
+        private T OpenOrFocusWindow<T>( Form form) where T : Form
+        {
+            if (Application.OpenForms.Cast<Form>().Any(x => x.GetType() == typeof(T)))
             {
-                layersForm.Focus();
-                return;
+                form.Focus();
+                return (T) form;
             }
 
-            if (layersForm == null || layersForm.IsDisposed)
-                layersForm = new LayersForm {MdiParent = this};
-            layersForm.Show();
+
+            if (form != null && !form.IsDisposed) return null;
+
+            form = (T)Activator.CreateInstance(typeof(T));
+            form.MdiParent = this;
+            form.StartPosition=FormStartPosition.CenterScreen;
+            form.Show();
+            return (T) form;
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            settingsForm = OpenOrFocusWindow<SettingsForm>(settingsForm);
         }
     }
 }

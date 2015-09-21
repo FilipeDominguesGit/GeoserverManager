@@ -1,16 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.Layers.Responses
 {
-    public class GetLayerStatusResponse : IGetLayerStatusResponse
+    public class UploadLayerToGeoserverResponse: IUploadLayerToGeoserverResponse
     {
-        public static IGetLayerStatusResponse NULL = new NullGetLayerStatusResponse();
+        public static IUploadLayerToGeoserverResponse NULL = new NullUploadLayerToGeoserverResponse();
 
-        public GetLayerStatusResponse(LayerStatus status)
+        public UploadLayerToGeoserverResponse(LayerStatus status)
         {
-         
+        
             Status = status;
         }
 
@@ -21,12 +25,12 @@ namespace GeoserverManager.UseCases.UseCases.Layers.Responses
             return IsNull(this);
         }
 
-        private static bool IsNull(IGetLayerStatusResponse response)
+        private static bool IsNull(IUploadLayerToGeoserverResponse response)
         {
             return response == NULL;
         }
 
-        private class NullGetLayerStatusResponse : IGetLayerStatusResponse
+        private class NullUploadLayerToGeoserverResponse : IUploadLayerToGeoserverResponse
         {
             public bool IsNull()
             {

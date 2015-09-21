@@ -15,12 +15,31 @@ namespace GeoserverManager
 {
     public partial class LayersForm : Form
     {
+        #region Use Cases
+
+        private readonly IGetAllLayersUseCase getAllLayersUseCase;
+        private readonly IGetLayerStatusUseCase getLayerStatusUseCase;
+        private readonly IUploadLayerToGeoserverUseCase uploadLayerToGeoserverUseCase;
+
+        #endregion
+
+        #region Delegates
+
+        private delegate void SetRowColorDelegate(LayerStatus status, int pos);
+
+        private delegate void SetLoadingToolStripStatusLabelTextDelegate(string text);
+
+        private delegate void SetCurrentGridRowSelectionDelegate(int pos);
+
+        #endregion
+
         public LayersForm()
         {
             InitializeComponent();
 
             getAllLayersUseCase = IocContainer.Resolve<IGetAllLayersUseCase>();
             getLayerStatusUseCase = IocContainer.Resolve<IGetLayerStatusUseCase>();
+            uploadLayerToGeoserverUseCase = IocContainer.Resolve<IUploadLayerToGeoserverUseCase>();
         }
 
         private void LoadGrid()
@@ -59,11 +78,13 @@ namespace GeoserverManager
 
         private void CheckAllLayersState()
         {
-            if (LayersGrid.DataSource != null && !backgroundWorker1.IsBusy)
+            if (LayersGrid.DataSource != null && !CheckStateBackgroundWorker.IsBusy)
             {
                 var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
+                bt_check_state.Enabled = false;
+                bt_upload_missing.Enabled = false;
                 pb_load_layers.Visible = true;
-                backgroundWorker1.RunWorkerAsync(list);
+                CheckStateBackgroundWorker.RunWorkerAsync(list);
             }
             else
             {
@@ -127,13 +148,12 @@ namespace GeoserverManager
             }
             else
             {
-                //  LayersGrid.FirstDisplayedScrollingRowIndex = pos;
                 LayersGrid.Rows[pos].Selected = true;
                 LayersGrid.CurrentCell = LayersGrid[0, pos];
             }
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void CheckStateBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             var list = e.Argument as List<ILayerInfo>;
             SetLoadingToolStripStatusLabelText("...Loading");
@@ -146,8 +166,8 @@ namespace GeoserverManager
                     SetCurrentGridRowSelection(i1);
 
                     getLayerStatusUseCase.Execute(new GetLayerStatusRequest {Layer = list[i]},
-                        response => ResponseBoundary(response, i1, list));
-                    backgroundWorker1.ReportProgress(((i + 1)*100)/list.Count);
+                        response => GetLayerStatusHandler(response, i1, list));
+                    CheckStateBackgroundWorker.ReportProgress(((i + 1)*100)/list.Count);
                 }
                 catch (Exception exception)
                 {
@@ -161,49 +181,112 @@ namespace GeoserverManager
             }
         }
 
-        private void ResponseBoundary(IGetLayerStatusResponse getLayerStatusResponse, int pos, List<ILayerInfo> list)
+        private void GetLayerStatusHandler(IGetLayerStatusResponse getLayerStatusResponse, int pos, List<ILayerInfo> list)
         {
             list[pos].ChangeLayerStatus(getLayerStatusResponse.Status);
             SetRowColorByStatus(getLayerStatusResponse.Status, pos);
         }
 
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        private void CheckStateBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             pb_load_layers.Value = e.ProgressPercentage;
 
             SetLoadingToolStripStatusLabelText(e.ProgressPercentage + "%");
         }
 
-        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        private void CheckStateBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             if (e.Cancelled) return;
             MessageBox.Show("Local layers up to date.", "Information", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             SetLoadingToolStripStatusLabelText("Ok");
+
+            bt_check_state.Enabled = true;
+            bt_upload_missing.Enabled = true;
         }
 
         private void LayersForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             pb_load_layers.Dispose();
-            backgroundWorker1.Dispose();
+            CheckStateBackgroundWorker.Dispose();
             Dispose();
+            
         }
 
-        #region Use Cases
+        private void bt_upload_missing_Click(object sender, EventArgs e)
+        {
+            if (LayersGrid.DataSource != null && !UploadLayerToGeoserverBackgroundWorker.IsBusy)
+            {
+                var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
+                bt_check_state.Enabled = false;
+                bt_upload_missing.Enabled = false;
+                pb_load_layers.Visible = true;
+                UploadLayerToGeoserverBackgroundWorker.RunWorkerAsync(list);
+            }
+            else
+            {
+                MessageBox.Show("Can't do that right now!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
-        private readonly IGetAllLayersUseCase getAllLayersUseCase;
-        private readonly IGetLayerStatusUseCase getLayerStatusUseCase;
 
-        #endregion
+        }
 
-        #region Delegates
+        private void ResponseBoundary(IUploadLayerToGeoserverResponse uploadLayerToGeoserverResponse, int pos, List<ILayerInfo> list)
+        {
+            
+        }
 
-        private delegate void SetRowColorDelegate(LayerStatus status, int pos);
+        private void UploadLayerToGeoserverBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var list = e.Argument as List<ILayerInfo>;
+            SetLoadingToolStripStatusLabelText("...Uploading");
 
-        private delegate void SetLoadingToolStripStatusLabelTextDelegate(string text);
+            for (var i = 0; i < list.Count; i++)
+            {
+                var i1 = i;
+                try
+                {
+                    SetCurrentGridRowSelection(i1);
 
-        private delegate void SetCurrentGridRowSelectionDelegate(int pos);
+                    if (list[i].LayerStatus == LayerStatus.Missing)
+                    {
+                        uploadLayerToGeoserverUseCase.Execute(new UploadLayerToGeoserverRequest(list[i]),
+                            response => ResponseBoundary(response, i1, list));
 
-        #endregion
+                    }
+
+                    UploadLayerToGeoserverBackgroundWorker.ReportProgress(((i + 1) * 100) / list.Count);
+                }
+                catch (Exception exception)
+                {
+                    if (!IsDisposed)
+                    {
+                        MessageBox.Show(exception.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    e.Cancel = true;
+                    return;
+                }
+            }
+
+        }
+
+        private void UploadLayerToGeoserverBackgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            pb_load_layers.Value = e.ProgressPercentage;
+
+            SetLoadingToolStripStatusLabelText(e.ProgressPercentage + "%");
+        }
+
+        private void UploadLayerToGeoserverBackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            if (e.Cancelled) return;
+            MessageBox.Show("Missing layers uploaded.", "Information", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+            SetLoadingToolStripStatusLabelText("Ok");
+
+            bt_check_state.Enabled = true;
+            bt_upload_missing.Enabled = true;
+            
+        }
     }
 }

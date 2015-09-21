@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Net;
+using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
+using GeoserverManager.Geoserver.Rest.Client.Request.Layer;
 using GeoserverManager.Geoserver.Rest.Client.Response;
 using GeoserverManager.Rest.Client.Interface;
 using GeoserverManager.Rest.Client.Request;
@@ -71,6 +73,27 @@ namespace GeoserverManager.Geoserver.Rest.Client
                 output.IsMissingFeatureType = response.Data.StartsWith("No such feature type");
             }
 
+
+            return output;
+        }
+
+        public IGeoserverRestResponse PostLayer(ILayerInfo layer)
+        {
+            var uri = $@"workspaces/{layer.Workspace}/datastores/{layer.Datastore}/featuretypes/{layer.Name}";
+            var request = new ServiceRequest(uri);
+
+            var layerRoot = LayerInfoToLayerRootTranslator.TranslateFrom(layer);
+
+            request.Body = JsonConvert.SerializeObject(layerRoot);
+
+            var response = restService.Post(request);
+
+
+            var output = new GeoserverRestResponse
+            {
+                Data = response.Data,
+                Code = response.StatusCode
+            };
 
             return output;
         }

@@ -30,10 +30,12 @@
         {
             this.LayersGrid = new System.Windows.Forms.DataGridView();
             this.bt_check_state = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.CheckStateBackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.pb_load_layers = new System.Windows.Forms.ToolStripProgressBar();
             this.tssl_loading_label = new System.Windows.Forms.ToolStripStatusLabel();
+            this.bt_upload_missing = new System.Windows.Forms.Button();
+            this.UploadLayerToGeoserverBackgroundWorker = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.LayersGrid)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,12 +62,12 @@
             this.bt_check_state.UseVisualStyleBackColor = true;
             this.bt_check_state.Click += new System.EventHandler(this.bt_check_state_Click);
             // 
-            // backgroundWorker1
+            // CheckStateBackgroundWorker
             // 
-            this.backgroundWorker1.WorkerReportsProgress = true;
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
-            this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
+            this.CheckStateBackgroundWorker.WorkerReportsProgress = true;
+            this.CheckStateBackgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.CheckStateBackgroundWorker_DoWork);
+            this.CheckStateBackgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.CheckStateBackgroundWorker_ProgressChanged);
+            this.CheckStateBackgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.CheckStateBackgroundWorker_RunWorkerCompleted);
             // 
             // statusStrip1
             // 
@@ -90,11 +92,29 @@
             this.tssl_loading_label.Name = "tssl_loading_label";
             this.tssl_loading_label.Size = new System.Drawing.Size(4, 17);
             // 
+            // bt_upload_missing
+            // 
+            this.bt_upload_missing.Location = new System.Drawing.Point(93, 19);
+            this.bt_upload_missing.Name = "bt_upload_missing";
+            this.bt_upload_missing.Size = new System.Drawing.Size(87, 23);
+            this.bt_upload_missing.TabIndex = 4;
+            this.bt_upload_missing.Text = "Upload missing";
+            this.bt_upload_missing.UseVisualStyleBackColor = true;
+            this.bt_upload_missing.Click += new System.EventHandler(this.bt_upload_missing_Click);
+            // 
+            // UploadLayerToGeoserverBackgroundWorker
+            // 
+            this.UploadLayerToGeoserverBackgroundWorker.WorkerReportsProgress = true;
+            this.UploadLayerToGeoserverBackgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.UploadLayerToGeoserverBackgroundWorker_DoWork);
+            this.UploadLayerToGeoserverBackgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.UploadLayerToGeoserverBackgroundWorker_ProgressChanged);
+            this.UploadLayerToGeoserverBackgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.UploadLayerToGeoserverBackgroundWorker_RunWorkerCompleted);
+            // 
             // LayersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 391);
+            this.Controls.Add(this.bt_upload_missing);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.bt_check_state);
             this.Controls.Add(this.LayersGrid);
@@ -114,9 +134,11 @@
 
         private System.Windows.Forms.DataGridView LayersGrid;
         private System.Windows.Forms.Button bt_check_state;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker CheckStateBackgroundWorker;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripProgressBar pb_load_layers;
         private System.Windows.Forms.ToolStripStatusLabel tssl_loading_label;
+        private System.Windows.Forms.Button bt_upload_missing;
+        private System.ComponentModel.BackgroundWorker UploadLayerToGeoserverBackgroundWorker;
     }
 }

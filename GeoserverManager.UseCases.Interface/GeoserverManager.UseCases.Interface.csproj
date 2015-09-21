@@ -43,10 +43,13 @@
     <Compile Include="Repositories\ILayerInfoRepository.cs" />
     <Compile Include="UseCases\Layers\IGetAllLayersUseCase.cs" />
     <Compile Include="UseCases\Layers\IGetLayerStatusUseCase.cs" />
+    <Compile Include="UseCases\Layers\IUploadLayerToGeoserverUseCase.cs" />
     <Compile Include="UseCases\Layers\Requests\IGetAllLayersRequests.cs" />
     <Compile Include="UseCases\Layers\Requests\IGetLayerStatusRequest.cs" />
+    <Compile Include="UseCases\Layers\Requests\IUploadLayerToGeoserverRequest.cs" />
     <Compile Include="UseCases\Layers\Responses\IGetAllLayersResponse.cs" />
     <Compile Include="UseCases\Layers\Responses\IGetLayerStatusResponse.cs" />
+    <Compile Include="UseCases\Layers\Responses\IUploadLayerToGeoserverResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

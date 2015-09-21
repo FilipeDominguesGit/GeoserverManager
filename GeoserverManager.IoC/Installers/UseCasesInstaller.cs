@@ -28,6 +28,14 @@ namespace GeoserverManager.IoC.Installers
                     restClient = container.Resolve<IGeoserverRestClient>()
                 })
                 .LifestyleTransient());
+
+            container.Register(Component
+             .For<IUploadLayerToGeoserverUseCase>()
+             .ImplementedBy<UploadLayerToGeoserverUseCase>().DependsOn(new
+             {
+                 restClient = container.Resolve<IGeoserverRestClient>()
+             })
+             .LifestyleTransient());
         }
     }
 }

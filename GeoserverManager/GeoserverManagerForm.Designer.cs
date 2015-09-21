@@ -1,4 +1,6 @@
-﻿namespace GeoserverManager
+﻿using System.Windows.Forms;
+
+namespace GeoserverManager
 {
     partial class GeoserverManagerForm
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoserverManagerForm));
             this.ss_main_form = new System.Windows.Forms.StatusStrip();
             this.tssl_server_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssl_server_name = new System.Windows.Forms.ToolStripStatusLabel();
@@ -90,8 +93,9 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // geoServerToolStripMenuItem
             // 
@@ -120,9 +124,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(617, 282);
             this.Controls.Add(this.ss_main_form);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "GeoserverManagerForm";

@@ -44,8 +44,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseCases\Layers\Requests\GetAllLayersRequests.cs" />
     <Compile Include="UseCases\Layers\Requests\GetLayerStatusRequest.cs" />
+    <Compile Include="UseCases\Layers\Requests\UploadLayerToGeoserverRequest.cs" />
     <Compile Include="UseCases\Layers\Responses\GetAllLayersResponse.cs" />
     <Compile Include="UseCases\Layers\Responses\GetLayerStatusResponse.cs" />
+    <Compile Include="UseCases\Layers\Responses\UploadLayerToGeoserverResponse.cs" />
+    <Compile Include="UseCases\Layers\UploadLayerToGeoserverUseCase.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
