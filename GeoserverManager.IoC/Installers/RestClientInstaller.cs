@@ -13,7 +13,8 @@ namespace GeoserverManager.IoC.Installers
         {
             container.Register(Component
                 .For<IRestService>()
-                .ImplementedBy<RestService>().DependsOn(new
+                .ImplementedBy<RestService>()
+                .DependsOn(new
                 {
                     uri = container.Resolve<IConfigurationDataGateway>().GeoServerUri,
                     user = container.Resolve<IConfigurationDataGateway>().GeoServerUser,

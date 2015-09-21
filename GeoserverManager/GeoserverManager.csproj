@@ -124,12 +124,17 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GeoserverManager.DAL.Repositories\GeoserverManager.DAL.Repositories.csproj">
       <Project>{2D0F72AF-A226-4621-8CDE-B8FD2B440F45}</Project>
       <Name>GeoserverManager.DAL.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoserverManager.DAL.UI.Repositories\GeoserverManager.DAL.UI.Repositories.csproj">
+      <Project>{F6A7AC03-FF6F-4BDB-A4F8-4F4848135F8E}</Project>
+      <Name>GeoserverManager.DAL.UI.Repositories</Name>
     </ProjectReference>
     <ProjectReference Include="..\GeoserverManager.Entities.Base.Interface\GeoserverManager.Entities.Base.Interface.csproj">
       <Project>{9782a491-7fb8-44d1-88ba-32b78ee5ec3a}</Project>

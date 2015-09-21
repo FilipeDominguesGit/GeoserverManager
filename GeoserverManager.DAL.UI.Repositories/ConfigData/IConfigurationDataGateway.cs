@@ -4,8 +4,8 @@
     {
         string LocalLayersConnectionString { get; }
 
-        string GeoServerUri { get; }
-        string GeoServerUser { get; }
-        string GeoServerPassword { get; }
+        string GeoServerUri { get; set; }
+        string GeoServerUser { get; set; }
+        string GeoServerPassword { get; set; }
     }
 }
