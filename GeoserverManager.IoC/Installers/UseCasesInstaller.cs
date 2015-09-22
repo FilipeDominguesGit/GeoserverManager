@@ -14,26 +14,50 @@ namespace GeoserverManager.IoC.Installers
         {
             container.Register(Component
                 .For<IGetAllLayersUseCase>()
-                .ImplementedBy<GetAllLayersUseCase>().DependsOn(new
-                {
-                    repository = container.Resolve<ILayerInfoRepository>()
-                })
+                .ImplementedBy<GetAllLayersUseCase>()
+               // .DependsOn(new
+                //{
+                //    repository = container.Resolve<ILayerInfoRepository>()
+                //})
+                 .DynamicParameters((p, k) =>
+                 {
+                     var repository = container.Resolve<ILayerInfoRepository>();
+
+                     k["repository"] = repository;
+                   
+                 })
                 .LifestyleTransient());
 
 
             container.Register(Component
                 .For<IGetLayerStatusUseCase>()
-                .ImplementedBy<GetLayerStatusUseCase>().DependsOn(new
-                {
-                    restClient = container.Resolve<IGeoserverRestClient>()
-                })
+                .ImplementedBy<GetLayerStatusUseCase>()
+                //.DependsOn(new
+                //{
+                //    restClient = container.Resolve<IGeoserverRestClient>()
+                //})
+                  .DynamicParameters((p, k) =>
+                  {
+                      var restClient = container.Resolve<IGeoserverRestClient>();
+
+                      k["restClient"] = restClient;
+
+                  })
                 .LifestyleTransient());
 
             container.Register(Component
              .For<IUploadLayerToGeoserverUseCase>()
-             .ImplementedBy<UploadLayerToGeoserverUseCase>().DependsOn(new
+             .ImplementedBy<UploadLayerToGeoserverUseCase>()
+             //.DependsOn(new
+             //{
+             //    restClient = container.Resolve<IGeoserverRestClient>()
+             //})
+             .DynamicParameters((p, k) =>
              {
-                 restClient = container.Resolve<IGeoserverRestClient>()
+                 var restClient = container.Resolve<IGeoserverRestClient>();
+
+                 k["restClient"] = restClient;
+
              })
              .LifestyleTransient());
         }

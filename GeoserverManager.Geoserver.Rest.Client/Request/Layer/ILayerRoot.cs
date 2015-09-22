@@ -1,7 +1,10 @@
-﻿namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
+﻿using Newtonsoft.Json;
+
+namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
     public interface ILayerRoot
     {
-        ILayer Layer { get; set; }
+        [JsonProperty("featureType")]
+        IRequestFeatureType FeatureType { get; set; }
     }
 }

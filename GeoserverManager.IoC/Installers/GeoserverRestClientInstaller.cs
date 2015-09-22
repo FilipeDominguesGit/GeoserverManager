@@ -12,9 +12,16 @@ namespace GeoserverManager.IoC.Installers
         {
             container.Register(Component
                 .For<IGeoserverRestClient>()
-                .ImplementedBy<GeoserverRestClient>().DependsOn(new
+                .ImplementedBy<GeoserverRestClient>()
+                //.DependsOn(new
+                //{
+                //    restService = container.Resolve<IRestService>()
+                //})
+                .DynamicParameters((p, k) =>
                 {
-                    restService = container.Resolve<IRestService>()
+                    var restService = p.Resolve<IRestService>();
+                    k["restService"] = restService;
+
                 })
                 .LifestyleTransient());
         }

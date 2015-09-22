@@ -14,10 +14,20 @@ namespace GeoserverManager.IoC.Installers
         {
             container.Register(Component
                 .For<ILayerInfoRepository>()
-                .ImplementedBy<LayerInfoRepository>().DependsOn(new
+                .ImplementedBy<LayerInfoRepository>()
+                //.DependsOn(new
+                //{
+                //    gateway = container.Resolve<IGeoEntityJsonGateway>(),
+                //    builderPrototype = container.Resolve<ILayerInfoBuilderPrototype>()
+                //})
+                .DynamicParameters((p, k) =>
                 {
-                    gateway = container.Resolve<IGeoEntityJsonGateway>(),
-                    builderPrototype = container.Resolve<ILayerInfoBuilderPrototype>()
+                    var gateway = container.Resolve<IGeoEntityJsonGateway>();
+                    var builderPrototype = container.Resolve<ILayerInfoBuilderPrototype>();
+
+                    k["gateway"] = gateway;
+                    k["builderPrototype"] = builderPrototype;
+
                 })
                 .LifestyleTransient());
         }

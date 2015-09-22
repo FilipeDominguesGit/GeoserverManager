@@ -6,6 +6,7 @@ using GeoserverManager.Geoserver.Rest.Client.Datamodel.GlobalSettings;
 using GeoserverManager.Geoserver.Rest.Client.Datamodel.Workspaces;
 using GeoserverManager.Geoserver.Rest.Client.Request.Layer;
 using GeoserverManager.Geoserver.Rest.Client.Response;
+using GeoserverManager.Geoserver.Rest.Client.Translator;
 using GeoserverManager.Rest.Client.Interface;
 using GeoserverManager.Rest.Client.Request;
 using Newtonsoft.Json;
@@ -79,7 +80,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
 
         public IGeoserverRestResponse PostLayer(ILayerInfo layer)
         {
-            var uri = $@"workspaces/{layer.Workspace}/datastores/{layer.Datastore}/featuretypes/{layer.Name}";
+            var uri = $@"workspaces/{layer.Workspace}/datastores/{layer.Datastore}/featuretypes";
             var request = new ServiceRequest(uri);
 
             var layerRoot = LayerInfoToLayerRootTranslator.TranslateFrom(layer);

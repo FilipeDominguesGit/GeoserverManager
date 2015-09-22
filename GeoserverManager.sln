@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.DAL.UI.Rep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.Security.Spike", "GeoserverManager.Security.Spike\GeoserverManager.Security.Spike.csproj", "{E731E904-963F-4554-87D2-2C4DFC278B95}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverManager.IoC.Spike", "GeoserverManager.IoC.Spike\GeoserverManager.IoC.Spike.csproj", "{DA3E281C-9BF0-443C-920F-9832BD8E0C1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +169,10 @@ Global
 		{E731E904-963F-4554-87D2-2C4DFC278B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E731E904-963F-4554-87D2-2C4DFC278B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E731E904-963F-4554-87D2-2C4DFC278B95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3E281C-9BF0-443C-920F-9832BD8E0C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3E281C-9BF0-443C-920F-9832BD8E0C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3E281C-9BF0-443C-920F-9832BD8E0C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3E281C-9BF0-443C-920F-9832BD8E0C1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,5 +212,6 @@ Global
 		{F96D8E68-BE81-4D62-B669-C81930D975B4} = {963A2554-5686-405A-A74F-01DF477BBBA4}
 		{F6A7AC03-FF6F-4BDB-A4F8-4F4848135F8E} = {F021533E-7477-4283-B048-BF04BDD2D4FE}
 		{E731E904-963F-4554-87D2-2C4DFC278B95} = {B892A56C-9185-476F-8437-DC5F7CEAC8CA}
+		{DA3E281C-9BF0-443C-920F-9832BD8E0C1E} = {B892A56C-9185-476F-8437-DC5F7CEAC8CA}
 	EndGlobalSection
 EndGlobal

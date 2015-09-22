@@ -14,11 +14,22 @@ namespace GeoserverManager.IoC.Installers
             container.Register(Component
                 .For<IRestService>()
                 .ImplementedBy<RestService>()
-                .DependsOn(new
+                //.DependsOn(new
+                //{
+                //    uri = container.Resolve<IConfigurationDataGateway>().GeoServerUri,
+                //    user = container.Resolve<IConfigurationDataGateway>().GeoServerUser,
+                //    password = container.Resolve<IConfigurationDataGateway>().GeoServerPassword
+                //})
+                .DynamicParameters((p, k) =>
                 {
-                    uri = container.Resolve<IConfigurationDataGateway>().GeoServerUri,
-                    user = container.Resolve<IConfigurationDataGateway>().GeoServerUser,
-                    password = container.Resolve<IConfigurationDataGateway>().GeoServerPassword
+                    var uri = container.Resolve<IConfigurationDataGateway>().GeoServerUri;
+                    var user = container.Resolve<IConfigurationDataGateway>().GeoServerUser;
+                    var password = container.Resolve<IConfigurationDataGateway>().GeoServerPassword;
+
+                    k["uri"] = uri;
+                    k["user"] = user;
+                    k["password"] = password;
+
                 })
                 .LifestyleTransient());
         }

@@ -13,10 +13,17 @@ namespace GeoserverManager.IoC.Installers
         {
             container.Register(Component
                 .For<IGeoEntityJsonGateway>()
-                .ImplementedBy<GeoEntityJsonGateway>().DependsOn(new
-                {
-                    connectionString = container.Resolve<IConfigurationDataGateway>().LocalLayersConnectionString
-                })
+                .ImplementedBy<GeoEntityJsonGateway>()
+                //.DependsOn(new
+                //{
+                //    connectionString = container.Resolve<IConfigurationDataGateway>().LocalLayersConnectionString
+                //})
+                 .DynamicParameters((p, k) =>
+                 {
+                     var gate = p.Resolve<IConfigurationDataGateway>();
+                     k["connectionString"] = gate.LocalLayersConnectionString;
+
+                 })
                 .LifestyleTransient());
         }
     }
