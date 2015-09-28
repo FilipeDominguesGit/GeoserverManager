@@ -26,7 +26,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Translator
                             {
                                 Name = layerInfo.Name,
                                 Sql = layerInfo.Sql,
-                                EscapeSql = "false"
+                                EscapeSql = "true"
                             }
                         }
                     }

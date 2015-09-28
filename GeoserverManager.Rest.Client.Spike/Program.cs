@@ -18,7 +18,9 @@ namespace GeoserverManager.Rest.Client.Spike
             var geoserverClient = new GeoserverRestClient(restService);
 
             var testLayer = "{'featureType': {'name': 'new_test_layer','title': 'new_test_layer','srs': 'EPSG:4326','projectionPolicy': 'FORCE_DECLARED','enabled': 'true','metadata': {'entry': {'@key': 'JDBC_VIRTUAL_TABLE','virtualTable': {'name': 'new_test_layer','sql': 'SELECT uuid, cellid, cellname, cellname as sigga_external_id, cellstate, operator, latitude, longitude, azimuth, sectorid, siteenvironment, siteid, vendor, tech, band, sector, oss, mcc, mnc, controllerid, controllername, lac, rac, tac, carrier, frequency, code, dldataspeed,cellgeomsmall as geom,cellgeommicrotiny as microtiny, cellgeomtiny as tiny, cellgeomsmall as small, cellgeommedium as medium, cellgeombig as big, cellgeombigger as bigger,cellgeomhuge as huge, errors FROM view_livefulldata_cell','escapeSql': 'false'}}},'overridingServiceSRS': 'false','circularArcPresent': 'false'}}";
-              var response = restService.Post(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes") { Body = testLayer });
+            var newtest = "{'featureType':{'name':'eventsmobilityreselectiontoeutranfail_ireland','title':'eventsmobilityreselectiontoeutranfail_ireland','srs':'EPSG: 4326','projectionPolicy':'FORCE_DECLARED','enabled':'true','metadata':{'entry':{'@key':'JDBC_VIRTUAL_TABLE','virtualTable':{'name':'eventsmobilityreselectiontoeutranfail_ireland','sql':'select * from eventsmobilityreselectiontoeutranfail_ireland where eventsuccessfull=false','escapeSql':'true'}}}}}";
+
+            var response = restService.Post(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes") { Body = newtest });
 
             //restService.Post(new ServiceRequest("workspaces/webgis-dev/datastores/networkTopologyDev/featuretypes") {Body = testLayer});
             //var response =
