@@ -36,7 +36,11 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             {
                 var response = restClient.PostLayer(request.Layer);
 
+
                 var status = GetStatusFromResponse(response);
+
+                if (status == LayerStatus.Ok)
+                    restClient.PutLayer(request.Layer);
 
                 responseBoundary(new UploadLayerToGeoserverResponse(status));
             }
@@ -52,6 +56,8 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
             if (response.Code == HttpStatusCode.OK)
                 status = LayerStatus.Ok;
+            if (response.Code == HttpStatusCode.Created)
+                status = LayerStatus.Ok;
 
             if (response.Code == HttpStatusCode.NotFound)
             {
@@ -63,6 +69,7 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
                 if (response.IsMissingFeatureType)
                     status = LayerStatus.Missing;
+                
             }
             if (response.Code == 0)
                 status = LayerStatus.ConnectionError;

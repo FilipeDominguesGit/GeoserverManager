@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
+namespace GeoserverManager.Geoserver.Rest.Client.Request.FeatureType
 {
     public interface IRequestFeatureType
     {

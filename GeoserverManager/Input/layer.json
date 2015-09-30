@@ -2,1067 +2,1068 @@
   //---------------METRICS-----------------
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicswebbrowsing_ireland_square1k",
+      "Name": "thematicswebbrowsing_unitedkingdom_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_ireland_square1k",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_unitedkingdom_square1k",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicswebbrowsing_ireland_square100",
+      "Name": "thematicswebbrowsing_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric3g_ireland_square10",
+      "Name": "thematicsrfmetric3g_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric3g_ireland_square100",
+      "Name": "thematicsrfmetric3g_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric3g_ireland_square1k",
+      "Name": "thematicsrfmetric3g_unitedkingdom_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_ireland_square1k",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom FROM thematicsrfmetric3g_unitedkingdom_square1k",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicswebbrowsing_ireland_square10",
+      "Name": "thematicswebbrowsing_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicswebbrowsing_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric4g_ireland_square10",
+      "Name": "thematicsrfmetric4g_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric4g_ireland_square100",
+      "Name": "thematicsrfmetric4g_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric4g_ireland_square1k",
+      "Name": "thematicsrfmetric4g_unitedkingdom_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_ireland_square1k",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp,        servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq,        servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac,        rachcurrenttxpower, rachinitialtxpower, id, square as geom  FROM thematicsrfmetric4g_unitedkingdom_square1k",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric2g_ireland_square10",
+      "Name": "thematicsrfmetric2g_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric2g_ireland_square100",
+      "Name": "thematicsrfmetric2g_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsrfmetric2g_ireland_square1k",
+      "Name": "thematicsrfmetric2g_unitedkingdom_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_ireland_square1k",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3,        bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta,        fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicsrfmetric2g_unitedkingdom_square1k",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsspeechquality_ireland_square10",
+      "Name": "thematicsspeechquality_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsspeechquality_ireland_square100",
+      "Name": "thematicsspeechquality_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsspeechquality_ireland_square1K",
+      "Name": "thematicsspeechquality_unitedkingdom_square1K",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_ireland_square1K",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicsspeechquality_unitedkingdom_square1K",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsdatatransfer_ireland_square10",
+      "Name": "thematicsdatatransfer_unitedkingdom_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_ireland_square10",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_unitedkingdom_square10",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsdatatransfer_ireland_square100",
+      "Name": "thematicsdatatransfer_unitedkingdom_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_ireland_square100",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_unitedkingdom_square100",
+      "Geometry": "polygon"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "thematicsdatatransfer_ireland_square1K",
+      "Name": "thematicsdatatransfer_unitedkingdom_square1K",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_ireland_square1K",
-      "Geometry": "Polygon"
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicsdatatransfer_unitedkingdom_square1K",
+      "Geometry": "polygon"
     }
   }
   //-----------------------EVENTS MOBILITY---------------------------------------------
   ,
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitytacreselection_ireland",
+      "Name": "eventsmobilitytacreselection_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitytacreselection_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilitytacreselection_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsmobilitytacreselectionfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsmobilitytacreselection_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityirathandoverfail_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityirathandover_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitytacreselectionfail_ireland",
+      "Name": "eventsmobilityirathandover_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitytacreselection_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityirathandover_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityirathandoverfail_ireland",
+      "Name": "eventsmobilityeutranredirected_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityirathandover_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityeutranredirected_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityirathandover_ireland",
+      "Name": "eventsmobilityeutranredirectedfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityirathandover_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityeutranredirected_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityeutranredirected_ireland",
+      "Name": "eventsmobilityhandoverfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityeutranredirected_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityhandover_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityeutranredirectedfail_ireland",
+      "Name": "eventsmobilityhandover_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityeutranredirected_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityhandover_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityhandoverfail_ireland",
+      "Name": "eventsmobilityreselectionfromutranfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityhandover_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityreselectionfromutran_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityhandover_ireland",
+      "Name": "eventsmobilityreselectionfromutran_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityhandover_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityreselectionfromutran_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectionfromutranfail_ireland",
+      "Name": "eventsmobilityracreselection_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectionfromutran_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityracreselection_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectionfromutran_ireland",
+      "Name": "eventsmobilityracreselectionfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectionfromutran_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityracreselection_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityracreselection_ireland",
+      "Name": "eventsmobilitypackettriggerfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityracreselection_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilitypackettrigger_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityracreselectionfail_ireland",
+      "Name": "eventsmobilitypackettrigger_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityracreselection_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilitypackettrigger_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitypackettriggerfail_ireland",
+      "Name": "eventsmobilityreselectiontoeutranfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitypackettrigger_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityreselectiontoeutran_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitypackettrigger_ireland",
+      "Name": "eventsmobilityreselectiontoeutran_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitypackettrigger_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityreselectiontoeutran_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectiontoeutranfail_ireland",
+      "Name": "eventsmobilitylacreselection_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoeutran_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilitylacreselection_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectiontoeutran_ireland",
+      "Name": "eventsmobilitylacreselectionfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoeutran_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilitylacreselection_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitylacreselection_ireland",
+      "Name": "eventsmobilityintrafreqhandover_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitylacreselection_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityintrafreqhandover_unitedkingdom ",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsmobilityintrafreqhandoverfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsmobilityintrafreqhandover_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectiontoutranfail_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectiontoutran_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilitylacreselectionfail_ireland",
+      "Name": "eventsmobilityreselectiontoutran_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitylacreselection_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityreselectiontoutran_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityintrafreqhandover_ireland",
+      "Name": "eventsmobilityinterfreqhandover_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityintrafreqhandover_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsmobilityinterfreqhandover_unitedkingdom ",
+      "Geometry": "point"
     }
   },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityintrafreqhandoverfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityintrafreqhandover_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectiontoutranfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoutran_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityreselectiontoutran_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoutran_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityinterfreqhandover_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityinterfreqhandover_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsmobilityinterfreqhandoverfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityinterfreqhandover_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  }
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsmobilityinterfreqhandoverfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsmobilityinterfreqhandover_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
   //-----------------------EVENTS PACKET---------------------------------------------
-  ,
+  
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketpdpcontextfailure_ireland",
+      "Name": "eventspacketpdpcontextfailure_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextfailure_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketpdpcontextfailure_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketpdpcontextfailurefail_ireland",
+      "Name": "eventspacketpdpcontextfailurefail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextfailure_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketpdpcontextfailure_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttpwebbrowsingcutofffail_ireland",
+      "Name": "eventspackethttpwebbrowsingcutofffail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsingcutoff_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttpwebbrowsingcutoff_ireland",
+      "Name": "eventspackethttpwebbrowsingcutoff_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsingcutoff_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketattachsuccess_ireland",
+      "Name": "eventspacketattachsuccess_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachsuccess_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketattachsuccess_unitedkingdom ",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspacketattachsuccessfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspacketattachsuccess_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketdns_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketdns_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketattachsuccessfail_ireland",
+      "Name": "eventspacketdnsfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachsuccess_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketdns_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketdns_ireland",
+      "Name": "eventspackethscellchange_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketdns_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethscellchange_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketdnsfail_ireland",
+      "Name": "eventspackethscellchangefail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketdns_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethscellchange_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethscellchange_ireland",
+      "Name": "eventspackethttpwebbrowsingfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethscellchange_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttpwebbrowsing_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethscellchangefail_ireland",
+      "Name": "eventspackethttpwebbrowsing_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethscellchange_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttpwebbrowsing_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttpwebbrowsingfail_ireland",
+      "Name": "eventspacketsessionsuccess_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsing_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketsessionsuccess_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttpwebbrowsing_ireland",
+      "Name": "eventspacketsessionsuccessfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsing_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketsessionsuccess_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketsessionsuccess_ireland",
+      "Name": "eventspackethttptransferfail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionsuccess_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttptransfer_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketsessionsuccessfail_ireland",
+      "Name": "eventspackethttptransfer_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionsuccess_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttptransfer_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttptransferfail_ireland",
+      "Name": "eventspacketattachattempt_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfer_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketattachattempt_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspacketattachattemptfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspacketattachattempt_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttptransfercutofffail_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttptransfercutoff_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttptransfer_ireland",
+      "Name": "eventspackethttptransfercutoff_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfer_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethttptransfercutoff_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketattachattempt_ireland",
+      "Name": "eventspacketsessionattempt_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachattempt_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketsessionattempt_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspacketsessionattemptfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspacketsessionattempt_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketpdpcontextcutoff_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextcutoff_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketattachattemptfail_ireland",
+      "Name": "eventspacketpdpcontextcutofffail_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachattempt_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketpdpcontextcutoff_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttptransfercutofffail_ireland",
+      "Name": "eventspackethsdpatodchreconfig_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfercutoff_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspackethsdpatodchreconfig_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspackethsdpatodchreconfigfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspackethsdpatodchreconfig_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketlatencyrttfail_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketlatencyrtt_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethttptransfercutoff_ireland",
+      "Name": "eventspacketlatencyrtt_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfercutoff_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketlatencyrtt_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketsessionattempt_ireland",
+      "Name": "eventspacketyoutubeaccess_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionattempt_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketyoutubeaccess_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspacketyoutubeaccessfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspacketyoutubeaccess_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketsessionattemptfail_ireland",
+      "Name": "eventspacketyoutubereproduction_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionattempt_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventspacketyoutubereproduction_unitedkingdom",
+      "Geometry": "point"
     }
   },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketpdpcontextcutoff_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextcutoff_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketpdpcontextcutofffail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextcutoff_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethsdpatodchreconfig_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethsdpatodchreconfig_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspackethsdpatodchreconfigfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethsdpatodchreconfig_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketlatencyrttfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketlatencyrtt_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketlatencyrtt_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketlatencyrtt_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketyoutubeaccess_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubeaccess_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketyoutubeaccessfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubeaccess_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketyoutubereproduction_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubereproduction_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventspacketyoutubereproductionfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubereproduction_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  }
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventspacketyoutubereproductionfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventspacketyoutubereproduction_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
 
   //-----------------------EVENTS VOICE---------------------------------------------
-  ,
+  
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicedropcall_ireland",
+      "Name": "eventsvoicedropcall_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicedropcall_ireland  where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoicedropcall_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoicedropcallfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoicedropcall_unitedkingdom  where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecallestablishment_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecallestablishment_unitedkingdom",
+      "Geometry": "point"
+    }
+  },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoicecallestablishmentfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoicecallestablishment_unitedkingdom  where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
+  {
+    "Layer": {
+      "Datastore": "DriveTestsUK",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecsfbcallattemptfail_unitedkingdom",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecsfbcallattempt_unitedkingdom where eventsuccessfull=false",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicedropcallfail_ireland",
+      "Name": "eventsvoicecsfbcallattempt_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicedropcall_ireland  where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoicecsfbcallattempt_unitedkingdom where eventsuccessfull=true",
+      "Geometry": "point"
     }
   },
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallestablishment_ireland",
+      "Name": "eventsvoicecallattempt_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallestablishment_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoicecallattempt_unitedkingdom",
+      "Geometry": "point"
     }
   },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoicecallattemptfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoicecallattempt_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallestablishmentfail_ireland",
+      "Name": "eventsvoicecallcompletion_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallestablishment_ireland  where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoicecallcompletion_unitedkingdom",
+      "Geometry": "point"
     }
   },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoicecallcompletionfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoicecallcompletion_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecsfbcallattemptfail_ireland",
+      "Name": "eventsvoiceblockcall_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecsfbcallattempt_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoiceblockcall_unitedkingdom",
+      "Geometry": "point"
     }
   },
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoiceblockcallfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoiceblockcall_unitedkingdom where eventsuccessfull=false",
+  //    "Geometry": "point"
+  //  }
+  //},
   {
     "Layer": {
-      "Datastore": "DriveTests",
+      "Datastore": "DriveTestsUK",
       "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecsfbcallattempt_ireland",
+      "Name": "eventsvoicenosustainability_unitedkingdom",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecsfbcallattempt_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallattempt_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallattempt_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallattemptfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallattempt_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallcompletion_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallcompletion_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicecallcompletionfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallcompletion_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoiceblockcall_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoiceblockcall_ireland where eventsuccessfull=true",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoiceblockcallfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoiceblockcall_ireland where eventsuccessfull=false",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicenosustainability_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicenosustainability_ireland where eventsuccessfull=true ",
-      "Geometry": "Polygon"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests",
-      "Workspace": "vdfg-drivetests",
-      "Name": "eventsvoicenosustainabilityfail_ireland",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicenosustainability_ireland where eventsuccessfull=false ",
-      "Geometry": "Polygon"
+      "Sql": "select * from eventsvoicenosustainability_unitedkingdom",
+      "Geometry": "point"
     }
   }
+  //,
+  //{
+  //  "Layer": {
+  //    "Datastore": "DriveTestsUK",
+  //    "Workspace": "vdfg-drivetests",
+  //    "Name": "eventsvoicenosustainabilityfail_unitedkingdom",
+  //    "Srs": "EPSG:4326",
+  //    "Enabled": "true",
+  //    "ProjectionPolicy": "FORCE_DECLARED",
+  //    "Sql": "select * from eventsvoicenosustainability_unitedkingdom where eventsuccessfull=false ",
+  //    "Geometry": "point"
+  //  }
+  //}
 
 
 ]

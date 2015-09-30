@@ -1,14 +1,15 @@
 ﻿using GeoserverManager.Entities.Interface.BussinessModel;
+using GeoserverManager.Geoserver.Rest.Client.Request.FeatureType;
 using GeoserverManager.Geoserver.Rest.Client.Request.Layer;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Translator
 {
-    public static class LayerInfoToLayerRootTranslator
+    public static class LayerInfoTranslator
     {
 
-        public static ILayerRoot TranslateFrom(ILayerInfo layerInfo)
+        public static IRequestFeatureTypeRoot TranslateToRequestFeatureTypeRoot(ILayerInfo layerInfo)
         {
-            var layerRoot = new LayerRoot
+            var layerRoot = new RequestFeatureTypeRoot
             {
                 FeatureType = new RequestFeatureType
                 {
@@ -36,6 +37,20 @@ namespace GeoserverManager.Geoserver.Rest.Client.Translator
 
 
             return layerRoot;
+        }
+
+        public static IRequestLayerRoot TranslateToRequestLayerRoot(ILayerInfo layerInfo)
+        {
+            return  new RequestLayerRoot()
+            {
+                Layer = new RequestLayer()
+                {
+                    DefaultStyle = new RequestDefaultStyle()
+                    {
+                        Name =layerInfo.Geometry
+                    }
+                }
+            };
         }
     }
 }

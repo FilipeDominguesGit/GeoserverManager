@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
@@ -233,7 +234,8 @@ namespace GeoserverManager
 
         private void ResponseBoundary(IUploadLayerToGeoserverResponse uploadLayerToGeoserverResponse, int pos, List<ILayerInfo> list)
         {
-            
+            list[pos].ChangeLayerStatus(uploadLayerToGeoserverResponse.Status);
+            SetRowColorByStatus(uploadLayerToGeoserverResponse.Status, pos);
         }
 
         private void UploadLayerToGeoserverBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -252,7 +254,7 @@ namespace GeoserverManager
                     {
                         uploadLayerToGeoserverUseCase.Execute(new UploadLayerToGeoserverRequest(list[i]),
                             response => ResponseBoundary(response, i1, list));
-
+                       // Thread.Sleep(1000);
                     }
 
                     UploadLayerToGeoserverBackgroundWorker.ReportProgress(((i + 1) * 100) / list.Count);

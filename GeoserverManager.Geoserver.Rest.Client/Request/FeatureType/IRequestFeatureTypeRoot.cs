@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
+namespace GeoserverManager.Geoserver.Rest.Client.Request.FeatureType
 {
-    public interface ILayerRoot
+    public interface IRequestFeatureTypeRoot
     {
         [JsonProperty("featureType")]
         IRequestFeatureType FeatureType { get; set; }

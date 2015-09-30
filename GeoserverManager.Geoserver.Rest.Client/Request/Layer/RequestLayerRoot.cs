@@ -8,11 +8,9 @@ using Newtonsoft.Json;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
-    public class RequestEntry: IRequestEntry
+    public class RequestLayerRoot : IRequestLayerRoot
     {
-        public string Key { get; set; }
-
-        [JsonConverter(typeof(ComplexJsonConverter<RequestVirtualTable>))]
-        public IRequestVirtualTable VirtualTable { get; set; }
+        [JsonConverter(typeof(ComplexJsonConverter<RequestLayer>))]
+        public IRequestLayer Layer { get; set; }
     }
 }

@@ -49,6 +49,11 @@ namespace GeoserverManager.Entities.BussinessModelFactories
             return this;
         }
 
+        public ILayerInfoBuilder WithGeometry(string value)
+        {
+            layerInfo.Geometry = value;
+            return this;
+        }
 
         public ILayerInfoBuilder WithLayerStatus(LayerStatus value)
         {

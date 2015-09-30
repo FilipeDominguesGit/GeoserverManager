@@ -22,6 +22,7 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
                 .WithSql(entity.Layer.Sql)
                 .WithDatastore(entity.Layer.Datastore)
                 .WithWorkspace(entity.Layer.Workspace)
+                .WithGeometry(entity.Layer.Geometry)
                 .WithLayerStatus(LayerStatus.Unknown);
 
             return builder.Build();

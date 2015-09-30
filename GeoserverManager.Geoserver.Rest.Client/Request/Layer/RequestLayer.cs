@@ -8,9 +8,10 @@ using Newtonsoft.Json;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
-    public class RequestMetadata: IRequestMetadata
+    public class RequestLayer : IRequestLayer
     {
-        [JsonConverter(typeof(ComplexJsonConverter<RequestEntry>))]
-        public IRequestEntry Entry { get; set; }
+       
+        [JsonConverter(typeof(ComplexJsonConverter<RequestDefaultStyle>))]
+        public IRequestDefaultStyle DefaultStyle { get; set; }
     }
 }

@@ -76,7 +76,6 @@ namespace GeoserverManager.Rest.Client
             if (Auth != null)
                 client.Authenticator = Auth;
 
-
             var restRequest = new RestRequest(request.Uri, Method.POST);
 
 

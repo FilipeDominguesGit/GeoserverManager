@@ -1,7 +1,7 @@
 ﻿using GeoserverManager.Geoserver.Rest.Client.Converter;
 using Newtonsoft.Json;
 
-namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
+namespace GeoserverManager.Geoserver.Rest.Client.Request.FeatureType
 {
     public class RequestFeatureType : IRequestFeatureType
     {

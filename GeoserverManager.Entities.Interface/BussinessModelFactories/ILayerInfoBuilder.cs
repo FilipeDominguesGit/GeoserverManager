@@ -12,6 +12,7 @@ namespace GeoserverManager.Entities.Interface.BussinessModelFactories
         ILayerInfoBuilder WithSql(string value);
         ILayerInfoBuilder WithWorkspace(string value);
         ILayerInfoBuilder WithDatastore(string value);
+        ILayerInfoBuilder WithGeometry(string value);
         ILayerInfoBuilder WithLayerStatus(LayerStatus value);
     }
 }

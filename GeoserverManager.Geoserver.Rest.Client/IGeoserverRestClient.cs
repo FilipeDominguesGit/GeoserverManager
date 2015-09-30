@@ -11,5 +11,6 @@ namespace GeoserverManager.Geoserver.Rest.Client
         IWorkspacesRoot GetAllWorkSpaces();
         IGeoserverRestResponse GetLayerInfoBy(string datastore, string workspace, string layername);
         IGeoserverRestResponse PostLayer(ILayerInfo layer);
+        IGeoserverRestResponse PutLayer(ILayerInfo layer);
     }
 }

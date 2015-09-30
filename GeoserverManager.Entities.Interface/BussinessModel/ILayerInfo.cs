@@ -10,6 +10,7 @@ namespace GeoserverManager.Entities.Interface.BussinessModel
         string Srs { get; }
         string Sql { get; }
         string Workspace { get; }
+        string Geometry { get; }
         LayerStatus LayerStatus { get; }
 
 

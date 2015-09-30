@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Request.Layer
 {
-    public class RequestVirtualTable: IRequestVirtualTable
+    public class RequestDefaultStyle: IRequestDefaultStyle
     {
         public string Name { get; set; }
-        public string Sql { get; set; }
-        public string EscapeSql { get; set; }
     }
 }

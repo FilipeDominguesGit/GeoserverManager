@@ -45,15 +45,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Converter\ComplexJsonConverter.cs" />
-    <Compile Include="Translator\LayerInfoToLayerRootTranslator.cs" />
-    <Compile Include="Request\Layer\IRequestEntry.cs" />
-    <Compile Include="Request\Layer\IRequestFeatureType.cs" />
-    <Compile Include="Request\Layer\ILayerRoot.cs" />
-    <Compile Include="Request\Layer\RequestEntry.cs" />
-    <Compile Include="Request\Layer\RequestFeatureType.cs" />
-    <Compile Include="Request\Layer\IRequestMetadata.cs" />
-    <Compile Include="Request\Layer\IRequestVirtualTable.cs" />
-    <Compile Include="Request\Layer\LayerRoot.cs" />
+    <Compile Include="Converter\EntryJsonConverter.cs" />
+    <Compile Include="Request\Layer\IRequestDefaultStyle.cs" />
+    <Compile Include="Request\Layer\IRequestLayer.cs" />
+    <Compile Include="Request\Layer\IRequestLayerRoot.cs" />
+    <Compile Include="Request\Layer\RequestDefaultStyle.cs" />
+    <Compile Include="Request\Layer\RequestLayer.cs" />
+    <Compile Include="Request\Layer\RequestLayerRoot.cs" />
+    <Compile Include="Translator\LayerInfoTranslator.cs" />
+    <Compile Include="Request\FeatureType\IRequestEntry.cs" />
+    <Compile Include="Request\FeatureType\IRequestFeatureType.cs" />
+    <Compile Include="Request\FeatureType\IRequestFeatureTypeRoot.cs" />
+    <Compile Include="Request\FeatureType\RequestEntry.cs" />
+    <Compile Include="Request\FeatureType\RequestFeatureType.cs" />
+    <Compile Include="Request\FeatureType\IRequestMetadata.cs" />
+    <Compile Include="Request\FeatureType\IRequestVirtualTable.cs" />
+    <Compile Include="Request\FeatureType\RequestFeatureTypeRoot.cs" />
     <Compile Include="Datamodel\FeatureTypes\Attributes.cs" />
     <Compile Include="Datamodel\FeatureTypes\Entry.cs" />
     <Compile Include="Datamodel\FeatureTypes\FeatureType.cs" />
@@ -105,8 +112,8 @@
     <Compile Include="GeoserverRestClient.cs" />
     <Compile Include="IGeoserverRestClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Request\Layer\RequestMetadata.cs" />
-    <Compile Include="Request\Layer\RequestVirtualTable.cs" />
+    <Compile Include="Request\FeatureType\RequestMetadata.cs" />
+    <Compile Include="Request\FeatureType\RequestVirtualTable.cs" />
     <Compile Include="Response\GeoserverRestResponse.cs" />
     <Compile Include="Response\IGeoserverRestResponse.cs" />
   </ItemGroup>

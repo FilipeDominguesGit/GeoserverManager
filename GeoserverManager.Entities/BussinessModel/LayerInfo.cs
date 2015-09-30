@@ -14,6 +14,7 @@ namespace GeoserverManager.Entities.BussinessModel
         public string Sql { get; internal set; }
         public string Workspace { get; internal set; }
         public string Datastore { get; internal set; }
+        public string Geometry { get; internal set; }
         public LayerStatus LayerStatus { get; internal set; }
 
         public void ChangeLayerStatus(LayerStatus layerStatus)
@@ -103,6 +104,10 @@ namespace GeoserverManager.Entities.BussinessModel
             }
 
             public string Datastore
+            {
+                get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
+            }
+            public string Geometry
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }

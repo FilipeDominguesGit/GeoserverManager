@@ -1,7 +1,10 @@
-﻿namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
+﻿using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+
+namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public interface IMetadata
     {
-        IEntry Entry { get; set; }
+       IEnumerable<IEntry> Entry { get; set; }
     }
 }

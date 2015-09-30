@@ -83,11 +83,32 @@ namespace GeoserverManager.Geoserver.Rest.Client
             var uri = $@"workspaces/{layer.Workspace}/datastores/{layer.Datastore}/featuretypes";
             var request = new ServiceRequest(uri);
 
-            var layerRoot = LayerInfoToLayerRootTranslator.TranslateFrom(layer);
+            var featureTypeRoot = LayerInfoTranslator.TranslateToRequestFeatureTypeRoot(layer);
+
+            request.Body = JsonConvert.SerializeObject(featureTypeRoot);
+
+            var response = restService.Post(request);
+
+
+            var output = new GeoserverRestResponse
+            {
+                Data = response.Data,
+                Code = response.StatusCode
+            };
+
+            return output;
+        }
+
+        public IGeoserverRestResponse PutLayer(ILayerInfo layer)
+        {
+            var uri = $@"layers/{layer.Name}";
+            var request = new ServiceRequest(uri);
+
+            var layerRoot = LayerInfoTranslator.TranslateToRequestLayerRoot(layer);
 
             request.Body = JsonConvert.SerializeObject(layerRoot);
 
-            var response = restService.Post(request);
+            var response = restService.Put(request);
 
 
             var output = new GeoserverRestResponse
