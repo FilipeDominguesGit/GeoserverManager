@@ -39,8 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BussinessModelFactories\LayerInfoBuilder.cs" />
-    <Compile Include="BussinessModel\LayerInfo.cs" />
+    <Compile Include="BussinessModelFactories\FeatureTypeInfoBuilder.cs" />
+    <Compile Include="BussinessModel\FeatureTypeInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -40,16 +40,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ILayerInfoRepository.cs" />
-    <Compile Include="UseCases\Layers\IGetAllLayersUseCase.cs" />
-    <Compile Include="UseCases\Layers\IGetLayerStatusUseCase.cs" />
-    <Compile Include="UseCases\Layers\IUploadLayerToGeoserverUseCase.cs" />
-    <Compile Include="UseCases\Layers\Requests\IGetAllLayersRequests.cs" />
-    <Compile Include="UseCases\Layers\Requests\IGetLayerStatusRequest.cs" />
-    <Compile Include="UseCases\Layers\Requests\IUploadLayerToGeoserverRequest.cs" />
-    <Compile Include="UseCases\Layers\Responses\IGetAllLayersResponse.cs" />
-    <Compile Include="UseCases\Layers\Responses\IGetLayerStatusResponse.cs" />
-    <Compile Include="UseCases\Layers\Responses\IUploadLayerToGeoserverResponse.cs" />
+    <Compile Include="Repositories\IFeatureTypeInfoRepository.cs" />
+    <Compile Include="UseCases\Layers\IGetAllFeatureTypesInfosUseCase.cs" />
+    <Compile Include="UseCases\Layers\IGetFeatureTypeInfoStatusUseCase.cs" />
+    <Compile Include="UseCases\Layers\IUploadFeatureTypeInfoToGeoserverUseCase.cs" />
+    <Compile Include="UseCases\Layers\Requests\IGetAllFeatureTypesInfosRequests.cs" />
+    <Compile Include="UseCases\Layers\Requests\IGetFeatureTypeInfoStatusRequest.cs" />
+    <Compile Include="UseCases\Layers\Requests\IUploadFeatureTypeInfoToGeoserverRequest.cs" />
+    <Compile Include="UseCases\Layers\Responses\IGetAllFeatureTypesInfosResponse.cs" />
+    <Compile Include="UseCases\Layers\Responses\IGetFeatureTypeInfoStatusResponse.cs" />
+    <Compile Include="UseCases\Layers\Responses\IUploadFeatureTypeInfoToGeoserverResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

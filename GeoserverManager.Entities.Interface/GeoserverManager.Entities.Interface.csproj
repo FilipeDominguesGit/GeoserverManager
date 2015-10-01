@@ -39,10 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BussinessModelFactories\ILayerInfoBuilder.cs" />
-    <Compile Include="BussinessModelFactories\ILayerInfoBuilderPrototype.cs" />
-    <Compile Include="BussinessModel\Enums\LayerStatus.cs" />
-    <Compile Include="BussinessModel\ILayerInfo.cs" />
+    <Compile Include="BussinessModelFactories\IFeatureTypeInfoBuilder.cs" />
+    <Compile Include="BussinessModelFactories\IFeatureTypeInfoBuilderPrototype.cs" />
+    <Compile Include="BussinessModel\Enums\FeatureTypeInfoStatus.cs" />
+    <Compile Include="BussinessModel\IFeatureTypeInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

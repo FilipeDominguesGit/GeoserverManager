@@ -7,7 +7,7 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
 {
     public static class CreateLayerInfoFromEntities
     {
-        public static ILayerInfo CreateLayerInfo(ILayerEntityRoot entity, ILayerInfoBuilder builder)
+        public static IFeatureTypeInfo CreateLayerInfo(ILayerEntityRoot entity, IFeatureTypeInfoBuilder builder)
         {
             if (entity == null)
                 return builder.BuildNullObject();
@@ -15,7 +15,7 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
             return Create(entity, builder);
         }
 
-        private static ILayerInfo Create(ILayerEntityRoot entity, ILayerInfoBuilder builder)
+        private static IFeatureTypeInfo Create(ILayerEntityRoot entity, IFeatureTypeInfoBuilder builder)
         {
             builder = builder.WithName(entity.Layer.Name)
                 .WithSrs(entity.Layer.Srs)
@@ -23,7 +23,7 @@ namespace GeoserverManager.DAL.UI.Repositories.Factories
                 .WithDatastore(entity.Layer.Datastore)
                 .WithWorkspace(entity.Layer.Workspace)
                 .WithGeometry(entity.Layer.Geometry)
-                .WithLayerStatus(LayerStatus.Unknown);
+                .WithLayerStatus(FeatureTypeInfoStatus.Unknown);
 
             return builder.Build();
         }

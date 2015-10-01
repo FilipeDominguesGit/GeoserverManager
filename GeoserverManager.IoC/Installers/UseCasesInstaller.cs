@@ -4,7 +4,7 @@ using Castle.Windsor;
 using GeoserverManager.Geoserver.Rest.Client;
 using GeoserverManager.UseCases.Interface.Repositories;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
-using GeoserverManager.UseCases.UseCases.Layers;
+using GeoserverManager.UseCases.UseCases.FeatureTypes;
 
 namespace GeoserverManager.IoC.Installers
 {
@@ -13,15 +13,15 @@ namespace GeoserverManager.IoC.Installers
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(Component
-                .For<IGetAllLayersUseCase>()
-                .ImplementedBy<GetAllLayersUseCase>()
+                .For<IGetAllFeatureTypesInfosUseCase>()
+                .ImplementedBy<GetAllFeatureTypesInfosUseCase>()
                // .DependsOn(new
                 //{
                 //    repository = container.Resolve<ILayerInfoRepository>()
                 //})
                  .DynamicParameters((p, k) =>
                  {
-                     var repository = container.Resolve<ILayerInfoRepository>();
+                     var repository = container.Resolve<IFeatureTypeInfoRepository>();
 
                      k["repository"] = repository;
                    
@@ -30,8 +30,8 @@ namespace GeoserverManager.IoC.Installers
 
 
             container.Register(Component
-                .For<IGetLayerStatusUseCase>()
-                .ImplementedBy<GetLayerStatusUseCase>()
+                .For<IGetFeatureTypeInfoStatusUseCase>()
+                .ImplementedBy<GetFeatureTypeInfoStatusUseCase>()
                 //.DependsOn(new
                 //{
                 //    restClient = container.Resolve<IGeoserverRestClient>()
@@ -46,8 +46,8 @@ namespace GeoserverManager.IoC.Installers
                 .LifestyleTransient());
 
             container.Register(Component
-             .For<IUploadLayerToGeoserverUseCase>()
-             .ImplementedBy<UploadLayerToGeoserverUseCase>()
+             .For<IUploadFeatureTypeInfoToGeoserverUseCase>()
+             .ImplementedBy<UploadFeatureTypeInfoToGeoserverUseCase>()
              //.DependsOn(new
              //{
              //    restClient = container.Resolve<IGeoserverRestClient>()

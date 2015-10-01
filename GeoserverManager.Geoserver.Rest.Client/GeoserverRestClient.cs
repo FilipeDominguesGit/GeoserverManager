@@ -78,7 +78,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
             return output;
         }
 
-        public IGeoserverRestResponse PostLayer(ILayerInfo layer)
+        public IGeoserverRestResponse PostLayer(IFeatureTypeInfo layer)
         {
             var uri = $@"workspaces/{layer.Workspace}/datastores/{layer.Datastore}/featuretypes";
             var request = new ServiceRequest(uri);
@@ -99,7 +99,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
             return output;
         }
 
-        public IGeoserverRestResponse PutLayer(ILayerInfo layer)
+        public IGeoserverRestResponse PutLayer(IFeatureTypeInfo layer)
         {
             var uri = $@"layers/{layer.Name}";
             var request = new ServiceRequest(uri);

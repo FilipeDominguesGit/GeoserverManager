@@ -13,8 +13,8 @@ namespace GeoserverManager.IoC.Installers
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(Component
-                .For<ILayerInfoRepository>()
-                .ImplementedBy<LayerInfoRepository>()
+                .For<IFeatureTypeInfoRepository>()
+                .ImplementedBy<FeatureTypeInfoRepository>()
                 //.DependsOn(new
                 //{
                 //    gateway = container.Resolve<IGeoEntityJsonGateway>(),
@@ -23,7 +23,7 @@ namespace GeoserverManager.IoC.Installers
                 .DynamicParameters((p, k) =>
                 {
                     var gateway = container.Resolve<IGeoEntityJsonGateway>();
-                    var builderPrototype = container.Resolve<ILayerInfoBuilderPrototype>();
+                    var builderPrototype = container.Resolve<IFeatureTypeInfoBuilderPrototype>();
 
                     k["gateway"] = gateway;
                     k["builderPrototype"] = builderPrototype;

@@ -7,7 +7,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Translator
     public static class LayerInfoTranslator
     {
 
-        public static IRequestFeatureTypeRoot TranslateToRequestFeatureTypeRoot(ILayerInfo layerInfo)
+        public static IRequestFeatureTypeRoot TranslateToRequestFeatureTypeRoot(IFeatureTypeInfo layerInfo)
         {
             var layerRoot = new RequestFeatureTypeRoot
             {
@@ -39,7 +39,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Translator
             return layerRoot;
         }
 
-        public static IRequestLayerRoot TranslateToRequestLayerRoot(ILayerInfo layerInfo)
+        public static IRequestLayerRoot TranslateToRequestLayerRoot(IFeatureTypeInfo layerInfo)
         {
             return  new RequestLayerRoot()
             {

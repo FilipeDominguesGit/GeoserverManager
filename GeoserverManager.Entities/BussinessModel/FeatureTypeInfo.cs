@@ -6,18 +6,18 @@ using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 
 namespace GeoserverManager.Entities.BussinessModel
 {
-    public class LayerInfo : ILayerInfo
+    public class FeatureTypeInfo : IFeatureTypeInfo
     {
-        public static readonly ILayerInfo NULL = new NullLayerInfo();
+        public static readonly IFeatureTypeInfo NULL = new NullLayerInfo();
         public string Name { get; internal set; }
         public string Srs { get; internal set; }
         public string Sql { get; internal set; }
         public string Workspace { get; internal set; }
         public string Datastore { get; internal set; }
         public string Geometry { get; internal set; }
-        public LayerStatus LayerStatus { get; internal set; }
+        public FeatureTypeInfoStatus LayerStatus { get; internal set; }
 
-        public void ChangeLayerStatus(LayerStatus layerStatus)
+        public void ChangeLayerStatus(FeatureTypeInfoStatus layerStatus)
         {
             LayerStatus = layerStatus;
         }
@@ -61,18 +61,18 @@ namespace GeoserverManager.Entities.BussinessModel
             return property.GetGetMethod().GetParameters().Length == 0;
         }
 
-        private static bool IsNull(ILayerInfo neighbourCellsRelation)
+        private static bool IsNull(IFeatureTypeInfo neighbourCellsRelation)
         {
             return neighbourCellsRelation == NULL;
         }
 
-        public class NullLayerInfo : ILayerInfo
+        public class NullLayerInfo : IFeatureTypeInfo
         {
             public bool Equals(IBusinessModel other)
             {
                 if (other == null)
                     return false;
-                if (!(other is ILayerInfo))
+                if (!(other is IFeatureTypeInfo))
                     return false;
 
                 return IsNull();
@@ -112,12 +112,12 @@ namespace GeoserverManager.Entities.BussinessModel
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }
 
-            public LayerStatus LayerStatus
+            public FeatureTypeInfoStatus LayerStatus
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }
 
-            public void ChangeLayerStatus(LayerStatus layerStatus)
+            public void ChangeLayerStatus(FeatureTypeInfoStatus layerStatus)
             {
                 throw new InvalidOperationException();
             }

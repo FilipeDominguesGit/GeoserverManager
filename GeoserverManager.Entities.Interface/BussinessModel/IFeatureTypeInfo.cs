@@ -3,7 +3,7 @@ using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 
 namespace GeoserverManager.Entities.Interface.BussinessModel
 {
-    public interface ILayerInfo : IBusinessModel
+    public interface IFeatureTypeInfo : IBusinessModel
     {
         string Datastore { get; }
         string Name { get; }
@@ -11,9 +11,9 @@ namespace GeoserverManager.Entities.Interface.BussinessModel
         string Sql { get; }
         string Workspace { get; }
         string Geometry { get; }
-        LayerStatus LayerStatus { get; }
+        FeatureTypeInfoStatus LayerStatus { get; }
 
 
-        void ChangeLayerStatus(LayerStatus layerStatus);
+        void ChangeLayerStatus(FeatureTypeInfoStatus layerStatus);
     }
 }

@@ -10,7 +10,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
         IGlobalSettingsRoot GetGlobalSettings();
         IWorkspacesRoot GetAllWorkSpaces();
         IGeoserverRestResponse GetLayerInfoBy(string datastore, string workspace, string layername);
-        IGeoserverRestResponse PostLayer(ILayerInfo layer);
-        IGeoserverRestResponse PutLayer(ILayerInfo layer);
+        IGeoserverRestResponse PostLayer(IFeatureTypeInfo layer);
+        IGeoserverRestResponse PutLayer(IFeatureTypeInfo layer);
     }
 }

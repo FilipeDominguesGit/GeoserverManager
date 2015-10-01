@@ -10,12 +10,12 @@ using GeoserverManager.UseCases.Interface.Repositories;
 
 namespace GeoserverManager.DAL.UI.Repositories
 {
-    public class LayerInfoRepository : ILayerInfoRepository
+    public class FeatureTypeInfoRepository : IFeatureTypeInfoRepository
     {
-        private readonly ILayerInfoBuilderPrototype builderPrototype;
+        private readonly IFeatureTypeInfoBuilderPrototype builderPrototype;
         private readonly IGeoGateway gateway;
 
-        public LayerInfoRepository(IGeoGateway gateway, ILayerInfoBuilderPrototype builderPrototype)
+        public FeatureTypeInfoRepository(IGeoGateway gateway, IFeatureTypeInfoBuilderPrototype builderPrototype)
         {
             if (gateway == null)
                 throw new ArgumentNullException("gateway", "gateway cannot be null");
@@ -26,7 +26,7 @@ namespace GeoserverManager.DAL.UI.Repositories
             this.builderPrototype = builderPrototype;
         }
 
-        public IEnumerable<ILayerInfo> GetAllLayersInfos()
+        public IEnumerable<IFeatureTypeInfo> GetAllLayersInfos()
         {
             var output = gateway.GetAllLayers();
 
@@ -36,7 +36,7 @@ namespace GeoserverManager.DAL.UI.Repositories
             return output.Select(CreateLayerInfoFromEntity);
         }
 
-        private ILayerInfo CreateLayerInfoFromEntity(ILayerEntityRoot entity)
+        private IFeatureTypeInfo CreateLayerInfoFromEntity(ILayerEntityRoot entity)
         {
             var builder = builderPrototype.Clone();
 

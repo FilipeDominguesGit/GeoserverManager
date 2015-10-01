@@ -10,7 +10,7 @@ using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.IoC.Container;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
-using GeoserverManager.UseCases.UseCases.Layers.Requests;
+using GeoserverManager.UseCases.UseCases.FeatureTypes.Requests;
 
 namespace GeoserverManager
 {
@@ -18,15 +18,15 @@ namespace GeoserverManager
     {
         #region Use Cases
 
-        private readonly IGetAllLayersUseCase getAllLayersUseCase;
-        private readonly IGetLayerStatusUseCase getLayerStatusUseCase;
-        private readonly IUploadLayerToGeoserverUseCase uploadLayerToGeoserverUseCase;
+        private readonly IGetAllFeatureTypesInfosUseCase getAllLayersUseCase;
+        private readonly IGetFeatureTypeInfoStatusUseCase getLayerStatusUseCase;
+        private readonly IUploadFeatureTypeInfoToGeoserverUseCase uploadLayerToGeoserverUseCase;
 
         #endregion
 
         #region Delegates
 
-        private delegate void SetRowColorDelegate(LayerStatus status, int pos);
+        private delegate void SetRowColorDelegate(FeatureTypeInfoStatus status, int pos);
 
         private delegate void SetLoadingToolStripStatusLabelTextDelegate(string text);
 
@@ -38,14 +38,14 @@ namespace GeoserverManager
         {
             InitializeComponent();
 
-            getAllLayersUseCase = IocContainer.Resolve<IGetAllLayersUseCase>();
-            getLayerStatusUseCase = IocContainer.Resolve<IGetLayerStatusUseCase>();
-            uploadLayerToGeoserverUseCase = IocContainer.Resolve<IUploadLayerToGeoserverUseCase>();
+            getAllLayersUseCase = IocContainer.Resolve<IGetAllFeatureTypesInfosUseCase>();
+            getLayerStatusUseCase = IocContainer.Resolve<IGetFeatureTypeInfoStatusUseCase>();
+            uploadLayerToGeoserverUseCase = IocContainer.Resolve<IUploadFeatureTypeInfoToGeoserverUseCase>();
         }
 
         private void LoadGrid()
         {
-            var request = new GetAllLayersRequests();
+            var request = new GetAllFeatureTypesInfosRequests();
             try
             {
                 getAllLayersUseCase.Execute(request, GetAllLayersHandler);
@@ -58,7 +58,7 @@ namespace GeoserverManager
             }
         }
 
-        private void GetAllLayersHandler(IGetAllLayersResponse obj)
+        private void GetAllLayersHandler(IGetAllFeatureTypesInfosResponse obj)
         {
             var list = obj.Layers.ToList();
 
@@ -81,7 +81,7 @@ namespace GeoserverManager
         {
             if (LayersGrid.DataSource != null && !CheckStateBackgroundWorker.IsBusy)
             {
-                var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
+                var list = LayersGrid.DataSource as IEnumerable<IFeatureTypeInfo>;
                 bt_check_state.Enabled = false;
                 bt_upload_missing.Enabled = false;
                 pb_load_layers.Visible = true;
@@ -106,7 +106,7 @@ namespace GeoserverManager
             }
         }
 
-        private void SetRowColorByStatus(LayerStatus status, int pos)
+        private void SetRowColorByStatus(FeatureTypeInfoStatus status, int pos)
         {
             if (LayersGrid.InvokeRequired)
             {
@@ -117,19 +117,19 @@ namespace GeoserverManager
             {
                 switch (status)
                 {
-                    case LayerStatus.Ok:
+                    case FeatureTypeInfoStatus.Ok:
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.Green;
                         break;
 
-                    case LayerStatus.Error:
+                    case FeatureTypeInfoStatus.Error:
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.Red;
                         break;
 
-                    case LayerStatus.Missing:
+                    case FeatureTypeInfoStatus.Missing:
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.Orange;
                         break;
 
-                    case LayerStatus.ConnectionError:
+                    case FeatureTypeInfoStatus.ConnectionError:
                         LayersGrid.Rows[pos].DefaultCellStyle.BackColor = Color.CadetBlue;
                         break;
 
@@ -156,7 +156,7 @@ namespace GeoserverManager
 
         private void CheckStateBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            var list = e.Argument as List<ILayerInfo>;
+            var list = e.Argument as List<IFeatureTypeInfo>;
             SetLoadingToolStripStatusLabelText("...Loading");
 
             for (var i = 0; i < list.Count; i++)
@@ -166,7 +166,7 @@ namespace GeoserverManager
                 {
                     SetCurrentGridRowSelection(i1);
 
-                    getLayerStatusUseCase.Execute(new GetLayerStatusRequest {Layer = list[i]},
+                    getLayerStatusUseCase.Execute(new GetFeatureTypeInfoStatusRequest {Layer = list[i]},
                         response => GetLayerStatusHandler(response, i1, list));
                     CheckStateBackgroundWorker.ReportProgress(((i + 1)*100)/list.Count);
                 }
@@ -182,7 +182,7 @@ namespace GeoserverManager
             }
         }
 
-        private void GetLayerStatusHandler(IGetLayerStatusResponse getLayerStatusResponse, int pos, List<ILayerInfo> list)
+        private void GetLayerStatusHandler(IGetFeatureTypeInfoStatusResponse getLayerStatusResponse, int pos, List<IFeatureTypeInfo> list)
         {
             list[pos].ChangeLayerStatus(getLayerStatusResponse.Status);
             SetRowColorByStatus(getLayerStatusResponse.Status, pos);
@@ -218,7 +218,7 @@ namespace GeoserverManager
         {
             if (LayersGrid.DataSource != null && !UploadLayerToGeoserverBackgroundWorker.IsBusy)
             {
-                var list = LayersGrid.DataSource as IEnumerable<ILayerInfo>;
+                var list = LayersGrid.DataSource as IEnumerable<IFeatureTypeInfo>;
                 bt_check_state.Enabled = false;
                 bt_upload_missing.Enabled = false;
                 pb_load_layers.Visible = true;
@@ -232,7 +232,7 @@ namespace GeoserverManager
 
         }
 
-        private void ResponseBoundary(IUploadLayerToGeoserverResponse uploadLayerToGeoserverResponse, int pos, List<ILayerInfo> list)
+        private void ResponseBoundary(IUploadFeatureTypeInfoToGeoserverResponse uploadLayerToGeoserverResponse, int pos, List<IFeatureTypeInfo> list)
         {
             list[pos].ChangeLayerStatus(uploadLayerToGeoserverResponse.Status);
             SetRowColorByStatus(uploadLayerToGeoserverResponse.Status, pos);
@@ -240,7 +240,7 @@ namespace GeoserverManager
 
         private void UploadLayerToGeoserverBackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            var list = e.Argument as List<ILayerInfo>;
+            var list = e.Argument as List<IFeatureTypeInfo>;
             SetLoadingToolStripStatusLabelText("...Uploading");
 
             for (var i = 0; i < list.Count; i++)
@@ -250,9 +250,9 @@ namespace GeoserverManager
                 {
                     SetCurrentGridRowSelection(i1);
 
-                    if (list[i].LayerStatus == LayerStatus.Missing)
+                    if (list[i].LayerStatus == FeatureTypeInfoStatus.Missing)
                     {
-                        uploadLayerToGeoserverUseCase.Execute(new UploadLayerToGeoserverRequest(list[i]),
+                        uploadLayerToGeoserverUseCase.Execute(new UploadFeatureTypeInfoToGeoserverRequest(list[i]),
                             response => ResponseBoundary(response, i1, list));
                        // Thread.Sleep(1000);
                     }

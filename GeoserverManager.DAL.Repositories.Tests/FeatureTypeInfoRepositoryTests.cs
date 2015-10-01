@@ -14,7 +14,7 @@ using Telerik.JustMock;
 namespace GeoserverManager.DAL.Repositories.Tests
 {
     [TestFixture]
-    public class LayerInfoRepositoryTests
+    public class FeatureTypeInfoRepositoryTests
     {
         [TestFixture]
         public class ConstructorTests
@@ -23,9 +23,9 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Should_build_repository_When_gateway_is_valid()
             {
                 var gateway = Mock.Create<IGeoGateway>();
-                var prototype = Mock.Create<ILayerInfoBuilderPrototype>();
+                var prototype = Mock.Create<IFeatureTypeInfoBuilderPrototype>();
 
-                var repo = new LayerInfoRepository(gateway, prototype);
+                var repo = new FeatureTypeInfoRepository(gateway, prototype);
 
                 Assert.IsNotNull(repo);
             }
@@ -33,7 +33,7 @@ namespace GeoserverManager.DAL.Repositories.Tests
             [Test]
             public void Should_throw_exception_When_gateway_is_null()
             {
-                Assert.Throws<ArgumentNullException>(() => new LayerInfoRepository(null, null));
+                Assert.Throws<ArgumentNullException>(() => new FeatureTypeInfoRepository(null, null));
             }
         }
 
@@ -44,8 +44,8 @@ namespace GeoserverManager.DAL.Repositories.Tests
             public void Setup()
             {
                 gateway = Mock.Create<IGeoGateway>();
-                builderPrototype = new LayerInfoBuilder();
-                repository = new LayerInfoRepository(gateway, builderPrototype);
+                builderPrototype = new FeatureTypeInfoBuilder();
+                repository = new FeatureTypeInfoRepository(gateway, builderPrototype);
             }
 
             [TearDown]
@@ -56,9 +56,9 @@ namespace GeoserverManager.DAL.Repositories.Tests
                 builderPrototype = null;
             }
 
-            private ILayerInfoBuilderPrototype builderPrototype;
+            private IFeatureTypeInfoBuilderPrototype builderPrototype;
             private IGeoGateway gateway;
-            private ILayerInfoRepository repository;
+            private IFeatureTypeInfoRepository repository;
 
             [Test]
             public void Should_return_list_with_layerinfo_When_db_has_records()
@@ -79,7 +79,7 @@ namespace GeoserverManager.DAL.Repositories.Tests
 
                 //assert
                 Assert.IsNotEmpty(list);
-                Assert.IsInstanceOf<ILayerInfo>(layerInfo);
+                Assert.IsInstanceOf<IFeatureTypeInfo>(layerInfo);
             }
         }
     }

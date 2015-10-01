@@ -3,8 +3,8 @@ using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Requests
 {
-    public interface IGetLayerStatusRequest : IUseCaseRequest
+    public interface IGetFeatureTypeInfoStatusRequest : IUseCaseRequest
     {
-        ILayerInfo Layer { get; set; }
+        IFeatureTypeInfo Layer { get; set; }
     }
 }

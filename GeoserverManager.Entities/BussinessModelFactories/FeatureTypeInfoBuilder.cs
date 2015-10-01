@@ -5,65 +5,65 @@ using GeoserverManager.Entities.Interface.BussinessModelFactories;
 
 namespace GeoserverManager.Entities.BussinessModelFactories
 {
-    public class LayerInfoBuilder : ILayerInfoBuilder, ILayerInfoBuilderPrototype
+    public class FeatureTypeInfoBuilder : IFeatureTypeInfoBuilder, IFeatureTypeInfoBuilderPrototype
     {
-        private readonly LayerInfo layerInfo = new LayerInfo();
+        private readonly FeatureTypeInfo layerInfo = new FeatureTypeInfo();
 
-        public ILayerInfo Build()
+        public IFeatureTypeInfo Build()
         {
             return layerInfo;
         }
 
-        public ILayerInfo BuildNullObject()
+        public IFeatureTypeInfo BuildNullObject()
         {
-            return LayerInfo.NULL;
+            return FeatureTypeInfo.NULL;
         }
 
-        public ILayerInfoBuilder WithName(string value)
+        public IFeatureTypeInfoBuilder WithName(string value)
         {
             layerInfo.Name = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithSrs(string value)
+        public IFeatureTypeInfoBuilder WithSrs(string value)
         {
             layerInfo.Srs = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithSql(string value)
+        public IFeatureTypeInfoBuilder WithSql(string value)
         {
             layerInfo.Sql = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithWorkspace(string value)
+        public IFeatureTypeInfoBuilder WithWorkspace(string value)
         {
             layerInfo.Workspace = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithDatastore(string value)
+        public IFeatureTypeInfoBuilder WithDatastore(string value)
         {
             layerInfo.Datastore = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithGeometry(string value)
+        public IFeatureTypeInfoBuilder WithGeometry(string value)
         {
             layerInfo.Geometry = value;
             return this;
         }
 
-        public ILayerInfoBuilder WithLayerStatus(LayerStatus value)
+        public IFeatureTypeInfoBuilder WithLayerStatus(FeatureTypeInfoStatus value)
         {
             layerInfo.LayerStatus = value;
             return this;
         }
 
-        public ILayerInfoBuilder Clone()
+        public IFeatureTypeInfoBuilder Clone()
         {
-            return new LayerInfoBuilder();
+            return new FeatureTypeInfoBuilder();
         }
     }
 }

@@ -8,8 +8,8 @@ using GeoserverManager.UseCases.Base.Interface.RequestBoundary;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Requests
 {
-    public interface IUploadLayerToGeoserverRequest : IUseCaseRequest
+    public interface IUploadFeatureTypeInfoToGeoserverRequest : IUseCaseRequest
     {
-        ILayerInfo Layer { get; set; }
+        IFeatureTypeInfo Layer { get; set; }
     }
 }

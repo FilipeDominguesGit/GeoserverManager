@@ -1,6 +1,6 @@
 ﻿namespace GeoserverManager.Entities.Interface.BussinessModel.Enums
 {
-    public enum LayerStatus
+    public enum FeatureTypeInfoStatus
     {
         Unknown,
         Ok,

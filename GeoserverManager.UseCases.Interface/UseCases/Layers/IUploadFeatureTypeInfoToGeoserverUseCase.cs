@@ -9,7 +9,7 @@ using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers
 {
-    public interface IUploadLayerToGeoserverUseCase : IUseCaseRequestBoundary<IUploadLayerToGeoserverRequest, IUploadLayerToGeoserverResponse>
+    public interface IUploadFeatureTypeInfoToGeoserverUseCase : IUseCaseRequestBoundary<IUploadFeatureTypeInfoToGeoserverRequest, IUploadFeatureTypeInfoToGeoserverResponse>
     {
     }
 }

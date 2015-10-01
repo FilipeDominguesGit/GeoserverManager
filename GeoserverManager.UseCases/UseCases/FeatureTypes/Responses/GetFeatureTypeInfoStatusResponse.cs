@@ -2,38 +2,38 @@
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 
-namespace GeoserverManager.UseCases.UseCases.Layers.Responses
+namespace GeoserverManager.UseCases.UseCases.FeatureTypes.Responses
 {
-    public class GetLayerStatusResponse : IGetLayerStatusResponse
+    public class GetFeatureTypeInfoStatusResponse : IGetFeatureTypeInfoStatusResponse
     {
-        public static IGetLayerStatusResponse NULL = new NullGetLayerStatusResponse();
+        public static IGetFeatureTypeInfoStatusResponse NULL = new NullGetLayerStatusResponse();
 
-        public GetLayerStatusResponse(LayerStatus status)
+        public GetFeatureTypeInfoStatusResponse(FeatureTypeInfoStatus status)
         {
          
             Status = status;
         }
 
-        public LayerStatus Status { get; }
+        public FeatureTypeInfoStatus Status { get; }
 
         public bool IsNull()
         {
             return IsNull(this);
         }
 
-        private static bool IsNull(IGetLayerStatusResponse response)
+        private static bool IsNull(IGetFeatureTypeInfoStatusResponse response)
         {
             return response == NULL;
         }
 
-        private class NullGetLayerStatusResponse : IGetLayerStatusResponse
+        private class NullGetLayerStatusResponse : IGetFeatureTypeInfoStatusResponse
         {
             public bool IsNull()
             {
                 return true;
             }
 
-            public LayerStatus Status
+            public FeatureTypeInfoStatus Status
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }

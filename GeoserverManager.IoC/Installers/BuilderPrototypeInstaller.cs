@@ -11,8 +11,8 @@ namespace GeoserverManager.IoC.Installers
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(Component
-                .For<ILayerInfoBuilderPrototype>()
-                .ImplementedBy<LayerInfoBuilder>()
+                .For<IFeatureTypeInfoBuilderPrototype>()
+                .ImplementedBy<FeatureTypeInfoBuilder>()
                 .LifestyleTransient());
         }
     }

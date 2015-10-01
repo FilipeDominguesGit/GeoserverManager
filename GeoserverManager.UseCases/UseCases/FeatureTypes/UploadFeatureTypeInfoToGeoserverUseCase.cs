@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.Geoserver.Rest.Client;
 using GeoserverManager.Geoserver.Rest.Client.Response;
@@ -11,21 +7,21 @@ using GeoserverManager.UseCases.Base.Interface.Exceptions;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
-using GeoserverManager.UseCases.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.UseCases.FeatureTypes.Responses;
 
-namespace GeoserverManager.UseCases.UseCases.Layers
+namespace GeoserverManager.UseCases.UseCases.FeatureTypes
 {
-    public class UploadLayerToGeoserverUseCase: IUploadLayerToGeoserverUseCase
+    public class UploadFeatureTypeInfoToGeoserverUseCase: IUploadFeatureTypeInfoToGeoserverUseCase
     {
         private readonly IGeoserverRestClient restClient;
 
-        public UploadLayerToGeoserverUseCase(IGeoserverRestClient restClient)
+        public UploadFeatureTypeInfoToGeoserverUseCase(IGeoserverRestClient restClient)
         {
             this.restClient = restClient;
         }
 
 
-        public void Execute(IUploadLayerToGeoserverRequest request, Action<IUploadLayerToGeoserverResponse> responseBoundary)
+        public void Execute(IUploadFeatureTypeInfoToGeoserverRequest request, Action<IUploadFeatureTypeInfoToGeoserverResponse> responseBoundary)
         {
             if (request == null)
                 throw new ArgumentNullException("request", "Use case request cannot be null!");
@@ -39,10 +35,10 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
                 var status = GetStatusFromResponse(response);
 
-                if (status == LayerStatus.Ok)
+                if (status == FeatureTypeInfoStatus.Ok)
                     restClient.PutLayer(request.Layer);
 
-                responseBoundary(new UploadLayerToGeoserverResponse(status));
+                responseBoundary(new UploadFeatureTypeInfoToGeoserverResponse(status));
             }
             catch (Exception ex)
             {
@@ -50,29 +46,29 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             }
         }
 
-        private LayerStatus GetStatusFromResponse(IGeoserverRestResponse response)
+        private FeatureTypeInfoStatus GetStatusFromResponse(IGeoserverRestResponse response)
         {
-            var status = LayerStatus.Unknown;
+            var status = FeatureTypeInfoStatus.Unknown;
 
             if (response.Code == HttpStatusCode.OK)
-                status = LayerStatus.Ok;
+                status = FeatureTypeInfoStatus.Ok;
             if (response.Code == HttpStatusCode.Created)
-                status = LayerStatus.Ok;
+                status = FeatureTypeInfoStatus.Ok;
 
             if (response.Code == HttpStatusCode.NotFound)
             {
                 if (response.IsMissingDataStore)
-                    status = LayerStatus.DatastoreNotFound;
+                    status = FeatureTypeInfoStatus.DatastoreNotFound;
 
                 if (response.IsMissingWorkSpace)
-                    status = LayerStatus.WorkspaceNotFound;
+                    status = FeatureTypeInfoStatus.WorkspaceNotFound;
 
                 if (response.IsMissingFeatureType)
-                    status = LayerStatus.Missing;
+                    status = FeatureTypeInfoStatus.Missing;
                 
             }
             if (response.Code == 0)
-                status = LayerStatus.ConnectionError;
+                status = FeatureTypeInfoStatus.ConnectionError;
 
             return status;
         }

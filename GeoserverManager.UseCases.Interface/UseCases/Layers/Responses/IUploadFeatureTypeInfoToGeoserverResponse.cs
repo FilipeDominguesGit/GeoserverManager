@@ -4,8 +4,8 @@ using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Responses
 {
-    public interface IUploadLayerToGeoserverResponse : IUseCaseResponse
+    public interface IUploadFeatureTypeInfoToGeoserverResponse : IUseCaseResponse
     {
-        LayerStatus Status { get; }
+        FeatureTypeInfoStatus Status { get; }
     }
 }

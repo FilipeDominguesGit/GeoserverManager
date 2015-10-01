@@ -7,20 +7,20 @@ using GeoserverManager.UseCases.Base.Interface.Exceptions;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
-using GeoserverManager.UseCases.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.UseCases.FeatureTypes.Responses;
 
-namespace GeoserverManager.UseCases.UseCases.Layers
+namespace GeoserverManager.UseCases.UseCases.FeatureTypes
 {
-    public class GetLayerStatusUseCase : IGetLayerStatusUseCase
+    public class GetFeatureTypeInfoStatusUseCase : IGetFeatureTypeInfoStatusUseCase
     {
         private readonly IGeoserverRestClient restClient;
 
-        public GetLayerStatusUseCase(IGeoserverRestClient restClient)
+        public GetFeatureTypeInfoStatusUseCase(IGeoserverRestClient restClient)
         {
             this.restClient = restClient;
         }
 
-        public void Execute(IGetLayerStatusRequest request, Action<IGetLayerStatusResponse> responseBoundary)
+        public void Execute(IGetFeatureTypeInfoStatusRequest request, Action<IGetFeatureTypeInfoStatusResponse> responseBoundary)
         {
             if (request == null)
                 throw new ArgumentNullException("request", "Use case request cannot be null!");
@@ -34,7 +34,7 @@ namespace GeoserverManager.UseCases.UseCases.Layers
 
                 var status = GetStatusFromResponse(response);
 
-                responseBoundary(new GetLayerStatusResponse(status));
+                responseBoundary(new GetFeatureTypeInfoStatusResponse(status));
             }
             catch (Exception ex)
             {
@@ -42,26 +42,26 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             }
         }
 
-        private LayerStatus GetStatusFromResponse(IGeoserverRestResponse response)
+        private FeatureTypeInfoStatus GetStatusFromResponse(IGeoserverRestResponse response)
         {
-            var status = LayerStatus.Unknown;
+            var status = FeatureTypeInfoStatus.Unknown;
 
             if (response.Code == HttpStatusCode.OK)
-                status = LayerStatus.Ok;
+                status = FeatureTypeInfoStatus.Ok;
 
             if (response.Code == HttpStatusCode.NotFound)
             {
                 if (response.IsMissingDataStore)
-                    status = LayerStatus.DatastoreNotFound;
+                    status = FeatureTypeInfoStatus.DatastoreNotFound;
 
                 if (response.IsMissingWorkSpace)
-                    status = LayerStatus.WorkspaceNotFound;
+                    status = FeatureTypeInfoStatus.WorkspaceNotFound;
 
                 if (response.IsMissingFeatureType)
-                    status = LayerStatus.Missing;
+                    status = FeatureTypeInfoStatus.Missing;
             }
             if (response.Code == 0)
-                status = LayerStatus.ConnectionError;
+                status = FeatureTypeInfoStatus.ConnectionError;
 
             return status;
         }

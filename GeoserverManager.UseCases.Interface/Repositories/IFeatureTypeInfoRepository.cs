@@ -3,8 +3,8 @@ using GeoserverManager.Entities.Interface.BussinessModel;
 
 namespace GeoserverManager.UseCases.Interface.Repositories
 {
-    public interface ILayerInfoRepository
+    public interface IFeatureTypeInfoRepository
     {
-        IEnumerable<ILayerInfo> GetAllLayersInfos();
+        IEnumerable<IFeatureTypeInfo> GetAllLayersInfos();
     }
 }

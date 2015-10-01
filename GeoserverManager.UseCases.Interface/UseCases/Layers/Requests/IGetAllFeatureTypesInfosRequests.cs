@@ -2,7 +2,7 @@
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Requests
 {
-    public interface IGetAllLayersRequests : IUseCaseRequest
+    public interface IGetAllFeatureTypesInfosRequests : IUseCaseRequest
     {
     }
 }

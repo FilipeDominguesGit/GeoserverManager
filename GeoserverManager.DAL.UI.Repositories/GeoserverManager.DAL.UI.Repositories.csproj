@@ -44,7 +44,7 @@
     <Compile Include="ConfigData\ConfigurationDataGateway.cs" />
     <Compile Include="ConfigData\IConfigurationDataGateway.cs" />
     <Compile Include="Factories\CreateLayerInfoFromEntities.cs" />
-    <Compile Include="LayerInfoRepository.cs" />
+    <Compile Include="FeatureTypeInfoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -5,20 +5,20 @@ using GeoserverManager.UseCases.Interface.Repositories;
 using GeoserverManager.UseCases.Interface.UseCases.Layers;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
-using GeoserverManager.UseCases.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.UseCases.FeatureTypes.Responses;
 
-namespace GeoserverManager.UseCases.UseCases.Layers
+namespace GeoserverManager.UseCases.UseCases.FeatureTypes
 {
-    public class GetAllLayersUseCase : IGetAllLayersUseCase
+    public class GetAllFeatureTypesInfosUseCase : Interface.UseCases.Layers.IGetAllFeatureTypesInfosUseCase
     {
-        private readonly ILayerInfoRepository repository;
+        private readonly IFeatureTypeInfoRepository repository;
 
-        public GetAllLayersUseCase(ILayerInfoRepository repository)
+        public GetAllFeatureTypesInfosUseCase(IFeatureTypeInfoRepository repository)
         {
             this.repository = repository;
         }
 
-        public void Execute(IGetAllLayersRequests request, Action<IGetAllLayersResponse> responseBoundary)
+        public void Execute(IGetAllFeatureTypesInfosRequests request, Action<IGetAllFeatureTypesInfosResponse> responseBoundary)
         {
             if (request == null)
                 throw new ArgumentNullException("request", "Use case request cannot be null!");
@@ -28,7 +28,7 @@ namespace GeoserverManager.UseCases.UseCases.Layers
             try
             {
                 var layers = repository.GetAllLayersInfos();
-                responseBoundary(layers.Any() ? new GetAllLayersResponse(layers) : GetAllLayersResponse.NULL);
+                responseBoundary(layers.Any() ? new GetAllFeatureTypesInfosResponse(layers) : GetAllFeatureTypesInfosResponse.NULL);
             }
             catch (Exception ex)
             {

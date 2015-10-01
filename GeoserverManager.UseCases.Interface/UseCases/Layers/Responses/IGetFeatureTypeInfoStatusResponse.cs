@@ -3,8 +3,8 @@ using GeoserverManager.UseCases.Base.Interface.ResponseBoundary;
 
 namespace GeoserverManager.UseCases.Interface.UseCases.Layers.Responses
 {
-    public interface IGetLayerStatusResponse : IUseCaseResponse
+    public interface IGetFeatureTypeInfoStatusResponse : IUseCaseResponse
     {
-        LayerStatus Status { get; }
+        FeatureTypeInfoStatus Status { get; }
     }
 }

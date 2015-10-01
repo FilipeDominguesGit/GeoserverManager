@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using GeoserverManager.Entities.Interface.BussinessModel;
 using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
 
-namespace GeoserverManager.UseCases.UseCases.Layers.Responses
+namespace GeoserverManager.UseCases.UseCases.FeatureTypes.Responses
 {
-    public class GetAllLayersResponse : IGetAllLayersResponse
+    public class GetAllFeatureTypesInfosResponse : IGetAllFeatureTypesInfosResponse
     {
-        public static IGetAllLayersResponse NULL = new NullGetAllLayersResponse();
+        public static IGetAllFeatureTypesInfosResponse NULL = new NullGetAllLayersResponse();
 
-        public GetAllLayersResponse(IEnumerable<ILayerInfo> layers)
+        public GetAllFeatureTypesInfosResponse(IEnumerable<IFeatureTypeInfo> layers)
         {
             if (layers == null)
                 throw new ArgumentNullException("layers", "layers can not be null");
@@ -17,26 +17,26 @@ namespace GeoserverManager.UseCases.UseCases.Layers.Responses
             Layers = layers;
         }
 
-        public IEnumerable<ILayerInfo> Layers { get; }
+        public IEnumerable<IFeatureTypeInfo> Layers { get; }
 
         public bool IsNull()
         {
             return IsNull(this);
         }
 
-        private static bool IsNull(IGetAllLayersResponse response)
+        private static bool IsNull(IGetAllFeatureTypesInfosResponse response)
         {
             return response == NULL;
         }
 
-        private class NullGetAllLayersResponse : IGetAllLayersResponse
+        private class NullGetAllLayersResponse : IGetAllFeatureTypesInfosResponse
         {
             public bool IsNull()
             {
                 return true;
             }
 
-            public IEnumerable<ILayerInfo> Layers
+            public IEnumerable<IFeatureTypeInfo> Layers
             {
                 get { throw new InvalidOperationException("Unable to get data from NULL object!"); }
             }
