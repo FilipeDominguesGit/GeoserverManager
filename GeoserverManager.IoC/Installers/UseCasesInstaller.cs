@@ -3,8 +3,10 @@ using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using GeoserverManager.Geoserver.Rest.Client;
 using GeoserverManager.UseCases.Interface.Repositories;
-using GeoserverManager.UseCases.Interface.UseCases.Layers;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes;
+using GeoserverManager.UseCases.Interface.UseCases.Server;
 using GeoserverManager.UseCases.UseCases.FeatureTypes;
+using GeoserverManager.UseCases.UseCases.Server;
 
 namespace GeoserverManager.IoC.Installers
 {
@@ -60,6 +62,18 @@ namespace GeoserverManager.IoC.Installers
 
              })
              .LifestyleTransient());
+
+            container.Register(Component
+            .For<IGetServerStatusUseCase>()
+            .ImplementedBy<GetServerStatusUseCase>()
+            .DynamicParameters((p, k) =>
+            {
+                var restClient = container.Resolve<IGeoserverRestClient>();
+
+                k["restClient"] = restClient;
+
+            })
+            .LifestyleTransient());
         }
     }
 }

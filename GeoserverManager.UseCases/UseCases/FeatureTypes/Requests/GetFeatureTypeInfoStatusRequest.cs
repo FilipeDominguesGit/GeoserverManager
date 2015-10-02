@@ -1,5 +1,5 @@
 ﻿using GeoserverManager.Entities.Interface.BussinessModel;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Requests;
 
 namespace GeoserverManager.UseCases.UseCases.FeatureTypes.Requests
 {

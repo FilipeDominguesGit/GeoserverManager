@@ -49,6 +49,9 @@
     <Compile Include="UseCases\FeatureTypes\Responses\GetFeatureTypeInfoStatusResponse.cs" />
     <Compile Include="UseCases\FeatureTypes\Responses\UploadFeatureTypeInfoToGeoserverResponse.cs" />
     <Compile Include="UseCases\FeatureTypes\UploadFeatureTypeInfoToGeoserverUseCase.cs" />
+    <Compile Include="UseCases\Server\GetServerStatusUseCase.cs" />
+    <Compile Include="UseCases\Server\Request\GetServerStatusRequest.cs" />
+    <Compile Include="UseCases\Server\Response\GetServerStatusResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

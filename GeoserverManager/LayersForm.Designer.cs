@@ -119,7 +119,7 @@
             this.Controls.Add(this.bt_check_state);
             this.Controls.Add(this.LayersGrid);
             this.Name = "LayersForm";
-            this.Text = "MainForm";
+            this.Text = "Layers";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LayersForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LayersGrid)).EndInit();

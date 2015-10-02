@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GeoserverManager.Entities.Interface.BussinessModel;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.FeatureTypes.Responses
 {

@@ -119,5 +119,19 @@ namespace GeoserverManager.Geoserver.Rest.Client
 
             return output;
         }
+
+        public IGeoserverRestResponse GetServerStatus()
+        {
+            var request =new ServiceRequest("");
+
+            var response = restService.Get(request);
+
+            var output = new GeoserverRestResponse
+            {
+                Data = response.Data,
+                Code = response.StatusCode
+            };
+            return output;
+        }
     }
 }

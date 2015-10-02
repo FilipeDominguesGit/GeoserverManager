@@ -28,6 +28,7 @@ namespace GeoserverManager.Rest.Client
                 Auth = new HttpBasicAuthenticator(user, password);
 
             client = new RestClient(uri);
+            
         }
 
         public IServiceResponse Get(IServiceRequest request, IRequestSettings restSettings)

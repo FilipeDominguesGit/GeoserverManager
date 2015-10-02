@@ -41,15 +41,18 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IFeatureTypeInfoRepository.cs" />
-    <Compile Include="UseCases\Layers\IGetAllFeatureTypesInfosUseCase.cs" />
-    <Compile Include="UseCases\Layers\IGetFeatureTypeInfoStatusUseCase.cs" />
-    <Compile Include="UseCases\Layers\IUploadFeatureTypeInfoToGeoserverUseCase.cs" />
-    <Compile Include="UseCases\Layers\Requests\IGetAllFeatureTypesInfosRequests.cs" />
-    <Compile Include="UseCases\Layers\Requests\IGetFeatureTypeInfoStatusRequest.cs" />
-    <Compile Include="UseCases\Layers\Requests\IUploadFeatureTypeInfoToGeoserverRequest.cs" />
-    <Compile Include="UseCases\Layers\Responses\IGetAllFeatureTypesInfosResponse.cs" />
-    <Compile Include="UseCases\Layers\Responses\IGetFeatureTypeInfoStatusResponse.cs" />
-    <Compile Include="UseCases\Layers\Responses\IUploadFeatureTypeInfoToGeoserverResponse.cs" />
+    <Compile Include="UseCases\FeatureTypes\IGetAllFeatureTypesInfosUseCase.cs" />
+    <Compile Include="UseCases\FeatureTypes\IGetFeatureTypeInfoStatusUseCase.cs" />
+    <Compile Include="UseCases\FeatureTypes\IUploadFeatureTypeInfoToGeoserverUseCase.cs" />
+    <Compile Include="UseCases\FeatureTypes\Requests\IGetAllFeatureTypesInfosRequests.cs" />
+    <Compile Include="UseCases\FeatureTypes\Requests\IGetFeatureTypeInfoStatusRequest.cs" />
+    <Compile Include="UseCases\FeatureTypes\Requests\IUploadFeatureTypeInfoToGeoserverRequest.cs" />
+    <Compile Include="UseCases\FeatureTypes\Responses\IGetAllFeatureTypesInfosResponse.cs" />
+    <Compile Include="UseCases\FeatureTypes\Responses\IGetFeatureTypeInfoStatusResponse.cs" />
+    <Compile Include="UseCases\FeatureTypes\Responses\IUploadFeatureTypeInfoToGeoserverResponse.cs" />
+    <Compile Include="UseCases\Server\IGetServerStatusUseCase.cs" />
+    <Compile Include="UseCases\Server\Request\IGetServerStatusRequest.cs" />
+    <Compile Include="UseCases\Server\Response\IGetServerStatusResponse.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

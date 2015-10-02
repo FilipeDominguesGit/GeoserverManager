@@ -2,14 +2,14 @@
 using System.Linq;
 using GeoserverManager.UseCases.Base.Interface.Exceptions;
 using GeoserverManager.UseCases.Interface.Repositories;
-using GeoserverManager.UseCases.Interface.UseCases.Layers;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Requests;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Responses;
 using GeoserverManager.UseCases.UseCases.FeatureTypes.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.FeatureTypes
 {
-    public class GetAllFeatureTypesInfosUseCase : Interface.UseCases.Layers.IGetAllFeatureTypesInfosUseCase
+    public class GetAllFeatureTypesInfosUseCase : IGetAllFeatureTypesInfosUseCase
     {
         private readonly IFeatureTypeInfoRepository repository;
 

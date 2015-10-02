@@ -4,9 +4,9 @@ using GeoserverManager.Entities.Interface.BussinessModel.Enums;
 using GeoserverManager.Geoserver.Rest.Client;
 using GeoserverManager.Geoserver.Rest.Client.Response;
 using GeoserverManager.UseCases.Base.Interface.Exceptions;
-using GeoserverManager.UseCases.Interface.UseCases.Layers;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Requests;
-using GeoserverManager.UseCases.Interface.UseCases.Layers.Responses;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Requests;
+using GeoserverManager.UseCases.Interface.UseCases.FeatureTypes.Responses;
 using GeoserverManager.UseCases.UseCases.FeatureTypes.Responses;
 
 namespace GeoserverManager.UseCases.UseCases.FeatureTypes

@@ -12,5 +12,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
         IGeoserverRestResponse GetLayerInfoBy(string datastore, string workspace, string layername);
         IGeoserverRestResponse PostLayer(IFeatureTypeInfo layer);
         IGeoserverRestResponse PutLayer(IFeatureTypeInfo layer);
+        IGeoserverRestResponse GetServerStatus();
+
     }
 }
