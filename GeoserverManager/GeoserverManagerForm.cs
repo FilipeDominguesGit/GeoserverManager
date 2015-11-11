@@ -13,6 +13,7 @@ namespace GeoserverManager
     {
         private LayersForm layersForm;
         private SettingsForm settingsForm;
+        private InputSettingsForm inputSettingsForm;
 
         private IConfigurationDataGateway configurationDataGateway;
 
@@ -22,7 +23,6 @@ namespace GeoserverManager
         {
             InitializeComponent();
 
-           
 
             configurationDataGateway = IocContainer.Resolve<IConfigurationDataGateway>();
             getServerStatusUseCase = IocContainer.Resolve<IGetServerStatusUseCase>();
@@ -85,6 +85,15 @@ namespace GeoserverManager
                 getServerStatusUseCase = IocContainer.Resolve<IGetServerStatusUseCase>();
                 GetServerData();
             }
+        }
+
+        private void inputSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            inputSettingsForm = new InputSettingsForm();
+
+            var result = inputSettingsForm?.ShowDialog();
+
         }
     }
 }

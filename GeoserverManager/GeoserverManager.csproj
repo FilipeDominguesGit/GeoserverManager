@@ -74,6 +74,12 @@
     <Compile Include="GeoserverManagerForm.Designer.cs">
       <DependentUpon>GeoserverManagerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InputSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputSettingsForm.Designer.cs">
+      <DependentUpon>InputSettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LayersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="GeoserverManagerForm.resx">
       <DependentUpon>GeoserverManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputSettingsForm.resx">
+      <DependentUpon>InputSettingsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LayersForm.resx">
       <DependentUpon>LayersForm.cs</DependentUpon>

@@ -7,7 +7,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
 {
     public class Metadata : IMetadata
     {
-        [JsonConverter(typeof (EntryJsonConverter))]
+        [JsonConverter(typeof (ListJsonConverter<Entry>))]
         public  IEnumerable<IEntry> Entry { get; set; }
     }
 }

@@ -122,7 +122,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
 
         public IGeoserverRestResponse GetServerStatus()
         {
-            var request =new ServiceRequest("");
+            var request =new ServiceRequest("about/manifest");
 
             var response = restService.Get(request);
 

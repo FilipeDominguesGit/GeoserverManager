@@ -2,7 +2,7 @@
 {
     public interface IConfigurationDataGateway
     {
-        string LocalLayersConnectionString { get; }
+        string LocalLayersConnectionString { get; set; }
 
         string GeoServerUri { get; set; }
         string GeoServerUser { get; set; }

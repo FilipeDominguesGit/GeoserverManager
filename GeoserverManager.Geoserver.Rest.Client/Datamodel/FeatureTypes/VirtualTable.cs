@@ -1,4 +1,5 @@
-﻿using GeoserverManager.Geoserver.Rest.Client.Converter;
+﻿using System.Collections.Generic;
+using GeoserverManager.Geoserver.Rest.Client.Converter;
 using Newtonsoft.Json;
 
 namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
@@ -9,7 +10,7 @@ namespace GeoserverManager.Geoserver.Rest.Client.Datamodel.FeatureTypes
         public string Sql { get; set; }
         public string EscapeSql { get; set; }
 
-        [JsonConverter(typeof (ComplexJsonConverter<Geometry>))]
-        public IGeometry Geometry { get; set; }
+        [JsonConverter(typeof(ListJsonConverter<Geometry>))]
+        public IEnumerable<IGeometry> Geometry { get; set; }
     }
 }

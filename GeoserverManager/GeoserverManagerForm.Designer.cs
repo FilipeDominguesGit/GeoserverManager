@@ -40,6 +40,7 @@ namespace GeoserverManager
             this.geoServerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.layersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importLayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ss_main_form.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +86,8 @@ namespace GeoserverManager
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem});
+            this.settingsToolStripMenuItem,
+            this.inputSettingsToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -93,8 +95,8 @@ namespace GeoserverManager
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.settingsToolStripMenuItem.Text = "Settings...";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.settingsToolStripMenuItem.Text = "Connection Settings...";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // geoServerToolStripMenuItem
@@ -110,7 +112,7 @@ namespace GeoserverManager
             this.layersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importLayersToolStripMenuItem});
             this.layersToolStripMenuItem.Name = "layersToolStripMenuItem";
-            this.layersToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.layersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.layersToolStripMenuItem.Text = "Layer";
             // 
             // importLayersToolStripMenuItem
@@ -119,6 +121,13 @@ namespace GeoserverManager
             this.importLayersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.importLayersToolStripMenuItem.Text = "Import layers...";
             this.importLayersToolStripMenuItem.Click += new System.EventHandler(this.importLayersToolStripMenuItem_Click);
+            // 
+            // inputSettingsToolStripMenuItem
+            // 
+            this.inputSettingsToolStripMenuItem.Name = "inputSettingsToolStripMenuItem";
+            this.inputSettingsToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.inputSettingsToolStripMenuItem.Text = "Input Settings...";
+            this.inputSettingsToolStripMenuItem.Click += new System.EventHandler(this.inputSettingsToolStripMenuItem_Click);
             // 
             // GeoserverManagerForm
             // 
@@ -155,5 +164,6 @@ namespace GeoserverManager
         private System.Windows.Forms.ToolStripMenuItem layersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importLayersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private ToolStripMenuItem inputSettingsToolStripMenuItem;
     }
 }
