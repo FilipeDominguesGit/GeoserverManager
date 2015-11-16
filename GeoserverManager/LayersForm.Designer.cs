@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LayersForm));
             this.LayersGrid = new System.Windows.Forms.DataGridView();
             this.bt_check_state = new System.Windows.Forms.Button();
             this.CheckStateBackgroundWorker = new System.ComponentModel.BackgroundWorker();
@@ -118,6 +119,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.bt_check_state);
             this.Controls.Add(this.LayersGrid);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LayersForm";
             this.Text = "Layers";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LayersForm_FormClosing);

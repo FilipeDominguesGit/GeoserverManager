@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using GeoserverManager.DAL.UI.Repositories.ConfigData;
@@ -43,7 +44,19 @@ namespace GeoserverManager
 
         private void GetServerStatusHandler(IGetServerStatusResponse getServerStatusResponse)
         {
-            tssl_server_status.Text = getServerStatusResponse.IsOnline ? "Status: Online" : "Status: Offline";
+
+            if (getServerStatusResponse.IsOnline)
+            {
+                tssl_server_status.Text = "Online";
+                tssl_server_status.ForeColor=Color.Green;
+            }
+            else
+            {
+                tssl_server_status.Text = "Offline";
+                tssl_server_status.ForeColor = Color.Red;
+            }
+
+            
         }
 
         private void importLayersToolStripMenuItem_Click(object sender, EventArgs e)

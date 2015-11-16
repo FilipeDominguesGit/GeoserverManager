@@ -1,0 +1,1021 @@
+﻿[
+  //---------------METRICS-----------------
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicwebbrowsing_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_spain_square1k",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicwebbrowsing_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric3g_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric3g_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric3g_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_spain_square1k",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicwebbrowsing_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric4g_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric4g_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric4g_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_spain_square1k",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric2g_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric2g_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicrfmetric2g_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicrfmetric2g_spain_square1k",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicspeechquality_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicspeechquality_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicspeechquality_spain_square1K",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_spain_square1K",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicdatatransfer_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicdatatransfer_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "thematicdatatransfer_spain_square1K",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, 'timestamp', mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_spain_square1K",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "gsmscanner_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid, band, cellname, bcch, bcchbsic,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "gsmscanner_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid, band, cellname, bcch, bcchbsic,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "gsmscanner_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid, band, cellname, bcch, bcchbsic,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_spain_square1k",
+      "Geometry": "polygon"
+    }
+  }
+  ,
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "ltescanner_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, pci, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_spain_square10",
+      "Geometry": "polygon"
+    }
+  } ,
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "ltescanner_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, pci, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_spain_square100",
+      "Geometry": "polygon"
+    }
+  } ,
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "ltescanner_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, pci, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_spain_square1k",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "wcdmascanner_spain_square10",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_spain_square10",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "wcdmascanner_spain_square100",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_spain_square100",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "wcdmascanner_spain_square1k",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT latitude, longitude, \"timestamp\", mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, band, cellname, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_spain_square1k",
+      "Geometry": "polygon"
+    }
+  }
+  //-----------------------EVENTS MOBILITY---------------------------------------------
+  ,
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilitytacreselection_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilitytacreselection_spain",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityirathandoverfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityirathandover_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityirathandover_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityirathandover_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityeutranredirected_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityeutranredirected_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityeutranredirectedfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityeutranredirected_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityhandoverfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityhandover_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityhandover_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityhandover_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectionfromutranfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectionfromutran_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectionfromutran_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectionfromutran_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityracreselection_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityracreselection_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityracreselectionfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityracreselection_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilitypackettriggerfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilitypackettrigger_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilitypackettrigger_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilitypackettrigger_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectiontoeutranfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectiontoeutran_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectiontoeutran_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectiontoeutran_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilitylacreselection_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilitylacreselection_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilitylacreselectionfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilitylacreselection_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityintrafreqhandover_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityintrafreqhandover_spain ",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectiontoutranfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectiontoutran_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityreselectiontoutran_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityreselectiontoutran_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsmobilityinterfreqhandover_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsmobilityinterfreqhandover_spain ",
+      "Geometry": "point"
+    }
+  },
+ 
+  //-----------------------EVENTS PACKET---------------------------------------------
+  
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketpdpcontextfailure_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextfailure_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketpdpcontextfailurefail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextfailure_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttpwebbrowsingcutofffail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttpwebbrowsingcutoff_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketattachsuccess_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketattachsuccess_spain ",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketattachsuccessfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketattachsuccess_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketdns_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketdns_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketdnsfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketdns_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethscellchange_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethscellchange_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethscellchangefail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethscellchange_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttpwebbrowsingfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttpwebbrowsing_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttpwebbrowsing_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttpwebbrowsing_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketsessionsuccess_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketsessionsuccess_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketsessionsuccessfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketsessionsuccess_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttptransferfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttptransfer_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttptransfer_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttptransfer_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketattachattempt_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketattachattempt_spain",
+      "Geometry": "point"
+    }
+  },
+ 
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttptransfercutofffail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttptransfercutoff_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethttptransfercutoff_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethttptransfercutoff_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketsessionattempt_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketsessionattempt_spain",
+      "Geometry": "point"
+    }
+  },
+  
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketpdpcontextcutoff_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextcutoff_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketpdpcontextcutofffail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextcutoff_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspackethsdpatodchreconfig_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethsdpatodchreconfig_spain",
+      "Geometry": "point"
+    }
+  },
+ 
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketlatencyrttfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketlatencyrtt_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketlatencyrtt_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketlatencyrtt_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketyoutubeaccess_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketyoutubeaccess_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventspacketyoutubereproduction_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketyoutubereproduction_spain",
+      "Geometry": "point"
+    }
+  },
+
+
+  //-----------------------EVENTS VOICE---------------------------------------------
+  
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicedropcall_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicedropcall_spain",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecallestablishment_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecallestablishment_spain",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecsfbcallattemptfail_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecsfbcallattempt_spain where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecsfbcallattempt_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecsfbcallattempt_spain where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecallattempt_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecallattempt_spain",
+      "Geometry": "point"
+    }
+  },
+  
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicecallcompletion_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicecallcompletion_spain",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoiceblockcall_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoiceblockcall_spain",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTestsES",
+      "Workspace": "vdfg-drivetests",
+      "Name": "eventsvoicenosustainability_spain",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicenosustainability_spain",
+      "Geometry": "point"
+    }
+  }
+
+  
+]

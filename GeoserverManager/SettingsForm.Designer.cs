@@ -119,6 +119,7 @@
             // 
             // bt_ok
             // 
+            this.bt_ok.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.bt_ok.Location = new System.Drawing.Point(350, 159);
             this.bt_ok.Name = "bt_ok";
             this.bt_ok.Size = new System.Drawing.Size(75, 23);
@@ -156,7 +157,7 @@
             this.Name = "SettingsForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Settings";
+            this.Text = "Connection Settings";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.ConnectionGroupBox.ResumeLayout(false);
             this.ConnectionGroupBox.PerformLayout();
