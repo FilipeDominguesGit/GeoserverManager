@@ -1,0 +1,137 @@
+﻿[
+  //-----------------------NW TOPOLOGY V3---------------------------------------------
+
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "live_cell_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid, cellid, cellname, cellstate, operator, managedby, managedby as hostedby, latitude, longitude, azimuth, sectorid, siteenvironment, siteid, vendor, tech, band, sector, oss, mcc, mnc, controllerid, controllername, gci, lac, rac, tac, carrier, frequency, code, dldataspeed, dlbandwidth, webgisid, cellgeomsmall as geom, cellgeommicrotiny as microtiny, cellgeomtiny as tiny, cellgeomsmall as small, cellgeommedium as medium, cellgeombig as big, cellgeombigger as bigger, cellgeomhuge as huge, cellgeomautomatic as automatic, errors FROM view_livefulldata_cell",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "live_sector_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid, siteid, tech, band, sector, sectorid, azimuth, sectorgeomsmall as geom, sectorgeommicrotiny as microtiny, sectorgeomtiny as tiny, sectorgeomsmall as small, sectorgeommedium as medium, sectorgeombig as big, sectorgeombigger as bigger, sectorgeomhuge as huge, sectorgeomautomatic as automatic FROM view_livefulldata_sector",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "live_site_thematic_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT siteid, operator, vendor, tech, hostedby, latitude, longitude, sitepoint as geom, ransharesiteid, siteenvironment,controllername, rac, lac, tac, cellstate, dldataspeed, errors, besttechs, bestspectrum, bestnodetype, bestru, bestret, bestbands, bestswrelease FROM view_livefulldata_site_thematic",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "neighbours_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select cwg_entity_cell.cellname as id,cwg_entity_cell.cellname as targetcellname, neighbourrelations.sourcecellname as sourcecellname,    cwg_entity_cell.cellgeomtiny as geom,  cwg_entity_cell.cellgeomautomatic as automatic,  cwg_entity_cell.cellgeommicrotiny as microtiny,  cwg_entity_cell.cellgeomtiny as tiny,  cwg_entity_cell.cellgeomsmall as small,  cwg_entity_cell.cellgeommedium as medium,  cwg_entity_cell.cellgeombig as big,  cwg_entity_cell.cellgeombigger as bigger,  cwg_entity_cell.cellgeomhuge as huge,  cwg_entity_cell.band as band,  cwg_entity_cell.frequency as frequency,  cwg_entity_cell.tech as tech, neighbourrelations.sourcetech as sourcetech,  neighbourrelations.systemrelation as systemrelation,  neighbourrelations.controllerrelation as controllerrelation,  neighbourrelations.ossrelation as ossrelation,  neighbourrelations.hostrelation as hostrelation,  neighbourrelations.vendorrelation as vendorrelation,  neighbourrelations.directionrelation as directionrelation, neighbourrelations.distance as distance, neighbourrelations.sourcecellwebgisid as sourcecellwebgisid, neighbourrelations.targetcellwebgisid as targetcellwebgisid from view_livefulldata_cell as cwg_entity_cell INNER JOIN view_neighbourrelations neighbourrelations ON cwg_entity_cell.cellname=neighbourrelations.targetcellname",
+      "Geometry": "polygon"
+    }
+  }
+  ,
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "neighbours_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select cwg_entity_cell.cellname as id,cwg_entity_cell.cellname as targetcellname, neighbourrelations.sourcecellname as sourcecellname,    cwg_entity_cell.cellgeomtiny as geom,  cwg_entity_cell.cellgeomautomatic as automatic,  cwg_entity_cell.cellgeommicrotiny as microtiny,  cwg_entity_cell.cellgeomtiny as tiny,  cwg_entity_cell.cellgeomsmall as small,  cwg_entity_cell.cellgeommedium as medium,  cwg_entity_cell.cellgeombig as big,  cwg_entity_cell.cellgeombigger as bigger,  cwg_entity_cell.cellgeomhuge as huge,  cwg_entity_cell.band as band,  cwg_entity_cell.frequency as frequency,  cwg_entity_cell.tech as tech, neighbourrelations.sourcetech as sourcetech,  neighbourrelations.systemrelation as systemrelation,  neighbourrelations.controllerrelation as controllerrelation,  neighbourrelations.ossrelation as ossrelation,  neighbourrelations.hostrelation as hostrelation,  neighbourrelations.vendorrelation as vendorrelation,  neighbourrelations.directionrelation as directionrelation, neighbourrelations.distance as distance, neighbourrelations.sourcecellwebgisid as sourcecellwebgisid, neighbourrelations.targetcellwebgisid as targetcellwebgisid from view_livefulldata_cell as cwg_entity_cell INNER JOIN view_neighbourrelations neighbourrelations ON cwg_entity_cell.cellname=neighbourrelations.targetcellname",
+      "Geometry": "polygon"
+    }
+  } ,
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "planned_cell_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid, cellid, cellname, cellstate, celltype, operator, oss as managedby,  oss as hostedby, latitude, longitude, azimuth, sectorid, siteenvironment, siteid, ransharesiteid, vendor, tech, band, sector, oss, mcc, mnc, msc, controllerid, controllername, lac, rac, tac, frequency, dataspeed, code, webgisid, cellgeomsmall as geom, cellgeommicrotiny as microtiny, cellgeomtiny as tiny, cellgeomsmall as small, cellgeommedium as medium, cellgeombig as big, cellgeombigger as bigger, cellgeomhuge as huge, cellgeomautomatic as automatic FROM view_fulldata_cell",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "planned_sector_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT uuid, siteid, tech, band, sector, sectorid, azimuth, sectorgeomsmall as geom, sectorgeommicrotiny as microtiny, sectorgeomtiny as tiny, sectorgeomsmall as small, sectorgeommedium as medium, sectorgeombig as big, sectorgeombigger as bigger, sectorgeomhuge as huge, sectorgeomautomatic as automatic FROM view_fulldata_sector",
+      "Geometry": "polygon"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "planned_site_thematic_v3",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT siteid, operator, vendor, tech, hostedby, latitude, longitude,        sitepoint, ransharesiteid, siteenvironment, sitelabel, sitetype, region,        sitestatus, controllername, rac, lac, tac,  cellstate, dataspeed, sitepoint as geom   FROM view_fulldata_site_thematic",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "uk_post_code_areas",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT postcode as sigga_external_id, postcode, latitude, longitude, county, district, ward, districtcode,  wardcode, country, countycode, region, geom   FROM postcode",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "uk_postcode_areas",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT gid, name as sigga_external_id, geom   FROM areas_generated ",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "geomap",
+      "Workspace": "geomap",
+      "Name": "uk_post_code_districts",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "SELECT gid as id , name as sigga_external_id, geom   FROM districts ",
+      "Geometry": "point"
+    }
+  }
+]

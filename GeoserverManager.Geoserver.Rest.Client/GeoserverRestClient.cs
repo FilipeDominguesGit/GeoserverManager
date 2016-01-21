@@ -53,7 +53,7 @@ namespace GeoserverManager.Geoserver.Rest.Client
 
         public IGeoserverRestResponse GetLayerInfoBy(string datastore, string workspace, string layername)
         {
-            var uri = $@"workspaces/{workspace}/datastores/{datastore}/featuretypes/{layername}";
+             var uri = $@"workspaces/{workspace}/datastores/{datastore}/featuretypes/{layername}";
             var request = new ServiceRequest(uri);
             var response = restService.Get(request);
 
