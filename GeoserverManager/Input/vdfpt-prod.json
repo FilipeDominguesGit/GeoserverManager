@@ -5,11 +5,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicwebbrowsing_portugal_square1k",
+      "Name": "thematicwebbrowsing_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -17,11 +17,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicwebbrowsing_portugal_square100",
+      "Name": "thematicwebbrowsing_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -29,11 +29,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3g_portugal_square10",
+      "Name": "thematicrfmetric3g_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -41,11 +41,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3g_portugal_square100",
+      "Name": "thematicrfmetric3g_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -53,11 +53,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3g_portugal_square1k",
+      "Name": "thematicrfmetric3g_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3g_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -65,11 +65,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicwebbrowsing_portugal_square10",
+      "Name": "thematicwebbrowsing_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion,  opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,  service, neddelivery, aquisitiontime, testdescription, logfilename,  sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,  eventstatus, totaltransfertime, size, appthroughput, samplestatusinfo, id,  square as geom FROM public.thematicwebbrowsing_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -77,11 +77,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4g_portugal_square10",
+      "Name": "thematicrfmetric4g_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -89,11 +89,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4g_portugal_square100",
+      "Name": "thematicrfmetric4g_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -101,11 +101,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4g_portugal_square1k",
+      "Name": "thematicrfmetric4g_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4g_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -113,11 +113,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2g_portugal_square10",
+      "Name": "thematicrfmetric2g_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -125,11 +125,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2g_portugal_square100",
+      "Name": "thematicrfmetric2g_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2g_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -137,11 +137,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2g_portugal_square1k",
+      "Name": "thematicrfmetric2g_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicrfmetric2g_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicrfmetric2g_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -149,11 +149,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3gcellfootprint_portugal_square10",
+      "Name": "thematicrfmetric3gcellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -161,11 +161,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3gcellfootprint_portugal_square100",
+      "Name": "thematicrfmetric3gcellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -173,11 +173,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric3gcellfootprint_portugal_square1k",
+      "Name": "thematicrfmetric3gcellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, txpwr, bler, numcells, freqas1, pscas1, ecnoas1, rscpas1, id, square as geom, freqas2, pscas2, ecnoas2, rscpas2, freqas3, pscas3, ecnoas3, rscpas3, freqmonitorn1, pscmonitorn1, eciomonitorn1, rscpmonitorn1, freqmonitorn2, pscmonitorn2, eciomonitorn2, rscpmonitorn2, freqmonitorn3, pscmonitorn3, eciomonitorn3, rscpmonitorn3, freqmonitorn4, pscmonitorn4, eciomonitorn4, rscpmonitorn4, freqmonitorn5, pscmonitorn5, eciomonitorn5, rscpmonitorn5, freqdetectn1, pscdetectn1, eciodetectn1, rscpdetectn1, freqdetectn2, pscdetectn2, eciodetectn2, rscpdetectn2, freqdetectn3, pscdetectn3, eciodetectn3, rscpdetectn3, freqdetectn4, pscdetectn4, eciodetectn4, rscpdetectn4, freqdetectn5, pscdetectn5, eciodetectn5, rscpdetectn5 FROM thematicrfmetric3gcellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -185,11 +185,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4gcellfootprint_portugal_square10",
+      "Name": "thematicrfmetric4gcellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -197,11 +197,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4gcellfootprint_portugal_square100",
+      "Name": "thematicrfmetric4gcellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -209,11 +209,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric4gcellfootprint_portugal_square1k",
+      "Name": "thematicrfmetric4gcellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, servingcelldlbw, servingcellrsrp, servingcellrsrptx1rx1, servingcellrsrptx1rx2, servingcellrsrq, servingcellrsrqtx1rx1, servingcellrsrqtx1rx2, dlpathloss, servingcelltac, rachcurrenttxpower, rachinitialtxpower, id, square as geom, phycellidn1, rsrpn1, rsrqn1, rssin1, earfcnn1, phycellidn2, rsrpn2, rsrqn2, rssin2, earfcnn2, phycellidn3, rsrpn3, rsrqn3, rssin3, earfcnn3, phycellidn4, rsrpn4, rsrqn4, rssin4, earfcnn4, phycellidn5, rsrpn5, rsrqn5, rssin5, earfcnn5, phycellidn6, rsrpn6, rsrqn6, rssin6, earfcnn6, phycellidn7, rsrpn7, rsrqn7, rssin7, earfcnn7, phycellidn8, rsrpn8, rsrqn8, rssin8, earfcnn8, phycellidn9, rsrpn9, rsrqn9, rssin9, earfcnn9, phycellidn10, rsrpn10, rsrqn10, rssin10, earfcnn10 FROM thematicrfmetric4gcellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -221,11 +221,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2gcellfootprint_portugal_square10",
+      "Name": "thematicrfmetric2gcellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2gcellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2gcellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -233,11 +233,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2gcellfootprint_portugal_square100",
+      "Name": "thematicrfmetric2gcellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2gcellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom FROM  thematicrfmetric2gcellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -245,11 +245,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicrfmetric2gcellfootprint_portugal_square1k",
+      "Name": "thematicrfmetric2gcellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicrfmetric2gcellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, bcchbsicn1, bcchbsicn2, bcchbsicn3, bcchbsicn4, bcchbsicn5, bcchbsicn6, rxlevel, rxqual, txpwr, ta, fer, n1rxlev, n2rxlev, n3rxlev, n4rxlev, n5rxlev, n6rxlev, id, square as geom  FROM thematicrfmetric2gcellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -257,11 +257,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicspeechquality_portugal_square10",
+      "Name": "thematicspeechquality_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -269,11 +269,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicspeechquality_portugal_square100",
+      "Name": "thematicspeechquality_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -281,11 +281,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicspeechquality_portugal_square1K",
+      "Name": "thematicspeechquality_vdfportugal_square1K",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_portugal_square1K",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid, voicecallsequence, vqmethod, speechcodecdl,        codecratedl, speechcodecul, codecrateul, mosdirection, voicequaldl,        voicequalul, voicequal, poorqualitysamples, id,square as geom  FROM public.thematicspeechquality_vdfportugal_square1K",
       "Geometry": "polygon"
     }
   },
@@ -293,11 +293,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicdatatransfer_portugal_square10",
+      "Name": "thematicdatatransfer_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -305,11 +305,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicdatatransfer_portugal_square100",
+      "Name": "thematicdatatransfer_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -317,11 +317,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "thematicdatatransfer_portugal_square1K",
+      "Name": "thematicdatatransfer_vdfportugal_square1K",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_portugal_square1K",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence,        databasename, fileid, country, vendorsystem, vendorsystemversion,        opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,        service, neddelivery, aquisitiontime, testdescription, logfilename,        sessionid, scope, target, subtarget, technology, systemband,        frequency, cellcode, cellid,  eventstatus,        testtype, totalbytestransferred, servername, totaltransferduration,        ippath, avgthroughput, filename, currentapplicationthroughput,        id, square as geom  FROM public.thematicdatatransfer_vdfportugal_square1K",
       "Geometry": "polygon"
     }
   },
@@ -329,11 +329,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscanner_portugal_square10",
+      "Name": "gsmscanner_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -341,11 +341,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscanner_portugal_square100",
+      "Name": "gsmscanner_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -353,11 +353,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscanner_portugal_square1k",
+      "Name": "gsmscanner_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype,service, neddelivery, aquisitiontime, testdescription, logfilename,sessionid, scope, target, subtarget, technology, systemband,frequency, cellcode, cellid,ci, scannerrxlevel, id,  square as geom FROM gsmscanner_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -365,11 +365,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescanner_portugal_square10",
+      "Name": "ltescanner_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -377,11 +377,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescanner_portugal_square100",
+      "Name": "ltescanner_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -389,11 +389,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescanner_portugal_square1k",
+      "Name": "ltescanner_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, id, square as geom FROM ltescanner_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -401,11 +401,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascanner_portugal_square10",
+      "Name": "wcdmascanner_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -413,11 +413,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascanner_portugal_square100",
+      "Name": "wcdmascanner_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid,coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -425,11 +425,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascanner_portugal_square1k",
+      "Name": "wcdmascanner_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascanner_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -437,11 +437,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscannercellfootprint_portugal_square10",
+      "Name": "gsmscannercellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -449,11 +449,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscannercellfootprint_portugal_square100",
+      "Name": "gsmscannercellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -461,11 +461,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "gsmscannercellfootprint_portugal_square1k",
+      "Name": "gsmscannercellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, ci, scannerrxlevel, id, square as geom FROM gsmscannercellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -473,11 +473,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescannercellfootprint_portugal_square10",
+      "Name": "ltescannercellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -485,11 +485,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescannercellfootprint_portugal_square100",
+      "Name": "ltescannercellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -497,11 +497,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "ltescannercellfootprint_portugal_square1k",
+      "Name": "ltescannercellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, cinr, deltato1stneigh, earfcn, numberneighbours, overlap, rsrp, rsrq, rssirx0, rssirx1, schcinr, sinr, ffactor, id, square as geom FROM ltescannercellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   },
@@ -509,11 +509,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascannercellfootprint_portugal_square10",
+      "Name": "wcdmascannercellfootprint_vdfportugal_square10",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_portugal_square10",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_vdfportugal_square10",
       "Geometry": "polygon"
     }
   },
@@ -521,11 +521,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascannercellfootprint_portugal_square100",
+      "Name": "wcdmascannercellfootprint_vdfportugal_square100",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_portugal_square100",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_vdfportugal_square100",
       "Geometry": "polygon"
     }
   },
@@ -533,11 +533,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "wcdmascannercellfootprint_portugal_square1k",
+      "Name": "wcdmascannercellfootprint_vdfportugal_square1k",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_portugal_square1k",
+      "Sql": "SELECT latitude, longitude, timestamp, mccid, mncid, fiscalyear, testsequence, databasename, fileid, country, vendorsystem, vendorsystemversion, opco, campaign, vehiclegroup, vehiclename, deviceunitname, deviceunittype, service, neddelivery, aquisitiontime, testdescription, logfilename, sessionid, scope, target, subtarget, technology, systemband, frequency, cellcode, cellid, coverage, eci0sc, ecsc, estimatedassize, pilotpollution, quality, sc, uarfcn, uli, id, square as geom FROM wcdmascannercellfootprint_vdfportugal_square1k",
       "Geometry": "polygon"
     }
   }
@@ -547,11 +547,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilitytacreselection_portugal",
+      "Name": "eventsmobilitytacreselection_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitytacreselection_portugal",
+      "Sql": "select * from eventsmobilitytacreselection_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -559,11 +559,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityirathandoverfail_portugal",
+      "Name": "eventsmobilityirathandoverfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityirathandover_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityirathandover_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -571,11 +571,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityirathandover_portugal",
+      "Name": "eventsmobilityirathandover_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityirathandover_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityirathandover_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -583,11 +583,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityeutranredirected_portugal",
+      "Name": "eventsmobilityeutranredirected_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityeutranredirected_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityeutranredirected_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -595,11 +595,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityeutranredirectedfail_portugal",
+      "Name": "eventsmobilityeutranredirectedfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityeutranredirected_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityeutranredirected_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -607,11 +607,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityhandoverfail_portugal",
+      "Name": "eventsmobilityhandoverfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityhandover_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityhandover_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -619,11 +619,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityhandover_portugal",
+      "Name": "eventsmobilityhandover_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityhandover_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityhandover_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -631,11 +631,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectionfromutranfail_portugal",
+      "Name": "eventsmobilityreselectionfromutranfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectionfromutran_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityreselectionfromutran_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -643,11 +643,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectionfromutran_portugal",
+      "Name": "eventsmobilityreselectionfromutran_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectionfromutran_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityreselectionfromutran_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -655,11 +655,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityracreselection_portugal",
+      "Name": "eventsmobilityracreselection_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityracreselection_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityracreselection_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -667,11 +667,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityracreselectionfail_portugal",
+      "Name": "eventsmobilityracreselectionfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityracreselection_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityracreselection_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -679,11 +679,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilitypackettriggerfail_portugal",
+      "Name": "eventsmobilitypackettriggerfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitypackettrigger_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilitypackettrigger_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -691,11 +691,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilitypackettrigger_portugal",
+      "Name": "eventsmobilitypackettrigger_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitypackettrigger_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilitypackettrigger_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -703,11 +703,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectiontoeutranfail_portugal",
+      "Name": "eventsmobilityreselectiontoeutranfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoeutran_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityreselectiontoeutran_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -715,11 +715,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectiontoeutran_portugal",
+      "Name": "eventsmobilityreselectiontoeutran_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoeutran_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityreselectiontoeutran_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -727,11 +727,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilitylacreselection_portugal",
+      "Name": "eventsmobilitylacreselection_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitylacreselection_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilitylacreselection_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -739,11 +739,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilitylacreselectionfail_portugal",
+      "Name": "eventsmobilitylacreselectionfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilitylacreselection_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilitylacreselection_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -751,11 +751,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityintrafreqhandover_portugal",
+      "Name": "eventsmobilityintrafreqhandover_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityintrafreqhandover_portugal ",
+      "Sql": "select * from eventsmobilityintrafreqhandover_vdfportugal ",
       "Geometry": "point"
     }
   },
@@ -764,11 +764,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectiontoutranfail_portugal",
+      "Name": "eventsmobilityreselectiontoutranfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoutran_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsmobilityreselectiontoutran_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -776,11 +776,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityreselectiontoutran_portugal",
+      "Name": "eventsmobilityreselectiontoutran_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityreselectiontoutran_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsmobilityreselectiontoutran_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -788,11 +788,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsmobilityinterfreqhandover_portugal",
+      "Name": "eventsmobilityinterfreqhandover_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsmobilityinterfreqhandover_portugal ",
+      "Sql": "select * from eventsmobilityinterfreqhandover_vdfportugal ",
       "Geometry": "point"
     }
   },
@@ -803,11 +803,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketpdpcontextfailure_portugal",
+      "Name": "eventspacketpdpcontextfailure_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextfailure_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspacketpdpcontextfailure_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -815,11 +815,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketpdpcontextfailurefail_portugal",
+      "Name": "eventspacketpdpcontextfailurefail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextfailure_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspacketpdpcontextfailure_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -827,11 +827,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttpwebbrowsingcutofffail_portugal",
+      "Name": "eventspackethttpwebbrowsingcutofffail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsingcutoff_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -839,11 +839,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttpwebbrowsingcutoff_portugal",
+      "Name": "eventspackethttpwebbrowsingcutoff_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsingcutoff_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspackethttpwebbrowsingcutoff_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -851,11 +851,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketattachsuccess_portugal",
+      "Name": "eventspacketattachsuccess_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachsuccess_portugal ",
+      "Sql": "select * from eventspacketattachsuccess_vdfportugal ",
       "Geometry": "point"
     }
   },
@@ -863,11 +863,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketattachsuccessfail_portugal",
+      "Name": "eventspacketattachsuccessfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachsuccess_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspacketattachsuccess_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -875,11 +875,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketdns_portugal",
+      "Name": "eventspacketdns_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketdns_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspacketdns_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -887,11 +887,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketdnsfail_portugal",
+      "Name": "eventspacketdnsfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketdns_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspacketdns_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -899,11 +899,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethscellchange_portugal",
+      "Name": "eventspackethscellchange_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethscellchange_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspackethscellchange_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -911,11 +911,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethscellchangefail_portugal",
+      "Name": "eventspackethscellchangefail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethscellchange_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspackethscellchange_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -923,11 +923,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttpwebbrowsingfail_portugal",
+      "Name": "eventspackethttpwebbrowsingfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsing_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspackethttpwebbrowsing_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -935,11 +935,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttpwebbrowsing_portugal",
+      "Name": "eventspackethttpwebbrowsing_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttpwebbrowsing_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspackethttpwebbrowsing_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -947,11 +947,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketsessionsuccess_portugal",
+      "Name": "eventspacketsessionsuccess_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionsuccess_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspacketsessionsuccess_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -959,11 +959,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketsessionsuccessfail_portugal",
+      "Name": "eventspacketsessionsuccessfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionsuccess_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspacketsessionsuccess_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -971,11 +971,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttptransferfail_portugal",
+      "Name": "eventspackethttptransferfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfer_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspackethttptransfer_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -983,11 +983,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethttptransfer_portugal",
+      "Name": "eventspackethttptransfer_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfer_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspackethttptransfer_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -995,48 +995,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketattachattempt_portugal",
+      "Name": "eventspacketattachattempt_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketattachattempt_portugal",
-      "Geometry": "point"
-    }
-  },
-
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspackethttptransfercutofffail_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfercutoff_portugal where eventsuccessfull=false",
-      "Geometry": "point"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspackethttptransfercutoff_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethttptransfercutoff_portugal where eventsuccessfull=true",
-      "Geometry": "point"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspacketsessionattempt_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketsessionattempt_portugal",
+      "Sql": "select * from eventspacketattachattempt_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1045,11 +1008,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketpdpcontextcutoff_portugal",
+      "Name": "eventspackethttptransfercutofffail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextcutoff_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspackethttptransfercutoff_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -1057,11 +1020,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketpdpcontextcutofffail_portugal",
+      "Name": "eventspackethttptransfercutoff_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketpdpcontextcutoff_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventspackethttptransfercutoff_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -1069,48 +1032,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspackethsdpatodchreconfig_portugal",
+      "Name": "eventspacketsessionattempt_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspackethsdpatodchreconfig_portugal",
-      "Geometry": "point"
-    }
-  },
-
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspacketlatencyrttfail_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketlatencyrtt_portugal where eventsuccessfull=false",
-      "Geometry": "point"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspacketlatencyrtt_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketlatencyrtt_portugal where eventsuccessfull=true",
-      "Geometry": "point"
-    }
-  },
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventspacketyoutubeaccess_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubeaccess_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventspacketsessionattempt_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1119,11 +1045,85 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventspacketyoutubereproduction_portugal",
+      "Name": "eventspacketpdpcontextcutoff_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventspacketyoutubereproduction_portugal",
+      "Sql": "select * from eventspacketpdpcontextcutoff_vdfportugal where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspacketpdpcontextcutofffail_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketpdpcontextcutoff_vdfportugal where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspackethsdpatodchreconfig_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspackethsdpatodchreconfig_vdfportugal",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspacketlatencyrttfail_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketlatencyrtt_vdfportugal where eventsuccessfull=false",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspacketlatencyrtt_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketlatencyrtt_vdfportugal where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspacketyoutubeaccess_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketyoutubeaccess_vdfportugal where eventsuccessfull=true",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventspacketyoutubereproduction_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventspacketyoutubereproduction_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1135,11 +1135,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicedropcall_portugal",
+      "Name": "eventsvoicedropcall_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicedropcall_portugal",
+      "Sql": "select * from eventsvoicedropcall_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1148,11 +1148,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicecallestablishment_portugal",
+      "Name": "eventsvoicecallestablishment_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallestablishment_portugal",
+      "Sql": "select * from eventsvoicecallestablishment_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1161,11 +1161,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicecsfbcallattemptfail_portugal",
+      "Name": "eventsvoicecsfbcallattemptfail_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecsfbcallattempt_portugal where eventsuccessfull=false",
+      "Sql": "select * from eventsvoicecsfbcallattempt_vdfportugal where eventsuccessfull=false",
       "Geometry": "point"
     }
   },
@@ -1173,11 +1173,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicecsfbcallattempt_portugal",
+      "Name": "eventsvoicecsfbcallattempt_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecsfbcallattempt_portugal where eventsuccessfull=true",
+      "Sql": "select * from eventsvoicecsfbcallattempt_vdfportugal where eventsuccessfull=true",
       "Geometry": "point"
     }
   },
@@ -1185,24 +1185,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicecallattempt_portugal",
+      "Name": "eventsvoicecallattempt_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallattempt_portugal",
-      "Geometry": "point"
-    }
-  },
-
-  {
-    "Layer": {
-      "Datastore": "DriveTests_portugal",
-      "Workspace": "geomap",
-      "Name": "eventsvoicecallcompletion_portugal",
-      "Srs": "EPSG:4326",
-      "Enabled": "true",
-      "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicecallcompletion_portugal",
+      "Sql": "select * from eventsvoicecallattempt_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1211,11 +1198,11 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoiceblockcall_portugal",
+      "Name": "eventsvoicecallcompletion_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoiceblockcall_portugal",
+      "Sql": "select * from eventsvoicecallcompletion_vdfportugal",
       "Geometry": "point"
     }
   },
@@ -1224,11 +1211,24 @@
     "Layer": {
       "Datastore": "DriveTests_portugal",
       "Workspace": "geomap",
-      "Name": "eventsvoicenosustainability_portugal",
+      "Name": "eventsvoiceblockcall_vdfportugal",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
-      "Sql": "select * from eventsvoicenosustainability_portugal",
+      "Sql": "select * from eventsvoiceblockcall_vdfportugal",
+      "Geometry": "point"
+    }
+  },
+
+  {
+    "Layer": {
+      "Datastore": "DriveTests_portugal",
+      "Workspace": "geomap",
+      "Name": "eventsvoicenosustainability_vdfportugal",
+      "Srs": "EPSG:4326",
+      "Enabled": "true",
+      "ProjectionPolicy": "FORCE_DECLARED",
+      "Sql": "select * from eventsvoicenosustainability_vdfportugal",
       "Geometry": "point"
     }
   },

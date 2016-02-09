@@ -126,7 +126,7 @@
     "Layer": {
       "Datastore": "geomap",
       "Workspace": "geomap",
-      "Name": "uk_post_code_districts",
+      "Name": "uk_postcode_districts",
       "Srs": "EPSG:4326",
       "Enabled": "true",
       "ProjectionPolicy": "FORCE_DECLARED",
