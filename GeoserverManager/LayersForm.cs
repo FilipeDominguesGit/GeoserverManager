@@ -168,6 +168,8 @@ namespace GeoserverManager
 
                     getLayerStatusUseCase.Execute(new GetFeatureTypeInfoStatusRequest {Layer = list[i]},
                         response => GetLayerStatusHandler(response, i1, list));
+
+                    Thread.Sleep(1000);
                     CheckStateBackgroundWorker.ReportProgress(((i + 1)*100)/list.Count);
                 }
                 catch (Exception exception)
@@ -254,7 +256,7 @@ namespace GeoserverManager
                     {
                         uploadLayerToGeoserverUseCase.Execute(new UploadFeatureTypeInfoToGeoserverRequest(list[i]),
                             response => ResponseBoundary(response, i1, list));
-                       // Thread.Sleep(1000);
+                        Thread.Sleep(1000);
                     }
 
                     UploadLayerToGeoserverBackgroundWorker.ReportProgress(((i + 1) * 100) / list.Count);

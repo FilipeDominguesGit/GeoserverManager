@@ -15,6 +15,7 @@ namespace GeoserverManager
         private LayersForm layersForm;
         private SettingsForm settingsForm;
         private InputSettingsForm inputSettingsForm;
+        private AboutForm aboutForm;
 
         private IConfigurationDataGateway configurationDataGateway;
 
@@ -107,6 +108,13 @@ namespace GeoserverManager
 
             var result = inputSettingsForm?.ShowDialog();
 
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aboutForm = new AboutForm();
+
+            var result = aboutForm?.ShowDialog();
         }
     }
 }

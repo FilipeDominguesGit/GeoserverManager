@@ -32,6 +32,7 @@ namespace GeoserverManager
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeoserverManagerForm));
             this.ss_main_form = new System.Windows.Forms.StatusStrip();
+            this.tssl_server_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssl_status = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssl_server_name = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -41,7 +42,8 @@ namespace GeoserverManager
             this.geoServerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.layersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importLayersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tssl_server_status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ss_main_form.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +61,12 @@ namespace GeoserverManager
             this.ss_main_form.SizingGrip = false;
             this.ss_main_form.TabIndex = 1;
             this.ss_main_form.Text = "statusStrip1";
+            // 
+            // tssl_server_status
+            // 
+            this.tssl_server_status.Name = "tssl_server_status";
+            this.tssl_server_status.Size = new System.Drawing.Size(58, 19);
+            this.tssl_server_status.Text = "Unknown";
             // 
             // tssl_status
             // 
@@ -78,7 +86,8 @@ namespace GeoserverManager
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.geoServerToolStripMenuItem});
+            this.geoServerToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(703, 24);
@@ -131,11 +140,20 @@ namespace GeoserverManager
             this.importLayersToolStripMenuItem.Text = "Import layers...";
             this.importLayersToolStripMenuItem.Click += new System.EventHandler(this.importLayersToolStripMenuItem_Click);
             // 
-            // tssl_server_status
+            // toolStripMenuItem1
             // 
-            this.tssl_server_status.Name = "tssl_server_status";
-            this.tssl_server_status.Size = new System.Drawing.Size(58, 19);
-            this.tssl_server_status.Text = "Unknown";
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.toolStripMenuItem1.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.aboutToolStripMenuItem.Text = "About Geoserver Manager";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // GeoserverManagerForm
             // 
@@ -174,5 +192,7 @@ namespace GeoserverManager
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private ToolStripMenuItem inputSettingsToolStripMenuItem;
         private ToolStripStatusLabel tssl_server_status;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

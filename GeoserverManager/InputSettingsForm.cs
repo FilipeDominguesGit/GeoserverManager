@@ -26,6 +26,8 @@ namespace GeoserverManager
 
             configurationDataGateway = IocContainer.Resolve<IConfigurationDataGateway>();
             getAllLayersUseCase = IocContainer.Resolve<IGetAllFeatureTypesInfosUseCase>();
+            openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory()+@"\input";
+            
         }
 
         private void bt_file_picker_Click(object sender, EventArgs e)

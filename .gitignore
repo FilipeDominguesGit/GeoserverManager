@@ -213,4 +213,4 @@ ModelManifest.xml
 
 
 #custom
-GeoserverManager\Input\*.json
+GeoserverManager/Input/*.json
